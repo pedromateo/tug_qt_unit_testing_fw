@@ -2,6 +2,24 @@
 
 **-*TUG: GUI Unit Testing ("Testing Unitario GUI", in Spanish) for Qt applications*-** 
 
+A framework to create batteries of tests for Qt applications. TUG bases on the Qt Test framework.
+
+## What does TUG provide?
+
+A video better than a thausand words: https://www.youtube.com/watch?v=tUis6JrycrA
+
+[![TUG VIDEO](http://img.youtube.com/vi/tUis6JrycrA/0.jpg)](http://www.youtube.com/watch?v=tUis6JrycrA)
+
+After 7 steps, 3-5 minutes and no code, you get:
+* 1000+ lines of code generated
+* test projects ready to compile and run
+* only test actions remain to be coded
+* all tests and testsuites arranged into a standalone project: 1 test suite = 1 subproject = 1 binary
+* high-level, interactive reports on the web browser
+* profiling and coverage analysis
+
+## About
+
 TUG project was born with the main purpose of providing a unit testing framework for graphical user interfaces. The main goal was providing developers with a method to easily create a battery of tests for Qt-based applications. The tests had to simulate, as far as possible, users interaction with the interface.
 
 With this purpose, the TUG project is divided into two main components:
