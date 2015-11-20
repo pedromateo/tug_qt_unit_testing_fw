@@ -1,6 +1,6 @@
 # TUG Framework
 
-TUG -- GUI Unit Testing ("Testing Unitario GUI", in Spanish) for Qt applications. 
+**-*TUG: GUI Unit Testing ("Testing Unitario GUI", in Spanish) for Qt applications*-** 
 
 TUG project was born with the main purpose of providing a unit testing framework for graphical user interfaces. The main goal was providing developers with a method to easily create a battery of tests for Qt-based applications. The tests had to simulate, as far as possible, users interaction with the interface.
 
