@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/tug_resources">
+        <file>settings</file>
+        <file>output_beautifier/TUG_output_transformation.xsl</file>
+    </qresource>
+</RCC>

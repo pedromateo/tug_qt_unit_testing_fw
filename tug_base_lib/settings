@@ -1,0 +1,73 @@
+
+#
+# gcov/lcov/gprof commands
+#
+
+
+gcov_pre_command = "gcov"
+gcov_pre_options = "-p -r -n -o ##FILEPATH## ##FILEPATH##;"
+gcov_post_command = ""
+gcov_post_options = ""
+gcov_clean_command = "rm *.gcda *.gcov;"
+
+gprof_pre_command = "gprof"
+gprof_pre_options = "-p -b ##BINNAME## gmon.out;"
+gprof_post_command = ""
+gprof_post_options = ""
+gprof_clean_command = "rm gmon.out;"
+
+lcov_pre_command = "lcov"
+lcov_pre_options = "-z --directory ##SOURCEDIR## -q;"
+lcov_post_command = "lcov"
+lcov_post_options = "--capture --test-name ##TESTNAME## --directory ##SOURCEDIR## --output-file ##TEMPDIR##/coverage.info; genhtml ##TEMPDIR##/coverage.info --output-directory ##DESTDIR## -q;"
+#removed param from lcov_post_options = --ignore-errors graph
+lcov_clean_command = "rm ##TEMPDIR##/coverage.info;"
+
+#
+# main directories
+#
+
+# dir paths relatives to "maintest"
+
+dir_bin = "../bin"
+dir_coverage = "../coverage"
+dir_output = "../out"
+dir_tests = "../bin"
+
+
+#
+# output file
+#
+
+# style
+
+output_tmp_filename = "TUG_output.tmp"
+output_style_filename = "TUG_output_transformation.xsl"
+output_final_filename = "output.xml";
+
+# preface and ending
+
+output_file_preface =  "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<?xml-stylesheet type=\"text/xsl\" href=\"TUG_output_transformation.xsl\"?>\n"
+output_file_ending = "\n\n"
+output_file_trial_tag = "trial"
+
+# gcov/lcov section
+output_file_gcov_tag = "gcov"
+output_file_gcov_item_tag = "gcovitem"
+output_file_gprof_tag = "gprof"
+output_file_gprof_item_tag = "gprofitem"
+output_file_lcov_tag = "lcov"
+output_file_lcov_item_tag = "lcovitem"
+
+# recover stuff
+
+recover_xml_preface = "<testsuite errors=\"1\" failures=\"1\" tests=\"1\" name=\"no_name\">\n   <testcase result=\"fail\" name=\"noname\">\n   <failure message=\""
+recover_xml_ending = "\" result=\"fail\"/>\n   </testcase>\n</testsuite>"
+
+
+
+
+
+
+
+

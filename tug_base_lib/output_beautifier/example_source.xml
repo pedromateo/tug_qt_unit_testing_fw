@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="TUG_output_transformation.xsl"?>
+<trial>
+
+<testsuite errors="0" failures="1" tests="4" name="CircleTest">
+  <properties>
+    <property value="4.8.1" name="QTestVersion"/>
+    <property value="4.8.1" name="QtVersion"/>
+  </properties>
+  <testcase result="pass" name="initTestCase"/>
+  <testcase result="pass" name="testRadius"/>
+  <testcase result="fail" name="testArea">
+    <failure message="&apos;true == false&apos; returned FALSE. ()" result="fail"/>
+  </testcase>
+  <testcase result="pass" name="cleanupTestCase"/>
+  <system-err/>
+</testsuite>
+
+<testsuite errors="0" failures="1" tests="5" name="SquareTest">
+  <properties>
+    <property value="4.8.1" name="QTestVersion"/>
+    <property value="4.8.1" name="QtVersion"/>
+  </properties>
+  <testcase result="pass" name="initTestCase"/>
+  <testcase result="pass" name="testSide"/>
+  <testcase result="pass" name="testArea"/>
+  <testcase result="fail" name="testPerimeter">
+    <failure message="Compared doubles are not the same (fuzzy compare)
+   Actual (1.0): 1
+   Expected (4.0): 4" result="fail"/>
+  </testcase>
+  <testcase result="pass" name="cleanupTestCase"/>
+  <system-err/>
+</testsuite>
+
+</trial>
