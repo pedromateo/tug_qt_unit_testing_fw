@@ -35,6 +35,15 @@ Releases can be found at "releases/" folder. Each one includes:
 Please, go to "doc/" folder and open TUG_doc.pdf to find a quick usage guide and 
 further information about this testing framework.
 
+
+# contents of this repository
+
+* doc/ -> Sources of TUG documentation. TUG_doc.pdf includes the docs of this project.
+* tug_base_lib/ -> GUI unit testing library sources organized into a QT Creator project.
+* LICENSE -> License file.
+* README.md -> This file.
+
+
 # about
 
 TUG project was born with the main purpose of providing a unit testing framework for graphical user interfaces. The main goal was providing developers with a method to easily create a battery of tests for Qt-based applications. The tests had to simulate, as far as possible, users interaction with the interface.
