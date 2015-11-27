@@ -1,0 +1,23 @@
+
+* Introducción
+
+Este documento introduce brevemente la librería TUG y explica su uso
+en un entorno Linux.
+
+El funcionamiento de la librería TUG se puede resumir en dos pasos
+fundamentales:
+1. *Generar la API de test para un panel*. Partimos de un panel
+   /PanelXXX/ definido en Qt 4.8 (i.e., fichero /PanelXXX.ui/). A
+   partir de este fichero generamos automáticamente una subclase
+   /test\_PanelXXX/ que incluye una API de test para interactuar con el
+   panel, aparte de toda su funcionalidad original.
+2. *Definir una o varias test suites asociadas a un panel*. Las
+   /testsuites/ son clases que heredan de la clase /TestSuiteBase/ y
+   que definen una serie de tests sobre uno o varios paneles. Los
+   /tests/ utilizan los métodos ofrecidos por la API de test para
+   interactuar con el panel junto con una serie de macros de ayuda
+   para la definición de comprobaciones y su posterior verificación.
+
+
+
+

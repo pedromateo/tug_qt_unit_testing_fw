@@ -1,0 +1,69 @@
+
+\subsection{Wizard Configuration}
+
+TUG Wizard includes some files that allow developers to configure the
+generation process. Some of these files can be modified from the TUG Wizard
+user interface. Others can only be modified using an external text editor.
+%
+These files can be found in {\tt config/} folder, and are briefly described
+in the following. 
+
+%%
+%%
+{\tt config/generation\_templates}: set of templates used during the
+generation of testsuites and test projects.
+\begin{itemize}
+%
+\item {\tt testsuitebase\_template}: testsuite base template.
+\item {\tt mp\_testsuite\_template}: template for testsuites in which a new
+  panel is launched for each test.
+\item {\tt mp\_test\_template}: template for tests in which a new panel is
+  launched for each test.
+\item {\tt op\_testsuite\_template}: template for testsuites in which only
+  one panel is used to execute all tests (for leaf nodes in the test
+  projects structure).
+\item {\tt op\_testsuite\_internal\_template}: template for testsuites in
+  which only one panel is used to execute all tests (for internal nodes in
+  the test projects structure).
+\item {\tt op\_test\_template}: template for tests in which only one panel
+  is used to execute all tests.
+\item {\tt testsuite\_project\_main}: template for main file launching a testsuite.           
+\item {\tt testsuite\_project\_pro}: template for Qt project file compiling
+  a testsuite.
+%
+\end{itemize}
+
+
+%%
+%%
+{\tt config/includes}: set of files in which the includes related to
+different options selected in TUG Wizard are defined. These files can be
+modified also from TUG Wizard user interface.
+\begin{itemize}
+%
+\item {\tt boost\_signals\_include}: defines the lines to include Boost
+  signals into a test project.
+\item {\tt libsig\_signals\_include}: defines the lines to include Libsig
+  signals into a test project.
+\item {\tt gcov\_include}: defines the lines to include Gcov into a test
+  project.
+\item {\tt gprof\_include}: defines the lines to include Gprof into a test
+  project.
+\item {\tt tuglib\_include}: defines the lines to include TUGLib library
+  into a test project.
+%
+\end{itemize}
+  
+
+
+\newpage
+
+%%% Local variables:
+%%% mode: latex
+%%% TeX-master: "README.tex"
+%%% ispell-local-dictionary: "american"
+%%% coding: utf-8
+%%% fill-column: 75
+%%% TeX-parse-self: t
+%%% TeX-auto-save: t
+%%% End:

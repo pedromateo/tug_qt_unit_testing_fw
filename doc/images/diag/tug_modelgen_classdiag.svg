@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="58cm" height="36cm" viewBox="-101 349 1146 708" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="-100" y="660" width="150.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-100" y="660" width="150.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-24.6" y="679">TUGWizardUtils</text>
+    <rect style="fill: #ffffff" x="-100" y="688" width="150.8" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-100" y="688" width="150.8" height="8"/>
+    <rect style="fill: #ffffff" x="-100" y="696" width="150.8" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-100" y="696" width="150.8" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="812" y="680" width="165.65" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="812" y="680" width="165.65" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="894.825" y="699">TestProjectModel</text>
+    <rect style="fill: #ffffff" x="812" y="708" width="165.65" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="812" y="708" width="165.65" height="8"/>
+    <rect style="fill: #ffffff" x="812" y="716" width="165.65" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="812" y="716" width="165.65" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="200" y="440" width="144.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="200" y="440" width="144.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="272.2" y="459">WizardWindow</text>
+    <rect style="fill: #ffffff" x="200" y="468" width="144.4" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="200" y="468" width="144.4" height="8"/>
+    <rect style="fill: #ffffff" x="200" y="476" width="144.4" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="200" y="476" width="144.4" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-60" y="440" width="141.25" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-60" y="440" width="141.25" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="10.625" y="459">EditImplFrame</text>
+    <rect style="fill: #ffffff" x="-60" y="468" width="141.25" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-60" y="468" width="141.25" height="8"/>
+    <rect style="fill: #ffffff" x="-60" y="476" width="141.25" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-60" y="476" width="141.25" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="492" y="540" width="165.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="492" y="540" width="165.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="574.7" y="559">TestProjectEditor</text>
+    <rect style="fill: #ffffff" x="492" y="568" width="165.4" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="492" y="568" width="165.4" height="8"/>
+    <rect style="fill: #ffffff" x="492" y="576" width="165.4" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="492" y="576" width="165.4" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="460" y="780" width="262.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="460" y="780" width="262.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="591.1" y="799">TestsuiteGenerationProcess</text>
+    <rect style="fill: #ffffff" x="460" y="808" width="262.2" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="460" y="808" width="262.2" height="8"/>
+    <rect style="fill: #ffffff" x="460" y="816" width="262.2" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="460" y="816" width="262.2" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-60" y="580" width="77.75" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-60" y="580" width="77.75" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-21.125" y="599">Defines</text>
+    <rect style="fill: #ffffff" x="-60" y="608" width="77.75" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-60" y="608" width="77.75" height="8"/>
+    <rect style="fill: #ffffff" x="-60" y="616" width="77.75" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-60" y="616" width="77.75" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-100" y="780" width="186.95" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-100" y="780" width="186.95" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-6.525" y="799">WizardWindowData</text>
+    <rect style="fill: #ffffff" x="-100" y="808" width="186.95" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-100" y="808" width="186.95" height="8"/>
+    <rect style="fill: #ffffff" x="-100" y="816" width="186.95" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-100" y="816" width="186.95" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="180" y="620" width="183.95" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="180" y="620" width="183.95" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="271.975" y="639">WizardWindowImpl</text>
+    <rect style="fill: #ffffff" x="180" y="648" width="183.95" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="180" y="648" width="183.95" height="8"/>
+    <rect style="fill: #ffffff" x="180" y="656" width="183.95" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="180" y="656" width="183.95" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="158" y="780" width="227.35" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="158" y="780" width="227.35" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="271.675" y="799">WizardWindowImpl_Gen</text>
+    <rect style="fill: #ffffff" x="158" y="808" width="227.35" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="158" y="808" width="227.35" height="8"/>
+    <rect style="fill: #ffffff" x="158" y="816" width="227.35" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="158" y="816" width="227.35" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="272.2,503.242 272.2,560 271.975,560 271.975,618.994 "/>
+    <polygon style="fill: #ffffff" points="280.2,503.242 272.2,487.242 264.2,503.242 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="280.2,503.242 272.2,487.242 264.2,503.242 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="271.975,683.242 271.975,730 271.675,730 271.675,778.994 "/>
+    <polygon style="fill: #ffffff" points="279.975,683.242 271.975,667.242 263.975,683.242 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="279.975,683.242 271.975,667.242 263.975,683.242 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="156.993,802 146.993,802 97.9558,802 92.4279,802 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="100.192,797 90.1918,802 100.192,807 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="179.031,642 120,642 120,602 23.2194,602 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="30.9834,597 20.9834,602 30.9834,607 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="179.031,642 120,642 120,682 56.2761,682 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="64.04,677 54.04,682 64.04,687 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="198.991,462 188.991,462 92.2587,462 86.7309,462 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="94.4948,457 84.4948,462 94.4948,467 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="182" y="900" width="180.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="182" y="900" width="180.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="272.25" y="919">GenerationProcess</text>
+    <rect style="fill: #ffffff" x="182" y="928" width="180.5" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="182" y="928" width="180.5" height="8"/>
+    <rect style="fill: #ffffff" x="182" y="936" width="180.5" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="182" y="936" width="180.5" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="820" y="480" width="223.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="820" y="480" width="223.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="931.7" y="499">TreeTableModelAdapter</text>
+    <rect style="fill: #ffffff" x="820" y="508" width="223.4" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="820" y="508" width="223.4" height="8"/>
+    <rect style="fill: #ffffff" x="820" y="516" width="223.4" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="820" y="516" width="223.4" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="821" y="560" width="150.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="821" y="560" width="150.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="896.45" y="579">TreeTableModel</text>
+    <rect style="fill: #ffffff" x="821" y="588" width="150.9" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="821" y="588" width="150.9" height="8"/>
+    <rect style="fill: #ffffff" x="821" y="596" width="150.9" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="821" y="596" width="150.9" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="460" y="440" width="229.95" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="460" y="440" width="229.95" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="574.975" y="459">TestProjectEditorWidget</text>
+    <rect style="fill: #ffffff" x="460" y="468" width="229.95" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="460" y="468" width="229.95" height="8"/>
+    <rect style="fill: #ffffff" x="460" y="476" width="229.95" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="460" y="476" width="229.95" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="826" y="772" width="138.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="826" y="772" width="138.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="895.2" y="791">TestsuiteNode</text>
+    <rect style="fill: #ffffff" x="826" y="800" width="138.4" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="826" y="800" width="138.4" height="8"/>
+    <rect style="fill: #ffffff" x="826" y="808" width="138.4" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="826" y="808" width="138.4" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="820" y="420" width="102.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="820" y="420" width="102.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="871.15" y="439">JTreeTable</text>
+    <rect style="fill: #ffffff" x="820" y="448" width="102.3" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="820" y="448" width="102.3" height="8"/>
+    <rect style="fill: #ffffff" x="820" y="456" width="102.3" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="820" y="456" width="102.3" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="848" y="872" width="93.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="848" y="872" width="93.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="894.75" y="891">TestNode</text>
+    <rect style="fill: #ffffff" x="848" y="900" width="93.5" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="848" y="900" width="93.5" height="8"/>
+    <rect style="fill: #ffffff" x="848" y="908" width="93.5" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="848" y="908" width="93.5" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="895.2,835.242 895.2,852 894.75,852 894.75,870.994 "/>
+    <polygon style="fill: #ffffff" points="903.2,835.242 895.2,819.242 887.2,835.242 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="903.2,835.242 895.2,819.242 887.2,835.242 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="574.975,503.242 574.975,520 574.7,520 574.7,538.994 "/>
+    <polygon style="fill: #ffffff" points="582.975,503.242 574.975,487.242 566.975,503.242 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="582.975,503.242 574.975,487.242 566.975,503.242 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="895.137" y1="678.995" x2="896.138" y2="605.005"/>
+    <ellipse style="fill: #ffffff" cx="896.044" cy="612.005" rx="7" ry="7"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="896.044" cy="612.005" rx="7" ry="7"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="978.652,702 1022.82,702 1022.82,794 969.879,794 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="977.643,789 967.643,794 977.643,799 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="658.405,562 739.203,562 739.203,434 815.528,434 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="807.764,439 817.764,434 807.764,429 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="658.405,562 739.203,562 739.203,494 815.528,494 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="807.764,499 817.764,494 807.764,489 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="666.405,562 739.203,562 739.203,694 807.528,694 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="799.764,699 809.764,694 799.764,689 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="345.409,462 355.409,462 448.993,462 454.521,462 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="446.757,467 456.757,462 446.757,457 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="386.357,802 396.357,802 448.992,802 454.52,802 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="446.756,807 456.756,802 446.756,797 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-43,360 -33,350 74.55,350 74.55,386 64.55,396 -43,396 -43,360 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-43,360 -33,350 74.55,350 74.55,386 64.55,396 -43,396 -43,360 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-43" y1="360" x2="64.55" y2="360"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="64.55" y1="360" x2="74.55" y2="350"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="64.55" y1="360" x2="64.55" y2="396"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-33" y="381.9">
+      <tspan x="-33" y="381.9">GenericEditor</tspan>
+    </text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-33" y1="384.95" x2="54.55" y2="384.95"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="10.625,438.994 10.625,418.002 10.775,418.002 10.775,401.481 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="15.775,409.245 10.775,399.245 5.775,409.245 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="271.675,825.006 271.675,862 272.25,862 272.25,894.522 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="267.25,886.758 272.25,896.758 277.25,886.758 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="174,1020 184,1010 380.3,1010 380.3,1046 370.3,1056 174,1056 174,1020 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="174,1020 184,1010 380.3,1010 380.3,1046 370.3,1056 174,1056 174,1020 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="174" y1="1020" x2="370.3" y2="1020"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="370.3" y1="1020" x2="380.3" y2="1010"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="370.3" y1="1020" x2="370.3" y2="1056"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="184" y="1041.9">
+      <tspan x="184" y="1041.9">TUGModelBasedGeneration</tspan>
+    </text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="184" y1="1044.95" x2="360.3" y2="1044.95"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="272.25,945.006 272.25,976.999 272.15,976.999 272.15,1004.52 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="267.15,996.757 272.15,1006.76 277.15,996.757 "/>
+  </g>
+</svg>
