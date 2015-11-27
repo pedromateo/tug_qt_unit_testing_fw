@@ -27,10 +27,10 @@ After 7 steps, 3-5 minutes and no code, you get:
 
 Releases can be found at "releases/" folder. Each one includes:
 
-* doc/ -> usage quick guide
-* libTUG_project/ -> C++ project of GUI unit testing library.
-* TUG_wizard/ -> wizard application to create test projects (requires Java RE).
-* install.sh -> libTUG installer. Type "./install.sh --help" for further info.
+* doc/  -> usage quick guide
+* libTUG_project/  -> C++ project of GUI unit testing library.
+* TUG_wizard/  -> wizard application to create test projects (requires Java RE).
+* install.sh  -> libTUG installer. Type "./install.sh --help" for further info.
    
 Please, go to "doc/" folder and open TUG_doc.pdf to find a quick usage guide and 
 further information about this testing framework.
@@ -38,11 +38,11 @@ further information about this testing framework.
 
 # contents of this repository
 
-* doc/ -> Sources of TUG documentation. TUG_doc.pdf includes the docs of this project.
-* releases/ -> includes TUG releases. Read [this](http://github.com/pedromateo/tug_qt_unit_testing_fw#what-does-a-tug-packagerelease-contain)
-* tug_base_lib/ -> GUI unit testing library sources organized into a QT Creator project.
-* LICENSE -> License file.
-* README.md -> This file.
+* doc/  -> Sources of TUG documentation. TUG_doc.pdf includes the docs of this project.
+* releases/  -> includes TUG releases. Read [above](http://github.com/pedromateo/tug_qt_unit_testing_fw#what-does-a-tug-packagerelease-contain)
+* tug_base_lib/  -> GUI unit testing library sources organized into a QT Creator project.
+* LICENSE  -> License file.
+* README.md  -> This file.
 
 
 # about
