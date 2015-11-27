@@ -39,6 +39,7 @@ further information about this testing framework.
 # contents of this repository
 
 * doc/ -> Sources of TUG documentation. TUG_doc.pdf includes the docs of this project.
+* releases/ -> includes TUG releases. Read #what-does-a-tug-packagerelease-contain
 * tug_base_lib/ -> GUI unit testing library sources organized into a QT Creator project.
 * LICENSE -> License file.
 * README.md -> This file.
