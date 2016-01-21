@@ -9,8 +9,9 @@
 #include <string>
 #include <stdexcept>
 #include <unistd.h>
+#ifndef __MINGW32__
 #include <sys/syscall.h>
-
+#endif
 using namespace std;
 
 namespace

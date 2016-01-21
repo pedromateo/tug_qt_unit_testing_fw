@@ -316,14 +316,15 @@ inline void signal_connect(void(*handler)(int)){
     //signal(SIGSEGV, handler);//SIGSEGV      11       Core    Invalid memory reference
     //signal(SIGFPE, handler);//SIGFPE        8       Core    Floating point exception
 
-    signal(SIGTERM, handler);//
-    //signal(SIGCHLD, handler);//
+#ifndef __MINGW32__
     signal(SIGCONT, handler);//
-    signal(SIGINT, handler);//SIGINT        2       Term    Interrupt from keyboard
     signal(SIGQUIT, handler);//SIGQUIT       3       Core    Quit from keyboard
+    signal(SIGTERM, handler);//
+#endif
+    //signal(SIGCHLD, handler);//
+    signal(SIGINT, handler);//SIGINT        2       Term    Interrupt from keyboard
     signal(SIGILL, handler);//SIGILL        4       Core    Illegal Instruction
     signal(SIGABRT, handler);//SIGABRT       6       Core    Abort signal from abort(3)
-    signal(SIGPIPE, handler);//SIGPIPE      13       Term    Broken pipe: write to pipe with no
 
     //signal(SIGKILL, handler);//SIGKILL       9       Term    Kill signal
     //signal(SIGSTOP, handler);//
