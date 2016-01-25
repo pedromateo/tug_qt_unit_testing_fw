@@ -1,0 +1,8 @@
+   /// Test name: ##TESTNAME##
+   void ##TESTNAME##()
+   {
+      /// >>>>>
+##TESTCODE##
+      /// <<<<< 
+   }
+

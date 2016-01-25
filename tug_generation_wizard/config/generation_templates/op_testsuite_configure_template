@@ -1,0 +1,4 @@
+        
+        // create the panel and show it here
+        _panel = new ##TESTPANELCLASSNAME##();
+        tug::panel_launch(_panel);

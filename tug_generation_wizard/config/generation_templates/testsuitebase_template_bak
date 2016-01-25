@@ -1,0 +1,104 @@
+#ifndef ##TESTSUITENAME##_hpp
+#define ##TESTSUITENAME##_hpp
+
+#include "##TESTSUITEPARENTFILENAME##"
+
+#include "##TESTPANELCLASSNAME##.h"
+##MODELINCLUDE##
+##SIGNALSINCLUDE##
+
+/// protected code area, kept after roundtrip        
+/// >>>>>
+##TESTSUITEINCLUDES##
+/// <<<<< 
+
+///
+/// \brief The ##TESTSUITENAME## class
+///
+
+class ##TESTSUITENAME## : public ##TESTSUITEPARENTNAME## {
+
+    Q_OBJECT /// (mandatory) Our test suite has to execute Q_OBJECT macros
+
+public:
+
+    /// TestSuite constructor
+    ##TESTSUITENAME##()
+    {
+        _id = "##TESTSUITENAME##";
+    }
+
+
+    /// TestSuite destructor
+    ~##TESTSUITENAME##()
+    {
+    }
+
+protected:
+
+    ///
+    /// TestSuite objects 
+    ///
+
+    ///
+    /// objects used to configure the test scenario
+    ##MODELOBJECT##
+    ##SIGNALSOBJECT##
+
+
+public:
+
+    ///
+    /// TestSuiteBase overloaded methods
+    ///
+
+    /// additional configurations performed before test suite execution
+    virtual void configure_testsuite()
+    {
+        TestSuiteBase::configure_testsuite();
+        // create and configure modal and signals here
+        ##MODELINSTANTIATION##
+        ##SIGNALSINSTANTIATION##
+        
+        /// >>>>>
+##TESTSUITECONFIGURE##
+        /// <<<<<
+    }
+
+    /// tests execution 
+    virtual void do_tests()
+    {
+        TestSuiteBase::do_tests();
+    }
+
+    /// additional actions executed after test suite execution
+    virtual void finish_testsuite()
+    {
+        TestSuiteBase::finish_testsuite(); 
+        
+        /// >>>>>
+##TESTSUITEFINISH##
+        /// <<<<< 
+    }
+
+    ///
+    /// Tests definition
+    ///
+
+private Q_SLOTS: /// (mandatory) Tests have to be declared as "private slots"
+
+##TESTSDEFINITION##
+
+protected:
+
+    ///
+    /// Supporting code
+    /// 
+       
+    /// >>>>>
+##TESTSUITEEXTENSIONS##
+    /// <<<<<
+
+};
+
+#endif // ##TESTSUITENAME##_hpp

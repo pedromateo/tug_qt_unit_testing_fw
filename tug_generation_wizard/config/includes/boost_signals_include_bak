@@ -1,0 +1,2 @@
+# add in the configuration file the lines to include boost signals
+LIBS += -lboost_regex

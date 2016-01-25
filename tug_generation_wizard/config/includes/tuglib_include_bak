@@ -1,0 +1,5 @@
+TUG_LIB_PATH = /tmp/tugproject/lib/
+TUG_INCLUDE_PATH = /tmp/tugproject/include/
+DEPENDPATH += $${TUG_LIB_PATH}
+INCLUDEPATH += $${TUG_INCLUDE_PATH}
+LIBS += -L$${TUG_LIB_PATH} -lTUG

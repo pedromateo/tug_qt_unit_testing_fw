@@ -1,0 +1,5 @@
+# add in the configuration file the lines to include gprof
+#QMAKE_CXXFLAGS += -pg
+#QMAKE_LDFLAGS += -pg
+QMAKE_CXXFLAGS_DEBUG *= -pg
+QMAKE_LFLAGS_DEBUG *= -pg

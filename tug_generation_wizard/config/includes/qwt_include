@@ -1,0 +1,6 @@
+# qwt includes
+QWT_PATH = /usr/local/qwt-6.1.0
+DEPENDPATH += $${QWT_PATH}/include/
+INCLUDEPATH += $${QWT_PATH}/include/
+LIBS +=  -L$${QWT_PATH}/lib/ -lqwt
+

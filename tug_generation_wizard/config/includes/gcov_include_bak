@@ -1,0 +1,4 @@
+# add in the configuration file the lines to include gcov
+LIBS += -lgcov
+QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage -O0
+QMAKE_LDFLAGS += -fprofile-arcs -ftest-coverage  -O0

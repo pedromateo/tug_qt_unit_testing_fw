@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="796.42859"
+   height="296.42856"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="tug_splash.svg"
+   inkscape:export-filename="/home/pedro/svn_catedra/anotaciones/dsl_testing/current_version/tug_generation_wizard/src/org/eclipse/tug/resources/splash/tug_splash.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3009">
+      <stop
+         style="stop-color:#aad400;stop-opacity:1"
+         offset="0"
+         id="stop3011" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="1"
+         id="stop3013" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3009"
+       id="linearGradient3015"
+       x1="767.61371"
+       y1="380.29776"
+       x2="741.13702"
+       y2="227.17384"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0469484,0,0,0.77425368,-16.519114,748.02982)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="550.06127"
+     inkscape:cy="226.22505"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1110"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.4285709,-755.2193)">
+    <rect
+       style="fill:url(#linearGradient3015);fill-opacity:1;stroke:none"
+       id="rect2999"
+       width="796.42859"
+       height="296.42856"
+       x="1.4285709"
+       y="755.2193" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2984"
+       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Medium"
+       transform="translate(32.324881,696.86471)"><flowRegion
+         id="flowRegion2986"><rect
+           id="rect2988"
+           width="699.02557"
+           height="215.16249"
+           x="34.345188"
+           y="65.639511"
+           style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Medium" /></flowRegion><flowPara
+         id="flowPara2990"><flowSpan
+           style="fill:#88aa00"
+           id="flowSpan2992">tug</flowSpan><flowSpan
+           style="fill:#666666"
+           id="flowSpan2994">wizard</flowSpan></flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3004"
+       style="font-size:26px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Medium"
+       transform="translate(-230.71429,694.21932)"><flowRegion
+         id="flowRegion3006"><rect
+           id="rect3008"
+           width="817.21338"
+           height="65.659912"
+           x="138.3909"
+           y="217.16238"
+           style="font-size:26px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:end;text-anchor:end;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Medium" /></flowRegion><flowPara
+         id="flowPara3010"
+         style="font-size:26px;font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;text-align:end;text-anchor:end;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Medium Italic">a unit testing framework for <flowSpan
+   style="font-size:26px;font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;text-align:end;text-anchor:end;fill:#88aa00;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Medium Italic"
+   id="flowSpan3012">Qt</flowSpan></flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3014"
+       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       transform="translate(33.14286,773.93361)"><flowRegion
+         id="flowRegion3016"><rect
+           id="rect3018"
+           width="554.57373"
+           height="90.913727"
+           x="195.96959"
+           y="250.49742"
+           style="font-size:13px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;-inkscape-font-specification:Arial" /></flowRegion><flowPara
+         id="flowPara3020"><flowSpan
+   style="font-weight:bold;-inkscape-font-specification:Arial Bold"
+   id="flowSpan3022">Cátedra SAES - University of Murcia (Spain)</flowSpan> - Pedro Mateo (www.pedromateo.es)</flowPara></flowRoot>  </g>
+</svg>

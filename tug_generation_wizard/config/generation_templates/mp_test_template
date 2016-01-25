@@ -1,0 +1,16 @@
+   /// Test name: ##TESTNAME##
+   void ##TESTNAME##()
+   {
+      /// >>>>> 
+
+      ##TESTPANELCLASSNAME## panel;
+      tug::log("Executing test '##TESTSUITENAME##::##TESTNAME##'");
+      tug::panel_launch(panel);
+      tug::sleep2();
+
+      // remove this statement - fail by default
+      tug::fail("'##TESTSUITENAME##::##TESTNAME##' Empty test.");
+
+      /// <<<<< 
+   }
+

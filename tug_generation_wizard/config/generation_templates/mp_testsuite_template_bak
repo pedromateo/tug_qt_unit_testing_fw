@@ -1,0 +1,75 @@
+#ifndef ##TESTSUITENAME##_hpp
+#define ##TESTSUITENAME##_hpp
+
+#include "##TESTSUITEPARENTFILENAME##"
+        
+/// protected code area, kept after roundtrip        
+/// >>>>>
+##TESTSUITEINCLUDES##
+/// <<<<< 
+
+///
+/// \brief The ##TESTSUITENAME## class
+///
+
+class ##TESTSUITENAME## : public ##TESTSUITEPARENTNAME## {
+
+    Q_OBJECT /// (mandatory) Our test suite has to execute Q_OBJECT macros
+
+public:
+
+    /// TestSuite constructor
+    ##TESTSUITENAME##()
+    {
+        _id = "##TESTSUITENAME##";
+    }
+
+
+public:
+
+    ///
+    /// TestSuiteBase overloaded methods
+    ///
+
+    /// additional configurations performed before test suite execution
+    virtual void configure_testsuite()
+    {
+        ##TESTSUITEPARENTNAME##::configure_testsuite();
+        
+        /// >>>>>
+##TESTSUITECONFIGURE##
+        /// <<<<<
+    }
+
+    /// additional actions executed after test suite execution
+    virtual void finish_testsuite()
+    {
+        ##TESTSUITEPARENTNAME##::finish_testsuite();
+        
+        /// >>>>>
+##TESTSUITEFINISH##
+        /// <<<<< 
+    }
+
+
+    ///
+    /// Tests definition
+    ///
+
+private Q_SLOTS: /// (mandatory) Tests have to be declared as "private slots"
+
+##TESTSDEFINITION##  
+
+protected:
+
+    ///
+    /// Supporting code
+    /// 
+   
+    /// >>>>>
+##TESTSUITEEXTENSIONS##
+    /// <<<<<
+
+};
+
+#endif // ##TESTSUITENAME##_hpp

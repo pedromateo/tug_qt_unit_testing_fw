@@ -1,0 +1,4 @@
+# add in the configuration file the lines to include libsig signals
+DEPENDPATH += /usr/lib/x86_64-linux-gnu/
+LIBS += -lsigc-2.0
+INCLUDEPATH += /usr/include/sigc++-2.0/ /usr/lib/x86_64-linux-gnu/sigc++-2.0/include/
