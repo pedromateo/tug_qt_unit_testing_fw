@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Acceleo Generator Module Runtime Plug-in
+Bundle-SymbolicName: testapi_generator
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.eclipse.acceleo.qt_test_api.generator.Activator
+Bundle-Vendor: Eclipse Modeling Project
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ org.eclipse.ocl,
+ org.eclipse.ocl.ecore,
+ org.eclipse.acceleo.common,
+ org.eclipse.acceleo.model,
+ org.eclipse.acceleo.profiler,
+ org.eclipse.acceleo.engine;visibility:=reexport,
+ com.google.guava,
+ org.eclipse.acceleo.parser,
+ qt48_model;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Eclipse-LazyStart: true
+Export-Package: 
+ org.eclipse.acceleo.qt_test_api.generation_app,
+ org.eclipse.acceleo.qt_test_api.generator,
+ org.eclipse.acceleo.qt_test_api.generator.main,
+ org.eclipse.acceleo.qt_test_api.generator.support
+Bundle-ClassPath: .
+

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/qt48_model/src" modelPluginID="qt48_model" modelName="org.casa.dsltesting.Qt48_XMLSchema"
+    modelPluginClass="" nonNLSMarkers="true" importerID="org.eclipse.xsd.ecore.importer"
+    copyrightFields="false">
+  <foreignModel>../qt48_xmlschema.xsd</foreignModel>
+  <genPackages prefix="Qt48Xmlschema" basePackage="org.casa.dsltesting" resource="XML"
+      disposableProviderFactory="true" ecorePackage="Qt48Xmlschema.ecore#/">
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Action">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Action/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Action/property"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Action/attribute"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Action/menu"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Action/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//ActionGroup">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ActionGroup/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ActionGroup/action"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ActionGroup/actiongroup"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ActionGroup/property"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ActionGroup/attribute"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ActionGroup/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//ActionRef">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ActionRef/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Brush">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Brush/color"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Brush/texture"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Brush/gradient"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Brush/brushstyle"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//ButtonGroup">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ButtonGroup/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ButtonGroup/property"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ButtonGroup/attribute"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ButtonGroup/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//ButtonGroups">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ButtonGroups/buttongroup"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Char">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Char/unicode"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Color">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Color/red"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Color/green"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Color/blue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Color/alpha"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//ColorGroup">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ColorGroup/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ColorGroup/colorrole"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ColorGroup/color"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//ColorRole">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ColorRole/brush"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ColorRole/role"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Column">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Column/property"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Connection">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Connection/sender"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Connection/signal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Connection/receiver"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Connection/slot"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Connection/hints"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//ConnectionHint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ConnectionHint/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ConnectionHint/y"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ConnectionHint/type"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//ConnectionHints">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ConnectionHints/hint"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Connections">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Connections/connection"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//CustomWidget">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//CustomWidget/class"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//CustomWidget/extends"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//CustomWidget/header"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//CustomWidget/sizehint"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//CustomWidget/addpagemethod"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//CustomWidget/container"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//CustomWidget/sizepolicy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//CustomWidget/pixmap"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//CustomWidget/script"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//CustomWidget/properties"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//CustomWidget/slots"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//CustomWidget/propertyspecifications"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//CustomWidgets">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//CustomWidgets/customwidget"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Date">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Date/year"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Date/month"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Date/day"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//DateTime">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//DateTime/hour"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//DateTime/minute"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//DateTime/second"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//DateTime/year"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//DateTime/month"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//DateTime/day"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//DesignerData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//DesignerData/property"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//DocumentRoot/ui"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Font">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Font/family"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Font/pointsize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Font/weight"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Font/italic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Font/bold"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Font/underline"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Font/strikeout"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Font/antialiasing"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Font/stylestrategy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Font/kerning"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Gradient">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Gradient/gradientStop"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Gradient/angle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Gradient/centralx"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Gradient/centraly"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Gradient/coordinatemode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Gradient/endx"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Gradient/endy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Gradient/focalx"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Gradient/focaly"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Gradient/radius"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Gradient/spread"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Gradient/startx"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Gradient/starty"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Gradient/type"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//GradientStop">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//GradientStop/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//GradientStop/position"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Header">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Header/mixed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Header/location"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Image">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Image/data"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Image/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//ImageData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ImageData/mixed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ImageData/format"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ImageData/length"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Images">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Images/image"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Include">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Include/mixed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Include/impldecl"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Include/location"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Includes">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Includes/include"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Item">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Item/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Item/property"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Item/item"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Item/column"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Item/row"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Layout">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Layout/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Layout/property"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Layout/attribute"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Layout/item"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Layout/class"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Layout/columnminimumwidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Layout/columnstretch"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Layout/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Layout/rowminimumheight"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Layout/rowstretch"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Layout/stretch"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//LayoutDefault">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//LayoutDefault/margin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//LayoutDefault/spacing"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//LayoutFunction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//LayoutFunction/margin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//LayoutFunction/spacing"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//LayoutItem">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//LayoutItem/widget"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//LayoutItem/layout"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//LayoutItem/spacer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//LayoutItem/alignment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//LayoutItem/colspan"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//LayoutItem/column"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//LayoutItem/row"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//LayoutItem/rowspan"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Locale">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Locale/country"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Locale/language"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Palette">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Palette/active"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Palette/inactive"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Palette/disabled"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Point">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Point/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Point/y"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//PointF">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//PointF/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//PointF/y"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Properties">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Properties/property"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Property">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Property/bool"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Property/cstring"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Property/cursor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Property/cursorshape"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Property/enum"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/font"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/iconset"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/pixmap"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/palette"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/point"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/rect"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Property/set"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/locale"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/sizepolicy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/size"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/string"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/stringlist"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Property/number"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Property/float"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Property/double"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/date"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/time"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/datetime"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/pointf"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/rectf"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/sizef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Property/longlong"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/char"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Property/uint"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Property/ulonglong"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Property/brush"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Property/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Property/stdset"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//PropertyData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//PropertyData/type"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//PropertySpecifications">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//PropertySpecifications/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//PropertySpecifications/stringpropertyspecification"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Rect">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Rect/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Rect/y"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Rect/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Rect/height"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//RectF">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//RectF/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//RectF/y"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//RectF/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//RectF/height"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Resource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Resource/location"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//ResourceIcon">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ResourceIcon/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ResourceIcon/normaloff"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ResourceIcon/normalon"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ResourceIcon/disabledoff"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ResourceIcon/disabledon"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ResourceIcon/activeoff"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ResourceIcon/activeon"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ResourceIcon/selectedoff"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//ResourceIcon/selectedon"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ResourceIcon/resource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ResourceIcon/theme"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//ResourcePixmap">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ResourcePixmap/mixed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ResourcePixmap/alias"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//ResourcePixmap/resource"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Resources">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Resources/include"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Resources/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Row">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Row/property"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Script">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Script/language"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Script/source"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Size">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Size/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Size/height"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//SizeF">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//SizeF/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//SizeF/height"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//SizePolicy">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//SizePolicy/hsizetype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//SizePolicy/vsizetype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//SizePolicy/horstretch"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//SizePolicy/verstretch"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//SizePolicy/hsizetype1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//SizePolicy/vsizetype1"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//SizePolicyData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//SizePolicyData/hordata"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//SizePolicyData/verdata"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Slots">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Slots/group"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Slots/signal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Slots/slot"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Spacer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Spacer/property"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Spacer/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//String">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//String/mixed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//String/comment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//String/extracomment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//String/notr"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//StringList">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//StringList/string"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//StringPropertySpecification">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//StringPropertySpecification/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//StringPropertySpecification/notr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//StringPropertySpecification/type"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//TabStops">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//TabStops/tabstop"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Time">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Time/hour"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Time/minute"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Time/second"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//UI">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//UI/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//UI/comment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//UI/exportmacro"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//UI/class"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//UI/widget"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//UI/layoutdefault"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//UI/layoutfunction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//UI/pixmapfunction"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//UI/customwidgets"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//UI/tabstops"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//UI/images"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//UI/includes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//UI/resources"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//UI/connections"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//UI/designerdata"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//UI/slots"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//UI/buttongroups"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//UI/displayname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//UI/language"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//UI/stdsetdef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//UI/stdSetDef1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//UI/version"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Url">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Url/string"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//Widget">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Widget/class"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Widget/property"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Widget/script"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Widget/widgetdata"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Widget/attribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Widget/row"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Widget/column"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Widget/item"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Widget/layout"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Widget/widget"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Widget/action"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Widget/actiongroup"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//Widget/addaction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Widget/zorder"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Widget/class1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Widget/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Qt48Xmlschema.ecore#//Widget/native"/>
+    </genClasses>
+    <genClasses ecoreClass="Qt48Xmlschema.ecore#//WidgetData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Qt48Xmlschema.ecore#//WidgetData/property"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

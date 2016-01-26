@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project org.eclipse.acceleo.qt_test_api.generator2 with libraries in sub-folder">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="/tmp/test.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.acceleo.qt_test_api.generation_app.GenerationProcess"/>
+                <attribute name="Class-Path" value=". test_lib/org.eclipse.core.runtime_3.9.0.v20130326-1255.jar test_lib/org.eclipse.osgi_3.9.1.v20130814-1242.jar test_lib/org.eclipse.equinox.weaving.hook_1.0.200.v20120524-1707.jar test_lib/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar test_lib/org.eclipse.core.jobs_3.5.300.v20130429-1813.jar test_lib/runtime_registry_compatibility.jar test_lib/org.eclipse.equinox.registry_3.5.301.v20130717-1549.jar test_lib/org.eclipse.equinox.preferences_3.5.100.v20130422-1538.jar test_lib/org.eclipse.core.contenttype_3.4.200.v20130326-1255.jar test_lib/org.eclipse.equinox.app_1.3.100.v20130327-1442.jar test_lib/org.eclipse.emf.ecore_2.9.1.v20130827-0309.jar test_lib/org.eclipse.emf.common_2.9.1.v20130827-0309.jar test_lib/org.eclipse.emf.ecore.xmi_2.9.1.v20130827-0309.jar test_lib/org.eclipse.ocl_3.3.0.v20130909-1552.jar test_lib/lpg.runtime.java_2.0.17.v201004271640.jar test_lib/org.eclipse.ocl.common_1.1.0.v20130531-0544.jar test_lib/org.eclipse.ocl.ecore_3.3.0.v20130520-1222.jar test_lib/org.eclipse.acceleo.common_3.4.1.201309031307.jar test_lib/org.eclipse.acceleo.model_3.4.1.201309031307.jar test_lib/org.eclipse.acceleo.profiler_3.4.1.201309031307.jar test_lib/org.eclipse.acceleo.engine_3.4.1.201309031307.jar test_lib/org.eclipse.emf.codegen.ecore_2.9.1.v20130902-0605.jar test_lib/org.eclipse.emf.codegen_2.9.0.v20130902-0605.jar test_lib/com.google.guava_11.0.2.v201303041551.jar test_lib/org.eclipse.acceleo.parser_3.4.1.201309031307.jar test_lib/org.casa.dsltesting.Qt48XMLschema_v0.1.jar"/>
+            </manifest>
+            <fileset dir="/home/dsevilla/prog/svn-csaesumu/anotaciones/dsl_testing/current_version/testapi_generator_project2/bin"/>
+        	<fileset file="/home/dsevilla/prog/svn-csaesumu/anotaciones/dsl_testing/current_version/testapi_generator_project2/bin/org/eclipse/acceleo/qt_test_api/generator/common/generate.emtl"/>
+        </jar>
+        <delete dir="/tmp/test_lib"/>
+        <mkdir dir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.core.runtime_3.9.0.v20130326-1255.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.osgi_3.9.1.v20130814-1242.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.equinox.weaving.hook_1.0.200.v20120524-1707.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.core.jobs_3.5.300.v20130429-1813.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.core.runtime.compatibility.registry_3.5.200.v20130514-1256/runtime_registry_compatibility.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.equinox.registry_3.5.301.v20130717-1549.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.equinox.preferences_3.5.100.v20130422-1538.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.core.contenttype_3.4.200.v20130326-1255.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.equinox.app_1.3.100.v20130327-1442.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.emf.ecore_2.9.1.v20130827-0309.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.emf.common_2.9.1.v20130827-0309.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.9.1.v20130827-0309.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.ocl_3.3.0.v20130909-1552.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/lpg.runtime.java_2.0.17.v201004271640.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.ocl.common_1.1.0.v20130531-0544.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.ocl.ecore_3.3.0.v20130520-1222.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.acceleo.common_3.4.1.201309031307.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.acceleo.model_3.4.1.201309031307.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.acceleo.profiler_3.4.1.201309031307.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.acceleo.engine_3.4.1.201309031307.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.emf.codegen.ecore_2.9.1.v20130902-0605.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.emf.codegen_2.9.0.v20130902-0605.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/com.google.guava_11.0.2.v201303041551.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/kepler/eclipse/plugins/org.eclipse.acceleo.parser_3.4.1.201309031307.jar" todir="/tmp/test_lib"/>
+        <copy file="/home/dsevilla/prog/usability-analyzer/workspace/qt48_model/org.casa.dsltesting.Qt48XMLschema_v0.1.jar" todir="/tmp/test_lib"/>
+    </target>
+</project>

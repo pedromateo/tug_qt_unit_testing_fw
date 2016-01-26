@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="qt48_model/org.casa.dsltesting.Qt48XMLschema_v0.1.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/qt48_model/create_jar.jardesc" exportErrors="false" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=qt48_model/src&lt;org"/>
+        <javaElement handleIdentifier="=qt48_model/src&lt;org.casa"/>
+        <javaElement handleIdentifier="=qt48_model/src&lt;org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl"/>
+        <file path="/qt48_model/qt48_xmlschema_qwt_enhanced.xsd"/>
+        <javaElement handleIdentifier="=qt48_model/src&lt;org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.util"/>
+        <javaElement handleIdentifier="=qt48_model/src&lt;org.casa.dsltesting"/>
+        <javaElement handleIdentifier="=qt48_model/src&lt;org.casa.dsltesting.Qt48XmlschemaQwtEnhanced"/>
+    </selectedElements>
+</jardesc>

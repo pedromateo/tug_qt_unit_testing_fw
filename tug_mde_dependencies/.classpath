@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.core.contenttype_3.4.200.v20140207-1251.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.core.jobs_3.6.1.v20141014-1248.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.core.runtime_3.10.0.v20140318-2214.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.emf.common_2.10.1.v20150123-0348.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.10.2.v20150123-0348.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.emf.ecore_2.10.2.v20150123-0348.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.equinox.app_1.3.200.v20130910-1609.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.equinox.preferences_3.5.200.v20140224-1527.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.equinox.registry_3.5.400.v20140428-1507.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.osgi_3.10.2.v20150203-1939.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/com.google.guava_15.0.0.v201403281430.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/lpg.runtime.java_2.0.17.v201004271640.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.acceleo.common_3.5.1.201409021433.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.acceleo.engine_3.5.1.201409021433.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.acceleo.model_3.5.1.201409021433.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.acceleo.parser_3.5.1.201409021433.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.acceleo.profiler_3.5.1.201409021433.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.emf.codegen.ecore_2.10.2.v20150123-0452.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.emf.codegen_2.10.0.v20150123-0452.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

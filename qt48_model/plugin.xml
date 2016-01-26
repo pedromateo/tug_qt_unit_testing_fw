@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="file:/home/pedro/svn_catedra/anotaciones/dsl_testing/cpp_generator_project/qt48_model/qt48_xmlschema.xsd"
+            class="Qt48Xmlschema.Qt48XmlschemaPackage"
+            genModel="model/qt48_xmlschema.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="qt48xmlschema"
+            class="Qt48Xmlschema.util.Qt48XmlschemaResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated qt48_xmlschema_qwt_enhanced -->
+      <package
+            uri="platform:/resource/qt48_model/qt48_xmlschema_qwt_enhanced.xsd"
+            class="org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.Qt48XmlschemaQwtEnhancedPackage"
+            genModel="model/qt48_xmlschema_qwt_enhanced.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated qt48_xmlschema_qwt_enhanced -->
+      <parser
+            type="qt48xmlschemaqwtenhanced"
+            class="org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.util.Qt48XmlschemaQwtEnhancedResourceFactoryImpl"/>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated qt48_xmlschema -->
+      <package
+            uri="file:/home/pedro/svn_catedra/anotaciones/dsl_testing/current_version/qt48_model/qt48_xmlschema.xsd"
+            class="org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage"
+            genModel="model/qt48_xmlschema.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated qt48_xmlschema -->
+      <parser
+            type="qt48xmlschema"
+            class="org.casa.dsltesting.Qt48Xmlschema.util.Qt48XmlschemaResourceFactoryImpl"/>
+   </extension>
+</plugin>
