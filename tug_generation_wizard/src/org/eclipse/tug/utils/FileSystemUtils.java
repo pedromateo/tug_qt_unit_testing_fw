@@ -196,7 +196,9 @@ public class FileSystemUtils {
 		String b = "";
 		try {
 			a = new File(mybase).getCanonicalFile().toURI().getPath();
+			a = a.replace("/", Defines.PATH_SEP);// makes it work in Windows and Linux systems
 			b = new File(mypath).getCanonicalFile().toURI().getPath();
+			b = b.replace("/", Defines.PATH_SEP);// makes it work in Windows and Linux systems
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
