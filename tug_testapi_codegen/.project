@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>testapi_generator</name>
+	<name>tug_testapi_codegen</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -23,22 +23,11 @@
 		<buildCommand>
 			<name>org.eclipse.acceleo.ide.ui.acceleoBuilder</name>
 			<arguments>
-				<dictionary>
-					<key>compilation.kind</key>
-					<value>compilation.platform.resource</value>
-				</dictionary>
-				<dictionary>
-					<key>compliance</key>
-					<value>strict</value>
-				</dictionary>
-				<dictionary>
-					<key>resource.kind</key>
-					<value>xmi</value>
-				</dictionary>
 			</arguments>
 		</buildCommand>
 	</buildSpec>
 	<natures>
+		<nature>org.eclipse.pde.PluginNature</nature>
 		<nature>org.eclipse.acceleo.ide.ui.acceleoNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.pde.PluginNature</nature>
