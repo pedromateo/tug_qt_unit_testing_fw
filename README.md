@@ -39,8 +39,12 @@ further information about this testing framework.
 # contents of this repository
 
 * doc/  -> Sources of TUG documentation. TUG_doc.pdf includes the docs of this project.
+* examples/  -> some full examples showing TUG usage with Qt projects
+* qt48_model  -> model of Qt GUIs for code generation (supports Qwt as well)
 * releases/  -> includes TUG releases. Read [above](http://github.com/pedromateo/tug_qt_unit_testing_fw#what-does-a-tug-packagerelease-contain)
-* tug_base_lib/  -> GUI unit testing library sources organized into a QT Creator project.
+* tug_base_lib/  -> TUG GUI unit testing library sources organized into a QT Creator project (need to be installed to use TUG).
+* tug_generation_wizard/  -> sources for the wizard application (Eclipse project).
+* tug_mde_dependencies/  -> MDE dependencies organized as an Eclipse project.
 * LICENSE  -> License file.
 * README.md  -> This file.
 
