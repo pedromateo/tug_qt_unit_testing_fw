@@ -27,10 +27,10 @@ After 7 steps, 3-5 minutes and no code, you get:
 
 Releases can be found at "releases/" folder. Each one includes:
 
-* doc/  -> usage quick guide
-* libTUG_project/  -> C++ project of GUI unit testing library.
-* TUG_wizard/  -> wizard application to create test projects (requires Java RE).
-* install.sh  -> libTUG installer. Type "./install.sh --help" for further info.
+* doc/............. usage quick guide
+* libTUG_project/.. C++ project of GUI unit testing library.
+* TUG_wizard/...... wizard application to create test projects (requires Java RE).
+* install.sh....... libTUG installer. Type "./install.sh --help" for further info.
    
 Please, go to "doc/" folder and open TUG_doc.pdf to find a quick usage guide and 
 further information about this testing framework.
@@ -38,16 +38,16 @@ further information about this testing framework.
 
 # contents of this repository
 
-* doc/  -> Sources of TUG documentation. TUG_doc.pdf includes the docs of this project.
-* examples/  -> some full examples showing TUG usage with Qt projects
-* qt48_model  -> model of Qt GUIs for code generation (supports Qwt as well)
-* releases/  -> includes TUG releases. Read [above](http://github.com/pedromateo/tug_qt_unit_testing_fw#what-does-a-tug-packagerelease-contain)
-* tug_base_lib/  -> TUG GUI unit testing library sources organized into a QT Creator project (need to be installed to use TUG).
-* tug_generation_wizard/  -> sources for the wizard application (Eclipse Java project).
-* tug_mde_dependencies/  -> MDE dependencies organized as an Eclipse Java project.
-* tug_testapi_codegen/  -> sources for the testing Qt panel generator (Eclipse Acceleo project).
-* LICENSE  -> License file.
-* README.md  -> This file.
+* doc/.................... Sources of TUG documentation. TUG_doc.pdf includes the docs of this project.
+* examples/............... Some full examples showing TUG usage with Qt projects
+* qt48_model.............. Model of Qt GUIs for code generation (supports Qwt as well)
+* releases/............... Includes TUG releases. Read [above](http://github.com/pedromateo/tug_qt_unit_testing_fw#what-does-a-tug-packagerelease-contain)
+* tug_base_lib/........... TUG GUI unit testing library sources organized into a QT Creator project (need to be installed to use TUG).
+* tug_generation_wizard/.. Sources for the wizard application (Eclipse Java project).
+* tug_mde_dependencies/... MDE dependencies organized as an Eclipse Java project.
+* tug_testapi_codegen/.... Sources for the testing Qt panel generator (Eclipse Acceleo project).
+* LICENSE................. License file.
+* README.md............... This file.
 
 
 # about
