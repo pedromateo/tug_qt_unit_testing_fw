@@ -43,8 +43,9 @@ further information about this testing framework.
 * qt48_model  -> model of Qt GUIs for code generation (supports Qwt as well)
 * releases/  -> includes TUG releases. Read [above](http://github.com/pedromateo/tug_qt_unit_testing_fw#what-does-a-tug-packagerelease-contain)
 * tug_base_lib/  -> TUG GUI unit testing library sources organized into a QT Creator project (need to be installed to use TUG).
-* tug_generation_wizard/  -> sources for the wizard application (Eclipse project).
-* tug_mde_dependencies/  -> MDE dependencies organized as an Eclipse project.
+* tug_generation_wizard/  -> sources for the wizard application (Eclipse Java project).
+* tug_mde_dependencies/  -> MDE dependencies organized as an Eclipse Java project.
+* tug_testapi_codegen/  -> sources for the testing Qt panel generator (Eclipse Acceleo project).
 * LICENSE  -> License file.
 * README.md  -> This file.
 
