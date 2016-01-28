@@ -12,6 +12,7 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.regex.Pattern;
 
 import org.eclipse.tug.wizard.Defines;
 
@@ -196,14 +197,13 @@ public class FileSystemUtils {
 		String b = "";
 		try {
 			a = new File(mybase).getCanonicalFile().toURI().getPath();
-			a = a.replace("/", Defines.PATH_SEP);// makes it work in Windows and Linux systems
 			b = new File(mypath).getCanonicalFile().toURI().getPath();
-			b = b.replace("/", Defines.PATH_SEP);// makes it work in Windows and Linux systems
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		String[] basePaths = a.split(Defines.PATH_SEP);
-		String[] otherPaths = b.split(Defines.PATH_SEP);
+		String pattern = Pattern.quote(Defines.PATH_SEP);// Windows + Unix
+		String[] basePaths = a.split(pattern);
+		String[] otherPaths = b.split(pattern);
 
 
 		// check common part
