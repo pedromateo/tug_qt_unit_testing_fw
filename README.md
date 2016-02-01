@@ -1,9 +1,9 @@
 
 **-*TUG: GUI Unit Testing ("Testing Unitario GUI", in Spanish) for Qt applications*-** 
 
-TUG is a framework to create batteries of tests for Qt applications in Linux, Windows and OS. It bases on the Qt Test framework.
+TUG is a framework to create batteries of tests for Qt applications in Linux, Windows and OS systems. 
 
-The TUG framework is composed of two elements:
+The TUG framework is based on the Qt Test framework, and is composed of two elements:
 * TUGLib: a C++ library to support GUI unit testing (requires Qt 4.8 or higher).
 * TUG Wizard: wizard application to create test projects (requires Java RE).
 
