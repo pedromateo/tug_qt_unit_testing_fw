@@ -1,54 +1,17 @@
 package org.eclipse.tug.wizard.widgets.testprojecteditor;
 
-import java.awt.BorderLayout;
-import java.awt.Font;
-import java.awt.GridBagConstraints;
-import java.awt.LayoutManager;
 import java.awt.event.ActionEvent;
-import java.awt.event.ContainerAdapter;
-import java.awt.event.ContainerEvent;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 
-import javax.swing.AbstractAction;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.KeyStroke;
-import javax.swing.event.CellEditorListener;
-import javax.swing.event.ChangeEvent;
 import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.TableModelEvent;
-import javax.swing.event.TableModelListener;
-import javax.swing.event.TreeModelEvent;
-import javax.swing.event.TreeModelListener;
-import javax.swing.event.TreeSelectionEvent;
-import javax.swing.event.TreeSelectionListener;
-import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.DefaultTreeCellRenderer;
-import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreePath;
-import javax.swing.tree.TreeSelectionModel;
 
 import org.eclipse.tug.utils.DialogsUtils;
 import org.eclipse.tug.wizard.Defines;
-import org.eclipse.tug.wizard.widgets.jtreetable.JTreeTable;
 import org.eclipse.tug.wizard.widgets.jtreetable.TreeTableModelAdapter;
-import org.eclipse.tug.wizard.widgets.testprojecteditor.model.*;
-
-import com.jgoodies.forms.factories.FormFactory;
-import com.jgoodies.forms.layout.ColumnSpec;
-import com.jgoodies.forms.layout.FormLayout;
-import com.jgoodies.forms.layout.RowSpec;
-
-import java.awt.GridBagLayout;
-import java.awt.Insets;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
-import java.util.Enumeration;
+import org.eclipse.tug.wizard.widgets.testprojecteditor.model.TestNode;
+import org.eclipse.tug.wizard.widgets.testprojecteditor.model.TestProjectModel;
+import org.eclipse.tug.wizard.widgets.testprojecteditor.model.TestProjectModelListener;
+import org.eclipse.tug.wizard.widgets.testprojecteditor.model.TestsuiteNode;
 
 
 public class TestProjectEditor 
@@ -59,6 +22,10 @@ implements TestProjectModelListener {
 	// TreeModelListener,
 	// TableModelListener
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	/// objects
 	protected TestProjectModel _tpmodel;
 
