@@ -8,7 +8,7 @@ import org.casa.dsltesting.Qt48Xmlschema.Brush;
 import org.casa.dsltesting.Qt48Xmlschema.Color;
 import org.casa.dsltesting.Qt48Xmlschema.Gradient;
 import org.casa.dsltesting.Qt48Xmlschema.Property;
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
+
 
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.Notification;

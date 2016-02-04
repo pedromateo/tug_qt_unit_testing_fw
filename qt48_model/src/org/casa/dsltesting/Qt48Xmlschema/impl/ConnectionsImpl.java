@@ -6,7 +6,7 @@ import java.util.Collection;
 
 import org.casa.dsltesting.Qt48Xmlschema.Connection;
 import org.casa.dsltesting.Qt48Xmlschema.Connections;
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
+
 
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.NotificationChain;

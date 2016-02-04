@@ -10,7 +10,7 @@ import org.casa.dsltesting.Qt48Xmlschema.CustomWidget;
 import org.casa.dsltesting.Qt48Xmlschema.Header;
 import org.casa.dsltesting.Qt48Xmlschema.Properties;
 import org.casa.dsltesting.Qt48Xmlschema.PropertySpecifications;
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
+
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Script;
 import org.casa.dsltesting.Qt48Xmlschema.Size;

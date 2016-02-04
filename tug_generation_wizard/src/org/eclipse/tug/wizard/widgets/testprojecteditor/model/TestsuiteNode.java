@@ -8,10 +8,15 @@ import java.util.Vector;
 
 import javax.swing.tree.TreeNode;
 
-import sun.awt.geom.AreaOp.AddOp;
+//import sun.awt.geom.AreaOp.AddOp;
 
 
 public class TestsuiteNode implements TreeNode, Serializable, Enumeration {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	public TestsuiteNode(TestsuiteNode parent, String name, boolean onepanel, String description) { 
 		this(parent, name, onepanel, description, true);

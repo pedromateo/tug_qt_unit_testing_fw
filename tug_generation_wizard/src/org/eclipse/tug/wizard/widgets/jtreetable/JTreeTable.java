@@ -177,7 +177,7 @@ public class JTreeTable extends JTable {
 			}
 		}
 
-		@Override
+		
 		public Object getCellEditorValue() {
 			return ((JTextField)textcomponent).getText();
 		}

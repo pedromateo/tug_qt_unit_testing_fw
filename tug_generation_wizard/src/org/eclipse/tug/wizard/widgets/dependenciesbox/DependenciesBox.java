@@ -20,7 +20,8 @@ import org.eclipse.tug.utils.FileSystemUtils;
 import org.eclipse.tug.wizard.Defines;
 import org.eclipse.tug.wizard.WizardWindowWidget;
 
-import com.jgoodies.forms.factories.FormFactory;
+//import com.jgoodies.forms.factories.FormSpecs;
+import com.jgoodies.forms.layout.FormSpecs;
 import com.jgoodies.forms.layout.ColumnSpec;
 import com.jgoodies.forms.layout.FormLayout;
 import com.jgoodies.forms.layout.RowSpec;
@@ -55,20 +56,20 @@ public class DependenciesBox extends JPanel {
 
 		// layout
 		setLayout(new FormLayout(new ColumnSpec[] {
-				FormFactory.DEFAULT_COLSPEC,
-				FormFactory.RELATED_GAP_COLSPEC,
-				FormFactory.DEFAULT_COLSPEC,
-				FormFactory.RELATED_GAP_COLSPEC,
-				FormFactory.DEFAULT_COLSPEC,
-				FormFactory.RELATED_GAP_COLSPEC,
-				FormFactory.DEFAULT_COLSPEC,
-				FormFactory.RELATED_GAP_COLSPEC,
+				FormSpecs.DEFAULT_COLSPEC,
+				FormSpecs.RELATED_GAP_COLSPEC,
+				FormSpecs.DEFAULT_COLSPEC,
+				FormSpecs.RELATED_GAP_COLSPEC,
+				FormSpecs.DEFAULT_COLSPEC,
+				FormSpecs.RELATED_GAP_COLSPEC,
+				FormSpecs.DEFAULT_COLSPEC,
+				FormSpecs.RELATED_GAP_COLSPEC,
 				ColumnSpec.decode("83dlu:grow"),},
 				new RowSpec[] {
-				//FormFactory.DEFAULT_ROWSPEC,
+				//FormSpecs.DEFAULT_ROWSPEC,
 				RowSpec.decode("default:grow"),
-				FormFactory.NARROW_LINE_GAP_ROWSPEC,// RELATED_GAP_ROWSPEC,
-				FormFactory.DEFAULT_ROWSPEC,}));
+				FormSpecs.NARROW_LINE_GAP_ROWSPEC,// RELATED_GAP_ROWSPEC,
+				FormSpecs.DEFAULT_ROWSPEC,}));
 
 		// add text area within a scrollpanel
 		_txa_dependencies = new JTextArea();

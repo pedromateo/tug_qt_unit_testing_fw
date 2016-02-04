@@ -17,7 +17,7 @@ import org.casa.dsltesting.Qt48Xmlschema.Palette;
 import org.casa.dsltesting.Qt48Xmlschema.Point;
 import org.casa.dsltesting.Qt48Xmlschema.PointF;
 import org.casa.dsltesting.Qt48Xmlschema.Property;
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
+
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Rect;
 import org.casa.dsltesting.Qt48Xmlschema.RectF;

@@ -4,7 +4,7 @@ package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
 
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
+
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Resource;
 

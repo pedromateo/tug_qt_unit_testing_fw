@@ -5,7 +5,7 @@ package org.casa.dsltesting.Qt48Xmlschema.impl;
 import java.math.BigInteger;
 
 import org.casa.dsltesting.Qt48Xmlschema.DateTime;
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
+
 
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.Notification;

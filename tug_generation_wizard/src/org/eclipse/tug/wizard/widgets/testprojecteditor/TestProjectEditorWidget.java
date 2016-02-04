@@ -36,7 +36,8 @@ import org.eclipse.tug.wizard.widgets.testprojecteditor.model.TestNode;
 import org.eclipse.tug.wizard.widgets.testprojecteditor.model.TestProjectModel;
 import org.eclipse.tug.wizard.widgets.testprojecteditor.model.TestsuiteNode;
 
-import com.jgoodies.forms.factories.FormFactory;
+//import com.jgoodies.forms.factories.FormSpecs;
+import com.jgoodies.forms.layout.FormSpecs;
 import com.jgoodies.forms.layout.ColumnSpec;
 import com.jgoodies.forms.layout.FormLayout;
 import com.jgoodies.forms.layout.RowSpec;
@@ -83,22 +84,22 @@ public abstract class TestProjectEditorWidget extends JPanel{
 		/// layout
 
 		fl = new FormLayout(new ColumnSpec[] {
-				FormFactory.RELATED_GAP_COLSPEC,
-				FormFactory.DEFAULT_COLSPEC,
-				FormFactory.RELATED_GAP_COLSPEC,
-				FormFactory.DEFAULT_COLSPEC,
-				FormFactory.RELATED_GAP_COLSPEC,
-				FormFactory.DEFAULT_COLSPEC,
-				FormFactory.RELATED_GAP_COLSPEC,
-				FormFactory.GLUE_COLSPEC,
+				FormSpecs.RELATED_GAP_COLSPEC,
+				FormSpecs.DEFAULT_COLSPEC,
+				FormSpecs.RELATED_GAP_COLSPEC,
+				FormSpecs.DEFAULT_COLSPEC,
+				FormSpecs.RELATED_GAP_COLSPEC,
+				FormSpecs.DEFAULT_COLSPEC,
+				FormSpecs.RELATED_GAP_COLSPEC,
+				FormSpecs.GLUE_COLSPEC,
 		},
 		new RowSpec[] {
-				FormFactory.RELATED_GAP_ROWSPEC,
-				FormFactory.GLUE_ROWSPEC,
-				FormFactory.RELATED_GAP_ROWSPEC,
-				FormFactory.DEFAULT_ROWSPEC,
-				FormFactory.RELATED_GAP_ROWSPEC,
-				FormFactory.DEFAULT_ROWSPEC
+				FormSpecs.RELATED_GAP_ROWSPEC,
+				FormSpecs.GLUE_ROWSPEC,
+				FormSpecs.RELATED_GAP_ROWSPEC,
+				FormSpecs.DEFAULT_ROWSPEC,
+				FormSpecs.RELATED_GAP_ROWSPEC,
+				FormSpecs.DEFAULT_ROWSPEC
 				,});
 
 		setLayout(fl);
