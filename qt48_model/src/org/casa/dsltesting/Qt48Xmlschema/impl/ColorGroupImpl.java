@@ -27,12 +27,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ColorGroupImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ColorGroupImpl#getColorrole <em>Colorrole</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ColorGroupImpl#getColor <em>Color</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

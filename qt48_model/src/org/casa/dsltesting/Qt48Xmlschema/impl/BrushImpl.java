@@ -26,13 +26,13 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.BrushImpl#getColor <em>Color</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.BrushImpl#getTexture <em>Texture</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.BrushImpl#getGradient <em>Gradient</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.BrushImpl#getBrushstyle <em>Brushstyle</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

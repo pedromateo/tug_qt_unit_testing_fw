@@ -15,12 +15,12 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ResourcePixmap#getMixed <em>Mixed</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ResourcePixmap#getAlias <em>Alias</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ResourcePixmap#getResource <em>Resource</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getResourcePixmap()
  * @model extendedMetaData="name='ResourcePixmap' kind='mixed'"

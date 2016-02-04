@@ -32,6 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.LayoutImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.LayoutImpl#getProperty <em>Property</em>}</li>
@@ -45,7 +46,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.LayoutImpl#getRowstretch <em>Rowstretch</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.LayoutImpl#getStretch <em>Stretch</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

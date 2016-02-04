@@ -11,13 +11,13 @@ import java.util.Map;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
 
-import org.casa.dsltesting.TestsuiteModel.Test;
-import org.casa.dsltesting.TestsuiteModel.Testsuite;
-import org.casa.dsltesting.TestsuiteModel.impl.TestsuiteModelFactoryImpl;
-import org.eclipse.acceleo.qt_testsuite.generator.main.GenerateTestsuite;
-import org.eclipse.acceleo.qt_testsuite.run.TestsuiteGenProcess;
-import org.eclipse.emf.common.util.BasicMonitor;
-import org.eclipse.emf.ecore.EObject;
+//import org.casa.dsltesting.TestsuiteModel.Test;
+//import org.casa.dsltesting.TestsuiteModel.Testsuite;
+//import org.casa.dsltesting.TestsuiteModel.impl.TestsuiteModelFactoryImpl;
+//import org.eclipse.acceleo.qt_testsuite.generator.main.GenerateTestsuite;
+//import org.eclipse.acceleo.qt_testsuite.run.TestsuiteGenProcess;
+//import org.eclipse.emf.common.util.BasicMonitor;
+//import org.eclipse.emf.ecore.EObject;
 import org.eclipse.tug.utils.FileSystemUtils;
 import org.eclipse.tug.wizard.roundtrip.RoundtripData;
 import org.eclipse.tug.wizard.roundtrip.RoundtripUtils;
@@ -313,23 +313,23 @@ public class Test_WizardWindow extends WizardWindow{
 		_id("TSGEN");
 
 		// create model
-		TestsuiteModelFactoryImpl tsfactory = new TestsuiteModelFactoryImpl();
-		Testsuite root = tsfactory.createTestsuite();
-		root.setName("rootts");
-		//
-		Testsuite ts = tsfactory.createTestsuite();
-		ts.setName("ts1");
-		Test t = tsfactory.createTest();
-		t.setName("test1");
-		ts.getTests().add(t);
-		root.getChildren().add(ts);
-		//
-		ts = tsfactory.createTestsuite();
-		ts.setName("ts2");
-		t = tsfactory.createTest();
-		t.setName("test2");
-		ts.getTests().add(t);
-		root.getChildren().add(ts);
+//		TestsuiteModelFactoryImpl tsfactory = new TestsuiteModelFactoryImpl();
+//		Testsuite root = tsfactory.createTestsuite();
+//		root.setName("rootts");
+//		//
+//		Testsuite ts = tsfactory.createTestsuite();
+//		ts.setName("ts1");
+//		Test t = tsfactory.createTest();
+//		t.setName("test1");
+//		ts.getTests().add(t);
+//		root.getChildren().add(ts);
+//		//
+//		ts = tsfactory.createTestsuite();
+//		ts.setName("ts2");
+//		t = tsfactory.createTest();
+//		t.setName("test2");
+//		ts.getTests().add(t);
+//		root.getChildren().add(ts);
 
 
 		// generate model
@@ -346,7 +346,7 @@ public class Test_WizardWindow extends WizardWindow{
 			
 			ts_generator.doGenerate(new BasicMonitor());*/
 			
-			TestsuiteGenProcess.main(root, "/tmp/ts_gendir_test/", args);
+			//TestsuiteGenProcess.main(root, "/tmp/ts_gendir_test/", args);
 
 
 			_log("Generation done. Please, check files in: "+ "/tmp/ts_gendir_test/");

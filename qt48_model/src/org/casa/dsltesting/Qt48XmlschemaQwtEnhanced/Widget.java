@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.Widget#getClass_ <em>Class</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.Widget#getProperty <em>Property</em>}</li>
@@ -34,7 +35,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.Widget#getName <em>Name</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.Widget#isNative <em>Native</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.Qt48XmlschemaQwtEnhancedPackage#getWidget()
  * @model extendedMetaData="name='Widget' kind='elementOnly'"

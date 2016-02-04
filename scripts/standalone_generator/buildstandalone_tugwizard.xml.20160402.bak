@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project tug_generation_wizard with libraries in sub-folder">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="./TUGWizard.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.tug.wizard.WizardWindow"/>
+                <attribute name="Class-Path" value=". 
+TUGWizard_lib/forms-1.3.0.jar 
+TUGWizard_lib/rsyntaxtextarea.jar 
+TUGWizard_lib/org.eclipse.core.runtime_3.10.0.v20140318-2214.jar
+TUGWizard_lib/org.eclipse.osgi_3.10.2.v20150203-1939.jar
+TUGWizard_lib/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar 
+TUGWizard_lib/org.eclipse.core.jobs_3.6.1.v20141014-1248.jar 
+TUGWizard_lib/org.eclipse.equinox.registry_3.5.400.v20140428-1507.jar 
+TUGWizard_lib/org.eclipse.equinox.preferences_3.5.200.v20140224-1527.jar
+TUGWizard_lib/org.eclipse.core.contenttype_3.4.200.v20140207-1251.jar 
+TUGWizard_lib/org.eclipse.equinox.app_1.3.200.v20130910-1609.jar 
+TUGWizard_lib/org.eclipse.emf.ecore_2.10.2.v20150123-0348.jar
+TUGWizard_lib/org.eclipse.emf.common_2.10.1.v20150123-0348.jar
+TUGWizard_lib/org.eclipse.emf.ecore.xmi_2.10.2.v20150123-0348.jar
+TUGWizard_lib/org.eclipse.ocl_3.4.2.v20140725-2242.jar 
+TUGWizard_lib/lpg.runtime.java_2.0.17.v201004271640.jar 
+TUGWizard_lib/org.eclipse.ocl.common_1.2.0.v20140610-0641.jar 
+TUGWizard_lib/org.eclipse.ocl.ecore_3.3.100.v20140610-0641.jar 
+TUGWizard_lib/org.eclipse.acceleo.common_3.5.1.201409021433.jar 
+TUGWizard_lib/org.eclipse.acceleo.model_3.5.1.201409021433.jar 
+TUGWizard_lib/org.eclipse.acceleo.profiler_3.5.1.201409021433.jar 
+TUGWizard_lib/org.eclipse.acceleo.engine_3.5.1.201409021433.jar 
+TUGWizard_lib/org.eclipse.emf.codegen.ecore_2.10.2.v20150123-0452.jar
+TUGWizard_lib/org.eclipse.emf.codegen_2.10.0.v20150123-0452.jar
+TUGWizard_lib/com.google.guava_15.0.0.v201403281430.jar 
+TUGWizard_lib/org.eclipse.acceleo.parser_3.5.1.201409021433.jar"/>
+            </manifest>
+            <fileset dir="../tug_generation_wizard/bin"/>
+            <fileset dir="../qt48_model/bin"/>
+            <fileset dir="../tug_testapi_codegen/bin"/>
+        </jar>
+
+        <delete dir="./TUGWizard_lib"/>
+        <mkdir dir="./TUGWizard_lib"/>
+
+        <copy file="../tug_generation_wizard/forms-1.3.0.jar" todir="./TUGWizard_lib"/>
+        <copy file="../tug_generation_wizard/rsyntaxtextarea.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.core.runtime_3.10.0.v20140318-2214.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.osgi_3.10.2.v20150203-1939.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.core.jobs_3.6.1.v20141014-1248.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.equinox.registry_3.5.400.v20140428-1507.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.equinox.preferences_3.5.200.v20140224-1527.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.core.contenttype_3.4.200.v20140207-1251.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.equinox.app_1.3.200.v20130910-1609.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.emf.ecore_2.10.2.v20150123-0348.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.emf.common_2.10.1.v20150123-0348.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.10.2.v20150123-0348.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.ocl_3.4.2.v20140725-2242.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/lpg.runtime.java_2.0.17.v201004271640.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.ocl.common_1.2.0.v20140610-0641.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.ocl.ecore_3.3.100.v20140610-0641.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.acceleo.common_3.5.1.201409021433.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.acceleo.model_3.5.1.201409021433.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.acceleo.profiler_3.5.1.201409021433.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.acceleo.engine_3.5.1.201409021433.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.emf.codegen.ecore_2.10.2.v20150123-0452.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.emf.codegen_2.10.0.v20150123-0452.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/com.google.guava_15.0.0.v201403281430.jar" todir="./TUGWizard_lib"/>
+        <copy file="/home/pedro/eclipse/plugins/org.eclipse.acceleo.parser_3.5.1.201409021433.jar" todir="./TUGWizard_lib"/>
+        <copy file="../qt48_model/org.casa.dsltesting.Qt48XMLschema_v0.1.jar" todir="./TUGWizard_lib"/>
+    </target>
+</project>

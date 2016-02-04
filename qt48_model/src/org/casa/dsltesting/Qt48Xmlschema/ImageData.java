@@ -17,12 +17,12 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ImageData#getMixed <em>Mixed</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ImageData#getFormat <em>Format</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ImageData#getLength <em>Length</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getImageData()
  * @model extendedMetaData="name='ImageData' kind='mixed'"

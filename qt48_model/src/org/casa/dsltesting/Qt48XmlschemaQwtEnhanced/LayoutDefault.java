@@ -13,11 +13,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.LayoutDefault#getMargin <em>Margin</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.LayoutDefault#getSpacing <em>Spacing</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.Qt48XmlschemaQwtEnhancedPackage#getLayoutDefault()
  * @model extendedMetaData="name='LayoutDefault' kind='empty'"

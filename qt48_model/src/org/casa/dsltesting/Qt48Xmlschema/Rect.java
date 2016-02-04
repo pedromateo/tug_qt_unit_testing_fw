@@ -13,13 +13,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Rect#getX <em>X</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Rect#getY <em>Y</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Rect#getWidth <em>Width</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Rect#getHeight <em>Height</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getRect()
  * @model extendedMetaData="name='Rect' kind='elementOnly'"

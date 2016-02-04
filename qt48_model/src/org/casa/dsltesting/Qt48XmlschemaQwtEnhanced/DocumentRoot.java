@@ -17,13 +17,13 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.DocumentRoot#getMixed <em>Mixed</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.DocumentRoot#getXMLNSPrefixMap <em>XMLNS Prefix Map</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.DocumentRoot#getXSISchemaLocation <em>XSI Schema Location</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.DocumentRoot#getUi <em>Ui</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.Qt48XmlschemaQwtEnhancedPackage#getDocumentRoot()
  * @model extendedMetaData="name='' kind='mixed'"

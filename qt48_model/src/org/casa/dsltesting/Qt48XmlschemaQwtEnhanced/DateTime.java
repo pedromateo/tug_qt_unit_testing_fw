@@ -13,6 +13,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.DateTime#getHour <em>Hour</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.DateTime#getMinute <em>Minute</em>}</li>
@@ -21,7 +22,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.DateTime#getMonth <em>Month</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.DateTime#getDay <em>Day</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.Qt48XmlschemaQwtEnhancedPackage#getDateTime()
  * @model extendedMetaData="name='DateTime' kind='elementOnly'"

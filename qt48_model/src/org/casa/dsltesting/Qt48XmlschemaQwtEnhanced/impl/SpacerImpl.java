@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.SpacerImpl#getProperty <em>Property</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.SpacerImpl#getName <em>Name</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

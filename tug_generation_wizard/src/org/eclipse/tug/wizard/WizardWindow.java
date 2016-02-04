@@ -11,8 +11,8 @@ import org.eclipse.splash.UISplashScreen;
 public class WizardWindow extends WizardWindowGen{
 
 	///////////////////////////////////////////////////////////////////////////
-	final static String TUG_VERSION = "1.8.4";
-	final static boolean TESTING_MODE = false;
+	final static String TUG_VERSION = "1.8.5";
+	final static boolean TESTING_MODE = true;
 	final static boolean JUST_TESTING = false;
 	final static boolean SAES_VERSION = false;
 	///////////////////////////////////////////////////////////////////////////

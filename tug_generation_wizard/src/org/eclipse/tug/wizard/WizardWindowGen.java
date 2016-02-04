@@ -32,9 +32,6 @@ import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreeModel;
 import javax.swing.tree.TreePath;
 
-import org.eclipse.acceleo.qt_test_api.generation_app.GenerationProcess;
-import org.eclipse.acceleo.qt_test_api.generation_app.MyGenerator;
-import org.eclipse.acceleo.qt_testsuite.run.TestsuiteGenProcess;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.tug.utils.DialogsUtils;
 import org.eclipse.tug.utils.FileSystemUtils;
@@ -50,6 +47,9 @@ import org.eclipse.tug.wizard.widgets.testprojecteditor.TestProjectEditor;
 import org.eclipse.tug.wizard.widgets.testprojecteditor.model.TestProjectModel;
 import org.eclipse.tug.wizard.widgets.testprojecteditor.model.TestsuiteDescriptor;
 import org.eclipse.tug.wizard.widgets.testprojecteditor.model.TestsuiteNode;
+
+import es.um.casa.qt_test_api.generation_app.GenerationProcess;
+import es.um.casa.qt_test_api.generation_app.MyGenerator;
 
 public abstract class WizardWindowGen extends WizardWindowImpl {
 

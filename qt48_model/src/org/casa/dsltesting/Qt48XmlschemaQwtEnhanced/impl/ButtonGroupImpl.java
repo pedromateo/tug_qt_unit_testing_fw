@@ -31,13 +31,13 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.ButtonGroupImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.ButtonGroupImpl#getProperty <em>Property</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.ButtonGroupImpl#getAttribute <em>Attribute</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.ButtonGroupImpl#getName <em>Name</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -13,13 +13,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Color#getRed <em>Red</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Color#getGreen <em>Green</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Color#getBlue <em>Blue</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Color#getAlpha <em>Alpha</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getColor()
  * @model extendedMetaData="name='Color' kind='elementOnly'"

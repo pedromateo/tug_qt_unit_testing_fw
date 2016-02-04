@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.ResourceIcon#getMixed <em>Mixed</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.ResourceIcon#getNormaloff <em>Normaloff</em>}</li>
@@ -28,7 +29,6 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.ResourceIcon#getResource <em>Resource</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.ResourceIcon#getTheme <em>Theme</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.Qt48XmlschemaQwtEnhancedPackage#getResourceIcon()
  * @model extendedMetaData="name='ResourceIcon' kind='mixed'"

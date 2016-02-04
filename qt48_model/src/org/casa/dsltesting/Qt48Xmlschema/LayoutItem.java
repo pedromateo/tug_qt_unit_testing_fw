@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.LayoutItem#getWidget <em>Widget</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.LayoutItem#getLayout <em>Layout</em>}</li>
@@ -25,7 +26,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.LayoutItem#getRow <em>Row</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.LayoutItem#getRowspan <em>Rowspan</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getLayoutItem()
  * @model extendedMetaData="name='LayoutItem' kind='elementOnly'"

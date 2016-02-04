@@ -20,8 +20,6 @@ import org.eclipse.tug.utils.FileSystemUtils;
 import org.eclipse.tug.wizard.Defines;
 import org.eclipse.tug.wizard.WizardWindowWidget;
 
-import sun.org.mozilla.javascript.regexp.SubString;
-
 import com.jgoodies.forms.factories.FormFactory;
 import com.jgoodies.forms.layout.ColumnSpec;
 import com.jgoodies.forms.layout.FormLayout;

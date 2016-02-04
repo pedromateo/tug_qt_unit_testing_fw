@@ -26,10 +26,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.ConnectionsImpl#getConnection <em>Connection</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -13,12 +13,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.StringPropertySpecification#getName <em>Name</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.StringPropertySpecification#getNotr <em>Notr</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.StringPropertySpecification#getType <em>Type</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getStringPropertySpecification()
  * @model extendedMetaData="name='StringPropertySpecification' kind='empty'"

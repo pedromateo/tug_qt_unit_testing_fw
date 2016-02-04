@@ -20,11 +20,11 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.LocaleImpl#getCountry <em>Country</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.LocaleImpl#getLanguage <em>Language</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

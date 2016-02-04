@@ -22,6 +22,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.FontImpl#getFamily <em>Family</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.FontImpl#getPointsize <em>Pointsize</em>}</li>
@@ -34,7 +35,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.FontImpl#getStylestrategy <em>Stylestrategy</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.FontImpl#isKerning <em>Kerning</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Gradient#getGradientStop <em>Gradient Stop</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Gradient#getAngle <em>Angle</em>}</li>
@@ -31,7 +32,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Gradient#getStarty <em>Starty</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Gradient#getType <em>Type</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getGradient()
  * @model extendedMetaData="name='Gradient' kind='elementOnly'"

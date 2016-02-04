@@ -28,6 +28,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ResourceIconImpl#getMixed <em>Mixed</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ResourceIconImpl#getNormaloff <em>Normaloff</em>}</li>
@@ -41,7 +42,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ResourceIconImpl#getResource <em>Resource</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ResourceIconImpl#getTheme <em>Theme</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

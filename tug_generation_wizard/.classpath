@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="config"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="forms-1.3.0.jar" sourcepath="forms-1.3.0-src.zip"/>
 	<classpathentry kind="lib" path="rsyntaxtextarea.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/testsuite_generator_project"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/testsuite_model"/>
-	<classpathentry kind="lib" path="/home/pedro/eclipse/plugins/org.eclipse.core.resources_3.9.1.v20140825-1431.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/tug_testapi_codegen"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

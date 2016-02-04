@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Layout#getGroup <em>Group</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Layout#getProperty <em>Property</em>}</li>
@@ -30,7 +31,6 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Layout#getRowstretch <em>Rowstretch</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Layout#getStretch <em>Stretch</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getLayout()
  * @model extendedMetaData="name='Layout' kind='elementOnly'"

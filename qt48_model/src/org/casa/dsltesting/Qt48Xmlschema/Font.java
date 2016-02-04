@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Font#getFamily <em>Family</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Font#getPointsize <em>Pointsize</em>}</li>
@@ -27,7 +28,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Font#getStylestrategy <em>Stylestrategy</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Font#isKerning <em>Kerning</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getFont()
  * @model extendedMetaData="name='Font' kind='elementOnly'"

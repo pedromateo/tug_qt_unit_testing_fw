@@ -23,6 +23,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.FontImpl#getFamily <em>Family</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.FontImpl#getPointsize <em>Pointsize</em>}</li>
@@ -35,7 +36,6 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.FontImpl#getStylestrategy <em>Stylestrategy</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.FontImpl#isKerning <em>Kerning</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

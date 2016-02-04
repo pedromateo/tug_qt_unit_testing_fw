@@ -21,11 +21,11 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.LocaleImpl#getCountry <em>Country</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.LocaleImpl#getLanguage <em>Language</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

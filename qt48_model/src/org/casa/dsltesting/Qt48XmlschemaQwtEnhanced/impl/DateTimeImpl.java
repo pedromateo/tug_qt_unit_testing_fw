@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.DateTimeImpl#getHour <em>Hour</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.DateTimeImpl#getMinute <em>Minute</em>}</li>
@@ -28,7 +29,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.DateTimeImpl#getMonth <em>Month</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.DateTimeImpl#getDay <em>Day</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

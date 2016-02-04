@@ -13,12 +13,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Time#getHour <em>Hour</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Time#getMinute <em>Minute</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Time#getSecond <em>Second</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getTime()
  * @model extendedMetaData="name='Time' kind='elementOnly'"

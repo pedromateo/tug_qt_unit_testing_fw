@@ -15,12 +15,12 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Include#getMixed <em>Mixed</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Include#getImpldecl <em>Impldecl</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Include#getLocation <em>Location</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getInclude()
  * @model extendedMetaData="name='Include' kind='mixed'"

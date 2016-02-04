@@ -11,11 +11,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.SizeF#getWidth <em>Width</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.SizeF#getHeight <em>Height</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getSizeF()
  * @model extendedMetaData="name='SizeF' kind='elementOnly'"

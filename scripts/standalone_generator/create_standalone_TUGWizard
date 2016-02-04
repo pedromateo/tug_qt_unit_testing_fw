@@ -1,0 +1,8 @@
+#!/bin/sh
+mkdir ./tmp/
+ant -f buildstandalone_tugwizard.xml
+
+#clear
+# launch binary
+#java -jar TUGWizard_v0.1.jar $*
+

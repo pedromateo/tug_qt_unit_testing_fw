@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ActionGroup#getGroup <em>Group</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ActionGroup#getAction <em>Action</em>}</li>
@@ -25,7 +26,6 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ActionGroup#getAttribute <em>Attribute</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ActionGroup#getName <em>Name</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getActionGroup()
  * @model extendedMetaData="name='ActionGroup' kind='elementOnly'"

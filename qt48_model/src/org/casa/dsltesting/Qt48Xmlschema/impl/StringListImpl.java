@@ -24,10 +24,10 @@ import org.eclipse.emf.ecore.util.EDataTypeEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.StringListImpl#getString <em>String</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -21,11 +21,11 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.SizeImpl#getWidth <em>Width</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.SizeImpl#getHeight <em>Height</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

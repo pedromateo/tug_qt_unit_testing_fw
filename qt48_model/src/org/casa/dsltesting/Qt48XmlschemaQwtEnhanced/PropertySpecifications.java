@@ -15,11 +15,11 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.PropertySpecifications#getGroup <em>Group</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.PropertySpecifications#getStringpropertyspecification <em>Stringpropertyspecification</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.Qt48XmlschemaQwtEnhancedPackage#getPropertySpecifications()
  * @model extendedMetaData="name='PropertySpecifications' kind='elementOnly'"

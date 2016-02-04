@@ -6,7 +6,7 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Export-Package: org.casa.dsltesting.Qt48Xmlschema,
  org.casa.dsltesting.Qt48Xmlschema.impl,
  org.casa.dsltesting.Qt48Xmlschema.util,

@@ -27,12 +27,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.IncludeImpl#getMixed <em>Mixed</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.IncludeImpl#getImpldecl <em>Impldecl</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.IncludeImpl#getLocation <em>Location</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

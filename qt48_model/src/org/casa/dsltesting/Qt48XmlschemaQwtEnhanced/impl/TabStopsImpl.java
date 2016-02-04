@@ -23,10 +23,10 @@ import org.eclipse.emf.ecore.util.EDataTypeEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.TabStopsImpl#getTabstop <em>Tabstop</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

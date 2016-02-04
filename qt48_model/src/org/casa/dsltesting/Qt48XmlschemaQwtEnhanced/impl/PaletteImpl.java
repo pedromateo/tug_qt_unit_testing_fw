@@ -21,12 +21,12 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.PaletteImpl#getActive <em>Active</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.PaletteImpl#getInactive <em>Inactive</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.PaletteImpl#getDisabled <em>Disabled</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

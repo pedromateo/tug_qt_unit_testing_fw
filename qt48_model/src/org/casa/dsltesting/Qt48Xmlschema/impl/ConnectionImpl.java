@@ -24,6 +24,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ConnectionImpl#getSender <em>Sender</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ConnectionImpl#getSignal <em>Signal</em>}</li>
@@ -31,7 +32,6 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ConnectionImpl#getSlot <em>Slot</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ConnectionImpl#getHints <em>Hints</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

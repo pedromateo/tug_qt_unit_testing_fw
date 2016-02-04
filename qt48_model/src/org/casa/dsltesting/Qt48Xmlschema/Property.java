@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Property#getBool <em>Bool</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Property#getColor <em>Color</em>}</li>
@@ -52,7 +53,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Property#getName <em>Name</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Property#getStdset <em>Stdset</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getProperty()
  * @model extendedMetaData="name='Property' kind='elementOnly'"

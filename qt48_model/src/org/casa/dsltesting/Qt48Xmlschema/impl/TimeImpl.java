@@ -21,12 +21,12 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.TimeImpl#getHour <em>Hour</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.TimeImpl#getMinute <em>Minute</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.TimeImpl#getSecond <em>Second</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

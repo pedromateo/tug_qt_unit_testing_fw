@@ -25,7 +25,10 @@ After 7 steps, 3-5 minutes and no code, you get:
 
 # what does a TUG package/release contain?
 
-Releases can be found at "releases/" folder. Each one includes:
+A new release can be created by executing "scripts/create_release.sh". This script receives the version
+number as a single argument.
+
+Generated releases can be found at "releases/" folder. Each one includes:
 
 * doc/............. usage quick guide
 * libTUG_project/.. C++ project of GUI unit testing library.

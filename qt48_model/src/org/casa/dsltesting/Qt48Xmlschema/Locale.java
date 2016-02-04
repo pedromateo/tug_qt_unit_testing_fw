@@ -13,11 +13,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Locale#getCountry <em>Country</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Locale#getLanguage <em>Language</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getLocale()
  * @model extendedMetaData="name='Locale' kind='empty'"

@@ -20,12 +20,12 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.StringPropertySpecificationImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.StringPropertySpecificationImpl#getNotr <em>Notr</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.StringPropertySpecificationImpl#getType <em>Type</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

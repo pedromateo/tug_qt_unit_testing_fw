@@ -28,12 +28,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.ImageDataImpl#getMixed <em>Mixed</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.ImageDataImpl#getFormat <em>Format</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.ImageDataImpl#getLength <em>Length</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

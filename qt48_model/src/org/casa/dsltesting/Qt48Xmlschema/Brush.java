@@ -13,13 +13,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Brush#getColor <em>Color</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Brush#getTexture <em>Texture</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Brush#getGradient <em>Gradient</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Brush#getBrushstyle <em>Brushstyle</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getBrush()
  * @model extendedMetaData="name='Brush' kind='elementOnly'"

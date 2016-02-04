@@ -36,6 +36,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.UIImpl#getAuthor <em>Author</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.UIImpl#getComment <em>Comment</em>}</li>
@@ -60,7 +61,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.UIImpl#getStdSetDef1 <em>Std Set Def1</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.UIImpl#getVersion <em>Version</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

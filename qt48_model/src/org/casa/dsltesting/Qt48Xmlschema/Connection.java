@@ -13,6 +13,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Connection#getSender <em>Sender</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Connection#getSignal <em>Signal</em>}</li>
@@ -20,7 +21,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Connection#getSlot <em>Slot</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Connection#getHints <em>Hints</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getConnection()
  * @model extendedMetaData="name='Connection' kind='elementOnly'"

@@ -1,0 +1,10 @@
+##
+## TUGWizard usage
+##
+
+Usage: ./launch_TUGWizard
+
+Each one of the files in /config directory can be filled out with the
+corresponding include directives. Please, check that the content of these files
+is correct before generating the test classes.
+

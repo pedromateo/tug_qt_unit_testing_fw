@@ -21,13 +21,13 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ColorImpl#getRed <em>Red</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ColorImpl#getGreen <em>Green</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ColorImpl#getBlue <em>Blue</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ColorImpl#getAlpha <em>Alpha</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

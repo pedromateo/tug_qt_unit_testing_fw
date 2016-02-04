@@ -17,13 +17,13 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ButtonGroup#getGroup <em>Group</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ButtonGroup#getProperty <em>Property</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ButtonGroup#getAttribute <em>Attribute</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ButtonGroup#getName <em>Name</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getButtonGroup()
  * @model extendedMetaData="name='ButtonGroup' kind='elementOnly'"

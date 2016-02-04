@@ -11,11 +11,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.PointF#getX <em>X</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.PointF#getY <em>Y</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getPointF()
  * @model extendedMetaData="name='PointF' kind='elementOnly'"

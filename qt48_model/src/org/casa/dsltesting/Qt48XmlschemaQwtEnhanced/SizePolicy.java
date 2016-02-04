@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.SizePolicy#getHsizetype <em>Hsizetype</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.SizePolicy#getVsizetype <em>Vsizetype</em>}</li>
@@ -23,7 +24,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.SizePolicy#getHsizetype1 <em>Hsizetype1</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.SizePolicy#getVsizetype1 <em>Vsizetype1</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.Qt48XmlschemaQwtEnhancedPackage#getSizePolicy()
  * @model extendedMetaData="name='SizePolicy' kind='elementOnly'"

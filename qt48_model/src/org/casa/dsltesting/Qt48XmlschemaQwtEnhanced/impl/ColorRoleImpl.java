@@ -23,11 +23,11 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.ColorRoleImpl#getBrush <em>Brush</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.ColorRoleImpl#getRole <em>Role</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

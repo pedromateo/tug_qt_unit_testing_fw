@@ -30,6 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.GradientImpl#getGradientStop <em>Gradient Stop</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.GradientImpl#getAngle <em>Angle</em>}</li>
@@ -46,7 +47,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.GradientImpl#getStarty <em>Starty</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.GradientImpl#getType <em>Type</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

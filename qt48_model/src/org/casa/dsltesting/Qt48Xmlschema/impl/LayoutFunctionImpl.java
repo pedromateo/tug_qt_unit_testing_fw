@@ -21,11 +21,11 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.LayoutFunctionImpl#getMargin <em>Margin</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.LayoutFunctionImpl#getSpacing <em>Spacing</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

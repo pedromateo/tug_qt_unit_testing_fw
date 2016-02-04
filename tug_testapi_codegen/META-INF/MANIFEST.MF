@@ -3,27 +3,36 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Acceleo Generator Module Runtime Plug-in
 Bundle-SymbolicName: testapi_generator
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: org.eclipse.acceleo.qt_test_api.generator.Activator
+Bundle-Activator: es.um.casa.qt_test_api.generator.Activator
 Bundle-Vendor: Eclipse Modeling Project
 Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.common,
  org.eclipse.emf.ecore,
  org.eclipse.emf.ecore.xmi,
+ org.eclipse.emf.codegen.ecore,
+ org.eclipse.emf.codegen,
  org.eclipse.ocl,
  org.eclipse.ocl.ecore,
  org.eclipse.acceleo.common,
  org.eclipse.acceleo.model,
  org.eclipse.acceleo.profiler,
- org.eclipse.acceleo.engine;visibility:=reexport,
+ org.eclipse.acceleo.engine,
  com.google.guava,
- org.eclipse.acceleo.parser,
+ lpg.runtime.java, 
+ org.eclipse.core.contenttype,
+ org.eclipse.core.jobs,
+ org.eclipse.equinox.app,
+ org.eclipse.equinox.common,
+ org.eclipse.equinox.preferences,
+ org.eclipse.equinox.registry,
  qt48_model;bundle-version="1.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Eclipse-LazyStart: true
 Export-Package: 
- org.eclipse.acceleo.qt_test_api.generation_app,
- org.eclipse.acceleo.qt_test_api.generator,
- org.eclipse.acceleo.qt_test_api.generator.main,
- org.eclipse.acceleo.qt_test_api.generator.support
+ es.um.casa.qt_test_api.generation_app,
+ es.um.casa.qt_test_api.generator,
+ es.um.casa.qt_test_api.generator.main,
+ es.um.casa.qt_test_api.generator.support
 Bundle-ClassPath: .
 

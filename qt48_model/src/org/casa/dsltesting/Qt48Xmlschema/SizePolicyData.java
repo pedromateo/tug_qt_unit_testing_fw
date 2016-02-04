@@ -13,11 +13,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.SizePolicyData#getHordata <em>Hordata</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.SizePolicyData#getVerdata <em>Verdata</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getSizePolicyData()
  * @model extendedMetaData="name='SizePolicyData' kind='elementOnly'"

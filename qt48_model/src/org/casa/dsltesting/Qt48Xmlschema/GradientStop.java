@@ -11,11 +11,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.GradientStop#getColor <em>Color</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.GradientStop#getPosition <em>Position</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getGradientStop()
  * @model extendedMetaData="name='GradientStop' kind='elementOnly'"

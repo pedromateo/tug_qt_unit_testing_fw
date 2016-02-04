@@ -20,11 +20,11 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.SizePolicyDataImpl#getHordata <em>Hordata</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.SizePolicyDataImpl#getVerdata <em>Verdata</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

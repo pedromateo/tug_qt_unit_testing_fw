@@ -32,6 +32,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.CustomWidgetImpl#getClass_ <em>Class</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.CustomWidgetImpl#getExtends <em>Extends</em>}</li>
@@ -46,7 +47,6 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.CustomWidgetImpl#getSlots <em>Slots</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.CustomWidgetImpl#getPropertyspecifications <em>Propertyspecifications</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

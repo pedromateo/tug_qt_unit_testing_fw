@@ -1,0 +1,5 @@
+#!/bin/sh
+clear
+# launch binary
+java -jar TUGWizard.jar $*
+

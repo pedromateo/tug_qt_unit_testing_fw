@@ -27,6 +27,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.LayoutItemImpl#getWidget <em>Widget</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.LayoutItemImpl#getLayout <em>Layout</em>}</li>
@@ -37,7 +38,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.LayoutItemImpl#getRow <em>Row</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.LayoutItemImpl#getRowspan <em>Rowspan</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

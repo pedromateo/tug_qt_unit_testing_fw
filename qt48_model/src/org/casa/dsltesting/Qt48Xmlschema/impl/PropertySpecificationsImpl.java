@@ -27,11 +27,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.PropertySpecificationsImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.PropertySpecificationsImpl#getStringpropertyspecification <em>Stringpropertyspecification</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -11,12 +11,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Palette#getActive <em>Active</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Palette#getInactive <em>Inactive</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Palette#getDisabled <em>Disabled</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getPalette()
  * @model extendedMetaData="name='Palette' kind='elementOnly'"

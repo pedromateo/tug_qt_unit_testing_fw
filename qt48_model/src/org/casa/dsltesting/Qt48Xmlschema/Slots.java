@@ -15,12 +15,12 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Slots#getGroup <em>Group</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Slots#getSignal <em>Signal</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.Slots#getSlot <em>Slot</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getSlots()
  * @model extendedMetaData="name='Slots' kind='elementOnly'"

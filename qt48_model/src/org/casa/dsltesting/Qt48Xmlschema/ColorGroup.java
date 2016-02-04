@@ -15,12 +15,12 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ColorGroup#getGroup <em>Group</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ColorGroup#getColorrole <em>Colorrole</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ColorGroup#getColor <em>Color</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getColorGroup()
  * @model extendedMetaData="name='ColorGroup' kind='elementOnly'"

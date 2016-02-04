@@ -15,12 +15,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ConnectionHint#getX <em>X</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ConnectionHint#getY <em>Y</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.ConnectionHint#getType <em>Type</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getConnectionHint()
  * @model extendedMetaData="name='ConnectionHint' kind='elementOnly'"

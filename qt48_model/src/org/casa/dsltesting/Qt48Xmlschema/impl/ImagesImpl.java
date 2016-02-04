@@ -27,10 +27,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ImagesImpl#getImage <em>Image</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

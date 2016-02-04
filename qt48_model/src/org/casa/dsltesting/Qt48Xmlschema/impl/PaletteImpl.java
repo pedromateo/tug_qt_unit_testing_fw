@@ -22,12 +22,12 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.PaletteImpl#getActive <em>Active</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.PaletteImpl#getInactive <em>Inactive</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.PaletteImpl#getDisabled <em>Disabled</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

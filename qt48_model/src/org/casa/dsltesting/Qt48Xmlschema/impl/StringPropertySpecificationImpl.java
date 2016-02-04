@@ -21,12 +21,12 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.StringPropertySpecificationImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.StringPropertySpecificationImpl#getNotr <em>Notr</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.StringPropertySpecificationImpl#getType <em>Type</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

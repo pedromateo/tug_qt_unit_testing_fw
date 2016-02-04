@@ -13,13 +13,13 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.String#getMixed <em>Mixed</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.String#getComment <em>Comment</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.String#getExtracomment <em>Extracomment</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.String#getNotr <em>Notr</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getString()
  * @model extendedMetaData="name='String' kind='mixed'"

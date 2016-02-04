@@ -41,6 +41,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.WidgetImpl#getClass_ <em>Class</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.WidgetImpl#getProperty <em>Property</em>}</li>
@@ -60,7 +61,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.WidgetImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.WidgetImpl#isNative <em>Native</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

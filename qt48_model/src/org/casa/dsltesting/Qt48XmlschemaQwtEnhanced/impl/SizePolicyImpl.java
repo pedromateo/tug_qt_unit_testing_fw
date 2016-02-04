@@ -22,6 +22,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.SizePolicyImpl#getHsizetype <em>Hsizetype</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.SizePolicyImpl#getVsizetype <em>Vsizetype</em>}</li>
@@ -30,7 +31,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.SizePolicyImpl#getHsizetype1 <em>Hsizetype1</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48XmlschemaQwtEnhanced.impl.SizePolicyImpl#getVsizetype1 <em>Vsizetype1</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

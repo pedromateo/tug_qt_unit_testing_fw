@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.UI#getAuthor <em>Author</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.UI#getComment <em>Comment</em>}</li>
@@ -39,7 +40,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.UI#getStdSetDef1 <em>Std Set Def1</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.UI#getVersion <em>Version</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getUI()
  * @model extendedMetaData="name='UI' kind='elementOnly'"

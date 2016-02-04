@@ -21,12 +21,12 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.DateImpl#getYear <em>Year</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.DateImpl#getMonth <em>Month</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.DateImpl#getDay <em>Day</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

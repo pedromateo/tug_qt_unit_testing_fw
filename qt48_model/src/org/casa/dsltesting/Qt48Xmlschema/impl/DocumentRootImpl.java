@@ -30,13 +30,13 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.DocumentRootImpl#getMixed <em>Mixed</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.DocumentRootImpl#getXMLNSPrefixMap <em>XMLNS Prefix Map</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.DocumentRootImpl#getXSISchemaLocation <em>XSI Schema Location</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.DocumentRootImpl#getUi <em>Ui</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

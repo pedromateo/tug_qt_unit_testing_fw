@@ -31,6 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ItemImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ItemImpl#getProperty <em>Property</em>}</li>
@@ -38,7 +39,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ItemImpl#getColumn <em>Column</em>}</li>
  *   <li>{@link org.casa.dsltesting.Qt48Xmlschema.impl.ItemImpl#getRow <em>Row</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
