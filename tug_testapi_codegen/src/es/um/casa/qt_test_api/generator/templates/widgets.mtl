@@ -1,0 +1,860 @@
+[comment encoding = UTF-8 /]
+[module widgets('platform:/resource/qt48_model/qt48_xmlschema_qwt_enhanced.xsd')]
+
+
+
+[comment ---------------------------------------------------------------------- /]
+[comment --------------- WIDGET EXPANSION METHOD ------------------------------ /]
+[comment ---------------------------------------------------------------------- /]
+
+
+[template public expand_Widget(
+	widget : Widget, 
+	ui_classname : ecore::EString, 
+	ui_ref : ecore::EString, 
+	implementation : ecore::EBoolean)]
+[comment /]
+[comment /]
+[comment ---------- Standard Qt support --------------------------------------- /]
+[if (widget.class1.equalsIgnoreCase('QSpinBox'))]
+[expand_QSpinBox(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QDoubleSpinBox'))]
+[expand_QDoubleSpinBox(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QComboBox'))]
+[expand_QComboBox(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QPushButton'))]
+[expand_QPushButton(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QToolButton'))]
+[expand_QToolButton(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QRadioButton'))]
+[expand_QRadioButton(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QCommandLinkButton'))]
+[expand_QCommandLinkButton(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QLineEdit'))]
+[expand_QLineEdit(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QTextEdit'))]
+[expand_QTextEdit(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QPlainTextEdit'))]
+[expand_QPlainTextEdit(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QDial'))]
+[expand_QDial(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QSlider'))]
+[expand_QSlider(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QProgressBar'))]
+[expand_QProgressBar(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QLabel'))]
+[expand_QLabel(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QCheckBox'))]
+[expand_QCheckBox(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QTableWidget'))]
+[expand_QTableWidget(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QTableView'))]
+[expand_QTableView(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[comment /]
+[comment /]
+[comment ---------- QWT support ----------------------------------------------- /]
+[elseif (widget.class1.equalsIgnoreCase('QwtSlider'))]
+[expand_QwtSlider(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QwtThermo'))]
+[expand_QwtThermo(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QwtDial'))]
+[expand_QwtDial(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QwtCompass'))]
+[expand_QwtCompass(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QwtKnob'))]
+[expand_QwtKnob(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QwtCounter'))]
+[expand_QwtCounter(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QwtWheel'))]
+[expand_QwtWheel(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QwtAnalogClock'))]
+[expand_QwtAnalogClock(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QwtArrowButton'))]
+[expand_QwtArrowButton(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QwtTextLabel'))]
+[expand_QwtTextLabel(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[elseif (widget.class1.equalsIgnoreCase('QwtPlot'))]
+[expand_QwtPlot(widget,ui_classname, ui_ref,implementation)/]
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[comment /]
+[comment /]
+[comment ---------- SAES support ---------------------------------------------- /]
+[comment [elseif (widget.class1.equalsIgnoreCase('QtWidgetLineEditStatus'))
+[expand_QtWidgetLineEditStatus(widget,ui_classname, ui_ref,implementation)/
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/
+[elseif (widget.class1.equalsIgnoreCase('QtWidgetRadioButtonStatus'))
+[expand_QtWidgetRadioButtonStatus(widget,ui_classname, ui_ref,implementation)/
+[expand_QWidget(widget,ui_classname, ui_ref,implementation)/]
+[comment /]
+[comment /]
+[comment -- NOT SUPPORTED WIDGETS support ------------------------------------- /]
+[comment -- QWidget generic class is avoided ---------------------------------- /]
+[comment -- [elseif (not widget.class1.equalsIgnoreCase('QWidget')) -- /]
+[comment --    // [widget.name/] 
+[comment -- [expand_QWidget(widget,ui_classname, ui_ref,implementation)/] 
+[/if]
+[comment /]
+[comment /]
+[/template]
+
+
+
+
+
+[comment ---------------------------------------------------------------------- /]
+[comment ------------- STANDARD QT WIDGET METHODS ----------------------------- /]
+[comment ---------------------------------------------------------------------- /]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QWidget(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+[widget.class1/]* test_[ui_classname/]::acc_[widget.name/]()
+{
+    return [ui_ref/][widget.name/];
+}
+[else]
+   [widget.class1/]* acc_[widget.name/]();
+[/if]
+[/template]
+
+[comment ALREADY SUPPORTED: --------------------------------------------------- /]
+[comment QSpinBox/]
+[comment QDoubleSpinbox/]
+[comment QComboBox/]
+[comment QPushButton/]
+[comment QToolButton/]
+[comment QRadioButton/]
+[comment QCommandLinkButton/]
+[comment QLineEdit/]
+[comment QTextEdit/]
+[comment QPlainTextEdit/]
+[comment QDial/]
+[comment QHorizontalSlider/]
+[comment QVerticalSlider/]
+[comment QProgressBar/]
+[comment QLabel/]
+[comment QCheckBox/]
+[comment QTableWidget/]
+[comment QTableView/]
+[comment QTimeEdit/]
+
+[comment TODO: -----------------------------------------------------------------/]
+
+[comment QListWidget/]
+[comment QTreeWidget/]
+[comment QTabWidget/]
+[comment QDialogButtonBox/]
+[comment /]
+[comment /]
+[comment /]
+[comment /]
+
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QSpinBox(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](int value)
+{
+    qt_test::setValue([ui_ref/][widget.name/],value);
+}
+
+int test_[ui_classname/]::get_[widget.name/]()
+{
+    return qt_test::getValue([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](int value);
+   int get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QDoubleSpinBox(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](double value)
+{
+    qt_test::setValue([ui_ref/][widget.name/],value);
+}
+
+double test_[ui_classname/]::get_[widget.name/]()
+{
+    return qt_test::getValue([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](double value);
+   double get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QComboBox(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](int value)
+{
+    qt_test::setIndex([ui_ref/][widget.name/],value);
+}
+
+int test_[ui_classname/]::get_[widget.name/]()
+{
+    return qt_test::getIndex([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](int value);
+   int get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QPushButton(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::doClick_[widget.name/]()
+{
+    qt_test::doLeftClick([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void doClick_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QToolButton(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::doClick_[widget.name/]()
+{
+    qt_test::doLeftClick([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void doClick_[widget.name/]();
+[/if] 
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QRadioButton(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](bool b)
+{
+    qt_test::setChecked([ui_ref/][widget.name/],b);
+}
+
+bool test_[ui_classname/]::isChecked_[widget.name/]()
+{
+    return qt_test::isChecked([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](bool);
+   bool isChecked_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QCommandLinkButton(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::doClick_[widget.name/]()
+{
+    qt_test::doLeftClick([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void doClick_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QLineEdit(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](const std::string& s)
+{
+    qt_test::setText([ui_ref/][widget.name/],s);
+}
+
+const std::string test_[ui_classname/]::get_[widget.name/]()
+{
+    return qt_test::getText([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](const std::string& s);
+   const std::string get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QTextEdit(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](const std::string& s)
+{
+    qt_test::setText([ui_ref/][widget.name/],s);
+}
+
+const std::string test_[ui_classname/]::get_[widget.name/]()
+{
+    return qt_test::getText([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](const std::string& s);
+   const std::string get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QPlainTextEdit(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](const std::string& s)
+{
+    qt_test::setText([ui_ref/][widget.name/],s);
+}
+
+const std::string test_[ui_classname/]::get_[widget.name/]()
+{
+    return qt_test::getText([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](const std::string& s);
+   const std::string get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QDial(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](int value)
+{
+    qt_test::setValue([ui_ref/][widget.name/],value);
+}
+
+int test_[ui_classname/]::get_[widget.name/]()
+{
+    return qt_test::getValue([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](int value);
+   int get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QSlider(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](int value)
+{
+    qt_test::setValue([ui_ref/][widget.name/],value);
+}
+
+int test_[ui_classname/]::get_[widget.name/]()
+{
+    return qt_test::getValue([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](int value);
+   int get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QProgressBar(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](int value)
+{
+    qt_test::setValue([ui_ref/][widget.name/],value);
+}
+
+int test_[ui_classname/]::get_[widget.name/]()
+{
+    return qt_test::getValue([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](int value);
+   int get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QLabel(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](const std::string& s)
+{
+    qt_test::setText([ui_ref/][widget.name/],s);
+}
+
+const std::string test_[ui_classname/]::get_[widget.name/]()
+{
+    return qt_test::getText([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](const std::string& s);
+   const std::string get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QCheckBox(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](bool checked)
+{
+    qt_test::setChecked([ui_ref/][widget.name/],checked);
+}
+
+bool test_[ui_classname/]::isChecked_[widget.name/]()
+{
+    return qt_test::isChecked([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](bool checked);
+   bool isChecked_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QDateTimeEdit(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::setDate_[widget.name/](int year, int month, int day)
+{
+    qt_test::setDate([ui_ref/][widget.name/],year,month,day);
+}
+
+QDate test_[ui_classname/]::getDate_[widget.name/]()
+{
+    return qt_test::getDate([ui_ref/][widget.name/]);
+}
+
+void test_[ui_classname/]::setTime_[widget.name/](int h, int m, int s, int ms)
+{
+    qt_test::setTime([ui_ref/][widget.name/],h,m,s,ms);
+}
+
+QTime test_[ui_classname/]::getTime_[widget.name/]()
+{
+    return qt_test::getTime([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void setDate_[widget.name/](int year, int month, int day);
+   QDate getDate_[widget.name/]();
+   void setTime_[widget.name/](int h, int m, int s = 0, int ms = 0 );
+   QTime getTime_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QDateEdit(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::setDate_[widget.name/](int year, int month, int day)
+{
+    qt_test::setDate([ui_ref/][widget.name/],year,month,day);
+}
+
+QDate test_[ui_classname/]::getDate_[widget.name/]()
+{
+    return qt_test::getDate([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void setDate_[widget.name/](int year, int month, int day);
+   QDate getDate_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QTimeEdit(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::setTime_[widget.name/](int h, int m, int s, int ms)
+{
+    qt_test::setTime([ui_ref/][widget.name/],h,m,s,ms);
+}
+
+QTime test_[ui_classname/]::getTime_[widget.name/]()
+{
+    return qt_test::getTime([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void setTime_[widget.name/](int h, int m, int s = 0, int ms = 0 );
+   QTime getTime_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QTabWidget(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](int index)
+{
+    qt_test::setIndex([ui_ref/][widget.name/],index);
+}
+
+int test_[ui_classname/]::get_[widget.name/]()
+{
+    return qt_test::getIndex([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](int index);
+   int get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QTableWidget(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::selectCell_[widget.name/](int row, int column)
+{
+    qt_test::selectCell([ui_ref/][widget.name/],row,column);
+}
+
+bool test_[ui_classname/]::isCellSelected_[widget.name/](int row, int column)
+{
+    return qt_test::isCellSelected([ui_ref/][widget.name/],row,column);
+}
+[else]
+   // [widget.name/]
+   void selectCell_[widget.name/](int row, int column);
+   bool isCellSelected_[widget.name/](int row, int column);
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QTableView(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::selectCell_[widget.name/](int row, int column)
+{
+    qt_test::selectCell([ui_ref/][widget.name/],row,column);
+}
+
+bool test_[ui_classname/]::isCellSelected_[widget.name/](int row, int column)
+{
+    return qt_test::isCellSelected([ui_ref/][widget.name/],row,column);
+}
+
+QAbstractItemModel* test_[ui_classname/]::getModel_[widget.name/]()
+{
+    return qt_test::getModel([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void selectCell_[widget.name/](int row, int column);
+   bool isCellSelected_[widget.name/](int row, int column);
+   QAbstractItemModel* getModel_[widget.name/]();
+[/if]
+[/template]
+
+
+
+[comment ---------------------------------------------------------------------- /]
+[comment ------------- QWT WIDGET METHODS ------------------------------------- /]
+[comment ---------------------------------------------------------------------- /]
+
+[comment ALREADY SUPPORTED: --------------------------------------------------- /]
+
+[comment QwtSlider/]
+[comment QwtThermo/]
+[comment QwtDial/]
+[comment QwtCompass/]
+[comment QwtKnob/]
+[comment QwtCounter/]
+[comment QwtWheel/]
+[comment QwtAnalogClock/]
+[comment QwtArrowButton/]
+[comment QwtTextLabel/]
+[comment QwtPlot/]
+
+[comment NO INTERACTABLE: ------------------------------------------------------/]
+
+[comment QwtLegend/]
+[comment QwtCompassRose/]
+[comment QwtScaleWidget/]
+
+[comment TODO: -----------------------------------------------------------------/]
+
+
+[comment /]
+[comment /]
+[comment /]
+[comment /]
+
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QwtSlider(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](double value)
+{
+    [ui_ref/][widget.name/]->setValue(value);
+}
+
+double test_[ui_classname/]::get_[widget.name/]()
+{
+    return [ui_ref/][widget.name/]->value();
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](double value);
+   double get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QwtThermo(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](double value)
+{
+    [ui_ref/][widget.name/]->setValue(value);
+}
+
+double test_[ui_classname/]::get_[widget.name/]()
+{
+    return [ui_ref/][widget.name/]->value();
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](double value);
+   double get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QwtDial(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](double value)
+{
+    [ui_ref/][widget.name/]->setValue(value);
+}
+
+double test_[ui_classname/]::get_[widget.name/]()
+{
+    return [ui_ref/][widget.name/]->value();
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](double value);
+   double get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QwtCompass(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](double value)
+{
+    [ui_ref/][widget.name/]->setValue(value);
+}
+
+double test_[ui_classname/]::get_[widget.name/]()
+{
+    return [ui_ref/][widget.name/]->value();
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](double value);
+   double get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QwtKnob(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](double value)
+{
+    [ui_ref/][widget.name/]->setValue(value);
+}
+
+double test_[ui_classname/]::get_[widget.name/]()
+{
+    return [ui_ref/][widget.name/]->value();
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](double value);
+   double get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QwtCounter(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](double value)
+{
+    [ui_ref/][widget.name/]->setValue(value);
+}
+
+double test_[ui_classname/]::get_[widget.name/]()
+{
+    return [ui_ref/][widget.name/]->value();
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](double value);
+   double get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QwtWheel(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](double value)
+{
+    [ui_ref/][widget.name/]->setValue(value);
+}
+
+double test_[ui_classname/]::get_[widget.name/]()
+{
+    return [ui_ref/][widget.name/]->value();
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](double value);
+   double get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QwtAnalogClock(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::setTime_[widget.name/](const QTime& time)
+{
+    [ui_ref/][widget.name/]->setTime(time);
+}
+
+void test_[ui_classname/]::setCurrentTime_[widget.name/]()
+{
+    [ui_ref/][widget.name/]->setCurrentTime();
+}
+
+double test_[ui_classname/]::get_[widget.name/]()
+{
+    return [ui_ref/][widget.name/]->value();
+}
+[else]
+   // [widget.name/]
+   void setTime_[widget.name/](const QTime& time);
+   void setCurrentTime_[widget.name/]();
+   double get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QwtArrowButton(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::doClick_[widget.name/]()
+{
+    qt_test::doLeftClick([ui_ref/][widget.name/]);
+}
+[else]
+   // [widget.name/]
+   void doClick_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QwtTextLabel(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/]
+void test_[ui_classname/]::set_[widget.name/](const std::string& s)
+{
+    [ui_ref/][widget.name/]->setPlainText(QString(s.c_str()));
+}
+
+const std::string test_[ui_classname/]::get_[widget.name/]()
+{
+    return [ui_ref/][widget.name/]->plainText().toStdString();
+}
+[else]
+   // [widget.name/]
+   void set_[widget.name/](const std::string& s);
+   const std::string get_[widget.name/]();
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[template public expand_QwtPlot(widget : Widget, ui_classname : ecore::EString, ui_ref : ecore::EString, implementation : Boolean)]
+[if (implementation = true)]
+// [widget.name/] - FIXME: might need '#include <qwt_plot_curve.h>'
+void test_[ui_classname/]::attachCurve_[widget.name/](QwtPlotCurve* curve)
+{
+    curve->attach([ui_ref/][widget.name/]);
+    [ui_ref/][widget.name/]->replot();
+}
+[else]
+   // [widget.name/] - FIXME: might need '#include <qwt_plot_curve.h>'
+   void attachCurve_[widget.name/](QwtPlotCurve* curve);
+[/if]
+[/template]
+
+[comment ---------------------------------------------------------------------- /]
+[comment ------------- SAES WIDGET METHODS ------------------------------------ /]
+[comment ---------------------------------------------------------------------- /]
+
+[comment ALREADY SUPPORTED: --------------------------------------------------- /]
+
+
+
+
+
+

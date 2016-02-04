@@ -1,0 +1,215 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generate. 
+ * Acceleo MTL doc: http://www.omg.org/spec/MOFM2T/1.0/PDF
+ * http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.acceleo.doc%2Fpages%2Freference%2Flanguage.html
+ */]
+[comment module generate('file:/home/pedro/svn_catedra/anotaciones/dsl_testing/cpp_generator_project/qt48_model/qt48_xmlschema.xsd')/] 
+[module generate('platform:/resource/qt48_model/qt48_xmlschema_qwt_enhanced.xsd') ]
+ 
+
+[import es::um::casa::qt_test_api::generator::templates::widgets /]   
+[import es::um::casa::qt_test_api::generator::templates::main_project /]  
+[import es::um::casa::qt_test_api::generator::templates::testpanel_project /]  
+[comment [import generateWidgets /]   
+
+[comment get timestamp/]
+[query public getCurrentTime(c : OclAny) : String
+=  invoke('es.um.casa.qt_test_api.generator.support.GenerationSupport', 'getCurrentTime()', Sequence{}) /]
+
+
+[**
+ * The documentation of the template generateElement.                             
+ * @param aDocumentRoot 
+ */] 
+[template public generateCppFile(aDocumentRoot : Qt48XmlschemaQwtEnhanced::DocumentRoot, 
+   ui_file_not_present : OclAny, ui_file : OclAny, rel_ui_file : OclAny, ui_classname : OclAny, ui_reference : OclAny, ui_reference_include : OclAny,
+   gw_enabled: OclAny, gw_lib : OclAny, gw_file : OclAny, gw_classname : OclAny, gw_panel_parameters : OclAny, gw_parameters : OclAny, gw_builddir : OclAny, gw_extras : OclAny,
+   model_enabled: OclAny, model_lib : OclAny, model_file : OclAny, model_classname : OclAny, model_builddir : OclAny, model_extras : OclAny,
+   signals_enabled: OclAny, signals_lib : OclAny, signals_file : OclAny, signals_classname : OclAny, signals_builddir : OclAny, signals_extras : OclAny, signals_includes : OclAny, 
+   gcov_enabled : OclAny, gcov_includes : OclAny, 
+   gprof_enabled : OclAny, gprof_includes : OclAny, 
+   qwt_enabled : OclAny, qwt_includes : OclAny, 
+   extra_includes : OclAny, 
+   testsuites_includes : OclAny, tuglib_includes : OclAny, 
+   rt_includes_h : OclAny, rt_code_h : OclAny, 
+   rt_includes_cpp : OclAny, rt_code_cpp : OclAny, 
+   project_name : OclAny, gen_only_pro : OclAny, 
+   testpanel_gendir : OclAny, testsuites_gendir : OclAny)]
+[comment @main/]
+
+[let uifilenotpresent: ecore::EBoolean = ui_file_not_present.toString().equalsIgnoreCase('true')]
+[let uifilepath: ecore::EString = ui_file.toString()]
+[let reluifilepath: ecore::EString = rel_ui_file.toString()]
+[let uiclassname: ecore::EString = ui_classname.toString()]
+[let uireference: ecore::EString = ui_reference.toString()]
+[let uireferenceinclude: ecore::EString = ui_reference_include.toString()]
+[let gwenabled: ecore::EBoolean = gw_enabled.toString().equalsIgnoreCase('true')]
+[let gwlibpath: ecore::EString = gw_lib.toString()]
+[let gwfilepath: ecore::EString = gw_file.toString()]
+[let gwclassname: ecore::EString = gw_classname.toString()]
+[let gwpanelparameters: ecore::EString = gw_panel_parameters.toString()]
+[let gwparameters: ecore::EString = gw_parameters.toString()]
+[let gwbuilddir: ecore::EString = gw_builddir.toString()]
+[let gwextras: ecore::EString = gw_extras.toString()]
+[let modelenabled: ecore::EBoolean = model_enabled.toString().equalsIgnoreCase('true')]
+[let modellibpath: ecore::EString = model_lib.toString()]
+[let modelfilepath: ecore::EString = model_file.toString()]
+[let modelclassname: ecore::EString = model_classname.toString()]
+[let modelbuilddir: ecore::EString = model_builddir.toString()]
+[let modelextras: ecore::EString = model_extras.toString()]
+[let signalsenabled: ecore::EBoolean = signals_enabled.toString().equalsIgnoreCase('true')]
+[let signalslibpath: ecore::EString = signals_lib.toString()]
+[let signalsfilepath: ecore::EString = signals_file.toString()]
+[let signalsclassname: ecore::EString = signals_classname.toString()]
+[let signalsbuilddir: ecore::EString = signals_builddir.toString()]
+[let signalsextras: ecore::EString = signals_extras.toString()]
+[let signalsinc: ecore::EString = signals_includes.toString()]
+[let gcovenabled: ecore::EBoolean = gcov_enabled.toString().toBoolean()]
+[let gcovinc: ecore::EString = gcov_includes.toString()]
+[let gprofenabled: ecore::EBoolean = gprof_enabled.toString().toBoolean()]
+[let gprofinc: ecore::EString = gprof_includes.toString()]
+[let qwtenabled: ecore::EBoolean = qwt_enabled.toString().toBoolean()]
+[let qwtinc: ecore::EString = qwt_includes.toString()]
+[let extrasinc: ecore::EString = extra_includes.toString()]
+[let testsuitesinc: ecore::EString = testsuites_includes.toString()]
+[let tuglibinc: ecore::EString = tuglib_includes.toString()]
+[let rtincludesh: ecore::EString = rt_includes_h.toString()]
+[let rtcodeh: ecore::EString = rt_code_h.toString()]
+[let rtincludescpp: ecore::EString = rt_includes_cpp.toString()]
+[let rtcodecpp: ecore::EString = rt_code_cpp.toString()]
+[let projectname: ecore::EString = project_name.toString()]
+[let genonlypro: ecore::EBoolean = gen_only_pro.toString().toBoolean()]
+[let testpanelgendir: ecore::EString = testpanel_gendir.toString()]
+[let testsuitesgendir: ecore::EString = testsuites_gendir.toString()]
+
+[comment ---------------------------------------------------------------------- /]
+[comment --------------- BUILD ALL PRO FILE ----------------------------------- /]
+[comment ---------------------------------------------------------------------- /]
+
+[generateMainProject(
+     testpanelgendir,testsuitesgendir,
+     projectname,uiclassname,testsuitesinc)/]
+
+[comment ---------------------------------------------------------------------- /]
+[comment --------------- MAINTEST PRO FILE ------------------------------------ /]
+[comment ---------------------------------------------------------------------- /]
+
+[generateTestpanelProject_proFile(testpanelgendir,projectname,
+     uiclassname,reluifilepath,uifilenotpresent,
+     gwenabled,gwfilepath,gwlibpath,gwextras,
+     modelenabled,modelfilepath,modellibpath,modelextras,
+     signalsenabled,signalsfilepath,signalslibpath,signalsextras,
+     signalsinc,tuglibinc,gcovinc,gprofinc,qwtinc,extrasinc)/] 
+
+[if (genonlypro = false)]
+
+[comment ---------------------------------------------------------------------- /]
+[comment --------------- MAINTEST MAIN FILE ----------------------------------- /]
+[comment ---------------------------------------------------------------------- /]
+
+[generateTestpanelProject_mainFile(
+     testpanelgendir,
+     projectname,
+     gwenabled,gwbuilddir,
+     modelenabled,modelbuilddir,
+     signalsenabled,signalsbuilddir,
+     gprofenabled,gcovenabled,
+     testsuitesinc)/]
+
+[comment ---------------------------------------------------------------------- /]
+[comment --------------- TESTPANEL CPP FILE ----------------------------------- /]
+[comment ---------------------------------------------------------------------- /]
+
+[generateTestpanelProject_cppFile(
+     aDocumentRoot,
+     testpanelgendir,
+     projectname,
+     uiclassname,
+     uifilenotpresent,
+     uireference,
+     uireferenceinclude,
+     gwenabled,
+     gwclassname,
+     gwpanelparameters,
+     gwparameters,
+     rtincludescpp,
+     rtcodecpp)/]
+
+[comment ---------------------------------------------------------------------- /]
+[comment ---------------- TESTPANEL H FILE ------------------------------------ /]
+[comment ---------------------------------------------------------------------- /]
+
+
+[generateTestpanelProject_hFile(
+     aDocumentRoot,
+     testpanelgendir,
+     projectname,
+     uiclassname,
+     reluifilepath,
+     uifilenotpresent,
+     uireference,
+     uireferenceinclude,
+     gwenabled,
+     gwclassname,
+     gwpanelparameters,
+     gwparameters,
+     gwfilepath,
+     rtincludesh,
+     rtcodeh,
+     testsuitesinc)/]
+
+[/if] [comment --- end for 'if (genonlypro = false)' -------------------------- /]
+
+
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/let]
+[/template]
+
+
+
+
+
+
