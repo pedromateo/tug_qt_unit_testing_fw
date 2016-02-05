@@ -25,7 +25,7 @@
     </dependencies>
   
   <build>
-    <sourceDirectory>src</sourceDirectory>
+<!--     <sourceDirectory>src</sourceDirectory>
     <resources>
       <resource>
         <directory>src</directory>
@@ -40,7 +40,7 @@
         </excludes>
       </resource>
     </resources>
-    
+ -->    
      
     
     <plugins>
