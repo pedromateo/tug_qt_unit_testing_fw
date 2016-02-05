@@ -3,21 +3,14 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.util.Collection;
-
 import org.casa.dsltesting.Qt48Xmlschema.Property;
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.WidgetData;
-
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -34,7 +27,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class WidgetDataImpl extends EObjectImpl implements WidgetData {
+public class WidgetDataImpl extends MinimalEObjectImpl.Container implements WidgetData {
 	/**
 	 * The cached value of the '{@link #getProperty() <em>Property</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -43,7 +36,7 @@ public class WidgetDataImpl extends EObjectImpl implements WidgetData {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList property;
+	protected EList<Property> property;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,6 +52,7 @@ public class WidgetDataImpl extends EObjectImpl implements WidgetData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.WIDGET_DATA;
 	}
@@ -68,9 +62,9 @@ public class WidgetDataImpl extends EObjectImpl implements WidgetData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getProperty() {
+	public EList<Property> getProperty() {
 		if (property == null) {
-			property = new EObjectContainmentEList(Property.class, this, Qt48XmlschemaPackage.WIDGET_DATA__PROPERTY);
+			property = new EObjectContainmentEList<Property>(Property.class, this, Qt48XmlschemaPackage.WIDGET_DATA__PROPERTY);
 		}
 		return property;
 	}
@@ -80,10 +74,11 @@ public class WidgetDataImpl extends EObjectImpl implements WidgetData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.WIDGET_DATA__PROPERTY:
-				return ((InternalEList)getProperty()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getProperty()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -93,6 +88,7 @@ public class WidgetDataImpl extends EObjectImpl implements WidgetData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.WIDGET_DATA__PROPERTY:
@@ -106,11 +102,13 @@ public class WidgetDataImpl extends EObjectImpl implements WidgetData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+		@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.WIDGET_DATA__PROPERTY:
 				getProperty().clear();
-				getProperty().addAll((Collection)newValue);
+				getProperty().addAll((Collection<? extends Property>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -121,6 +119,7 @@ public class WidgetDataImpl extends EObjectImpl implements WidgetData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.WIDGET_DATA__PROPERTY:
@@ -135,6 +134,7 @@ public class WidgetDataImpl extends EObjectImpl implements WidgetData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.WIDGET_DATA__PROPERTY:

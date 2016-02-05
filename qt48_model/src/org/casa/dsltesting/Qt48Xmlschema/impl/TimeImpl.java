@@ -3,17 +3,12 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.math.BigInteger;
-
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Time;
-
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +25,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class TimeImpl extends EObjectImpl implements Time {
+public class TimeImpl extends MinimalEObjectImpl.Container implements Time {
 	/**
 	 * The default value of the '{@link #getHour() <em>Hour</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -105,6 +100,7 @@ public class TimeImpl extends EObjectImpl implements Time {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.TIME;
 	}
@@ -177,6 +173,7 @@ public class TimeImpl extends EObjectImpl implements Time {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.TIME__HOUR:
@@ -194,6 +191,7 @@ public class TimeImpl extends EObjectImpl implements Time {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.TIME__HOUR:
@@ -214,6 +212,7 @@ public class TimeImpl extends EObjectImpl implements Time {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.TIME__HOUR:
@@ -234,6 +233,7 @@ public class TimeImpl extends EObjectImpl implements Time {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.TIME__HOUR:
@@ -251,15 +251,16 @@ public class TimeImpl extends EObjectImpl implements Time {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (hour: "); //$NON-NLS-1$
+		result.append(" (hour: ");
 		result.append(hour);
-		result.append(", minute: "); //$NON-NLS-1$
+		result.append(", minute: ");
 		result.append(minute);
-		result.append(", second: "); //$NON-NLS-1$
+		result.append(", second: ");
 		result.append(second);
 		result.append(')');
 		return result.toString();

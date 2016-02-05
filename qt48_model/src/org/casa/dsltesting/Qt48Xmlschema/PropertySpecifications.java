@@ -54,10 +54,10 @@ public interface PropertySpecifications extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Stringpropertyspecification</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getPropertySpecifications_Stringpropertyspecification()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.StringPropertySpecification" containment="true" transient="true" volatile="true" derived="true"
+	 * @model containment="true" transient="true" volatile="true" derived="true"
 	 *        extendedMetaData="kind='element' name='stringpropertyspecification' namespace='##targetNamespace' group='group:0'"
 	 * @generated
 	 */
-	EList getStringpropertyspecification();
+	EList<StringPropertySpecification> getStringpropertyspecification();
 
 } // PropertySpecifications

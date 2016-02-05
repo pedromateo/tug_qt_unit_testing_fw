@@ -3,24 +3,17 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
 import java.util.Collection;
-
 import org.casa.dsltesting.Qt48Xmlschema.Action;
-
-
+import org.casa.dsltesting.Qt48Xmlschema.Property;
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.BasicFeatureMap;
 import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -42,7 +35,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ActionImpl extends EObjectImpl implements Action {
+public class ActionImpl extends MinimalEObjectImpl.Container implements Action {
 	/**
 	 * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -107,6 +100,7 @@ public class ActionImpl extends EObjectImpl implements Action {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.ACTION;
 	}
@@ -128,7 +122,7 @@ public class ActionImpl extends EObjectImpl implements Action {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getProperty() {
+	public EList<Property> getProperty() {
 		return getGroup().list(Qt48XmlschemaPackage.Literals.ACTION__PROPERTY);
 	}
 
@@ -137,7 +131,7 @@ public class ActionImpl extends EObjectImpl implements Action {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getAttribute() {
+	public EList<Property> getAttribute() {
 		return getGroup().list(Qt48XmlschemaPackage.Literals.ACTION__ATTRIBUTE);
 	}
 
@@ -188,14 +182,15 @@ public class ActionImpl extends EObjectImpl implements Action {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.ACTION__GROUP:
-				return ((InternalEList)getGroup()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.ACTION__PROPERTY:
-				return ((InternalEList)getProperty()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getProperty()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.ACTION__ATTRIBUTE:
-				return ((InternalEList)getAttribute()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getAttribute()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -205,6 +200,7 @@ public class ActionImpl extends EObjectImpl implements Action {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.ACTION__GROUP:
@@ -227,6 +223,8 @@ public class ActionImpl extends EObjectImpl implements Action {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+		@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.ACTION__GROUP:
@@ -234,11 +232,11 @@ public class ActionImpl extends EObjectImpl implements Action {
 				return;
 			case Qt48XmlschemaPackage.ACTION__PROPERTY:
 				getProperty().clear();
-				getProperty().addAll((Collection)newValue);
+				getProperty().addAll((Collection<? extends Property>)newValue);
 				return;
 			case Qt48XmlschemaPackage.ACTION__ATTRIBUTE:
 				getAttribute().clear();
-				getAttribute().addAll((Collection)newValue);
+				getAttribute().addAll((Collection<? extends Property>)newValue);
 				return;
 			case Qt48XmlschemaPackage.ACTION__MENU:
 				setMenu((String)newValue);
@@ -255,6 +253,7 @@ public class ActionImpl extends EObjectImpl implements Action {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.ACTION__GROUP:
@@ -281,6 +280,7 @@ public class ActionImpl extends EObjectImpl implements Action {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.ACTION__GROUP:
@@ -302,15 +302,16 @@ public class ActionImpl extends EObjectImpl implements Action {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (group: "); //$NON-NLS-1$
+		result.append(" (group: ");
 		result.append(group);
-		result.append(", menu: "); //$NON-NLS-1$
+		result.append(", menu: ");
 		result.append(menu);
-		result.append(", name: "); //$NON-NLS-1$
+		result.append(", name: ");
 		result.append(name);
 		result.append(')');
 		return result.toString();

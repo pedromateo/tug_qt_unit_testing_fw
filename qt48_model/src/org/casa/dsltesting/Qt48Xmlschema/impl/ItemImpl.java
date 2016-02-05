@@ -3,24 +3,17 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.math.BigInteger;
-
 import java.util.Collection;
-
 import org.casa.dsltesting.Qt48Xmlschema.Item;
-
-
+import org.casa.dsltesting.Qt48Xmlschema.Property;
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.BasicFeatureMap;
 import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -42,7 +35,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ItemImpl extends EObjectImpl implements Item {
+public class ItemImpl extends MinimalEObjectImpl.Container implements Item {
 	/**
 	 * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -107,6 +100,7 @@ public class ItemImpl extends EObjectImpl implements Item {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.ITEM;
 	}
@@ -128,7 +122,7 @@ public class ItemImpl extends EObjectImpl implements Item {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getProperty() {
+	public EList<Property> getProperty() {
 		return getGroup().list(Qt48XmlschemaPackage.Literals.ITEM__PROPERTY);
 	}
 
@@ -137,7 +131,7 @@ public class ItemImpl extends EObjectImpl implements Item {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getItem() {
+	public EList<Item> getItem() {
 		return getGroup().list(Qt48XmlschemaPackage.Literals.ITEM__ITEM);
 	}
 
@@ -188,14 +182,15 @@ public class ItemImpl extends EObjectImpl implements Item {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.ITEM__GROUP:
-				return ((InternalEList)getGroup()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.ITEM__PROPERTY:
-				return ((InternalEList)getProperty()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getProperty()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.ITEM__ITEM:
-				return ((InternalEList)getItem()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getItem()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -205,6 +200,7 @@ public class ItemImpl extends EObjectImpl implements Item {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.ITEM__GROUP:
@@ -227,6 +223,8 @@ public class ItemImpl extends EObjectImpl implements Item {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+		@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.ITEM__GROUP:
@@ -234,11 +232,11 @@ public class ItemImpl extends EObjectImpl implements Item {
 				return;
 			case Qt48XmlschemaPackage.ITEM__PROPERTY:
 				getProperty().clear();
-				getProperty().addAll((Collection)newValue);
+				getProperty().addAll((Collection<? extends Property>)newValue);
 				return;
 			case Qt48XmlschemaPackage.ITEM__ITEM:
 				getItem().clear();
-				getItem().addAll((Collection)newValue);
+				getItem().addAll((Collection<? extends Item>)newValue);
 				return;
 			case Qt48XmlschemaPackage.ITEM__COLUMN:
 				setColumn((BigInteger)newValue);
@@ -255,6 +253,7 @@ public class ItemImpl extends EObjectImpl implements Item {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.ITEM__GROUP:
@@ -281,6 +280,7 @@ public class ItemImpl extends EObjectImpl implements Item {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.ITEM__GROUP:
@@ -302,15 +302,16 @@ public class ItemImpl extends EObjectImpl implements Item {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (group: "); //$NON-NLS-1$
+		result.append(" (group: ");
 		result.append(group);
-		result.append(", column: "); //$NON-NLS-1$
+		result.append(", column: ");
 		result.append(column);
-		result.append(", row: "); //$NON-NLS-1$
+		result.append(", row: ");
 		result.append(row);
 		result.append(')');
 		return result.toString();

@@ -3,17 +3,12 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Script;
-
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +24,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class ScriptImpl extends EObjectImpl implements Script {
+public class ScriptImpl extends MinimalEObjectImpl.Container implements Script {
 	/**
 	 * The default value of the '{@link #getLanguage() <em>Language</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -84,6 +79,7 @@ public class ScriptImpl extends EObjectImpl implements Script {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.SCRIPT;
 	}
@@ -135,6 +131,7 @@ public class ScriptImpl extends EObjectImpl implements Script {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SCRIPT__LANGUAGE:
@@ -150,6 +147,7 @@ public class ScriptImpl extends EObjectImpl implements Script {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SCRIPT__LANGUAGE:
@@ -167,6 +165,7 @@ public class ScriptImpl extends EObjectImpl implements Script {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SCRIPT__LANGUAGE:
@@ -184,6 +183,7 @@ public class ScriptImpl extends EObjectImpl implements Script {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SCRIPT__LANGUAGE:
@@ -199,13 +199,14 @@ public class ScriptImpl extends EObjectImpl implements Script {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (language: "); //$NON-NLS-1$
+		result.append(" (language: ");
 		result.append(language);
-		result.append(", source: "); //$NON-NLS-1$
+		result.append(", source: ");
 		result.append(source);
 		result.append(')');
 		return result.toString();

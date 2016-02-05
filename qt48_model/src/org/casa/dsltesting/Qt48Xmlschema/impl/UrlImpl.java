@@ -1,19 +1,14 @@
 /**
  */
 package org.casa.dsltesting.Qt48Xmlschema.impl;
-
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Url;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +23,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class UrlImpl extends EObjectImpl implements Url {
+public class UrlImpl extends MinimalEObjectImpl.Container implements Url {
 	/**
 	 * The cached value of the '{@link #getString() <em>String</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -53,6 +48,7 @@ public class UrlImpl extends EObjectImpl implements Url {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.URL;
 	}
@@ -105,6 +101,7 @@ public class UrlImpl extends EObjectImpl implements Url {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.URL__STRING:
@@ -118,6 +115,7 @@ public class UrlImpl extends EObjectImpl implements Url {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.URL__STRING:
@@ -131,6 +129,7 @@ public class UrlImpl extends EObjectImpl implements Url {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.URL__STRING:
@@ -145,6 +144,7 @@ public class UrlImpl extends EObjectImpl implements Url {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.URL__STRING:
@@ -159,6 +159,7 @@ public class UrlImpl extends EObjectImpl implements Url {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.URL__STRING:

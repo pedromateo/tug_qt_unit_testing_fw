@@ -3,17 +3,12 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Resource;
-
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +23,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class ResourceImpl extends EObjectImpl implements Resource {
+public class ResourceImpl extends MinimalEObjectImpl.Container implements Resource {
 	/**
 	 * The default value of the '{@link #getLocation() <em>Location</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -63,6 +58,7 @@ public class ResourceImpl extends EObjectImpl implements Resource {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.RESOURCE;
 	}
@@ -93,6 +89,7 @@ public class ResourceImpl extends EObjectImpl implements Resource {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.RESOURCE__LOCATION:
@@ -106,6 +103,7 @@ public class ResourceImpl extends EObjectImpl implements Resource {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.RESOURCE__LOCATION:
@@ -120,6 +118,7 @@ public class ResourceImpl extends EObjectImpl implements Resource {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.RESOURCE__LOCATION:
@@ -134,6 +133,7 @@ public class ResourceImpl extends EObjectImpl implements Resource {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.RESOURCE__LOCATION:
@@ -147,11 +147,12 @@ public class ResourceImpl extends EObjectImpl implements Resource {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (location: "); //$NON-NLS-1$
+		result.append(" (location: ");
 		result.append(location);
 		result.append(')');
 		return result.toString();

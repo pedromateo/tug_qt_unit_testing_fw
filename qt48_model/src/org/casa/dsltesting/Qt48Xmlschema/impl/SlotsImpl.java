@@ -2,21 +2,15 @@
  */
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
+import java.lang.String;
 import java.util.Collection;
-
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Slots;
-
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.BasicFeatureMap;
 import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -36,7 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class SlotsImpl extends EObjectImpl implements Slots {
+public class SlotsImpl extends MinimalEObjectImpl.Container implements Slots {
 	/**
 	 * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -61,6 +55,7 @@ public class SlotsImpl extends EObjectImpl implements Slots {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.SLOTS;
 	}
@@ -82,7 +77,7 @@ public class SlotsImpl extends EObjectImpl implements Slots {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getSignal() {
+	public EList<String> getSignal() {
 		return getGroup().list(Qt48XmlschemaPackage.Literals.SLOTS__SIGNAL);
 	}
 
@@ -91,7 +86,7 @@ public class SlotsImpl extends EObjectImpl implements Slots {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getSlot() {
+	public EList<String> getSlot() {
 		return getGroup().list(Qt48XmlschemaPackage.Literals.SLOTS__SLOT);
 	}
 
@@ -100,10 +95,11 @@ public class SlotsImpl extends EObjectImpl implements Slots {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SLOTS__GROUP:
-				return ((InternalEList)getGroup()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -113,6 +109,7 @@ public class SlotsImpl extends EObjectImpl implements Slots {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SLOTS__GROUP:
@@ -131,6 +128,8 @@ public class SlotsImpl extends EObjectImpl implements Slots {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+		@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SLOTS__GROUP:
@@ -138,11 +137,11 @@ public class SlotsImpl extends EObjectImpl implements Slots {
 				return;
 			case Qt48XmlschemaPackage.SLOTS__SIGNAL:
 				getSignal().clear();
-				getSignal().addAll((Collection)newValue);
+				getSignal().addAll((Collection<? extends String>)newValue);
 				return;
 			case Qt48XmlschemaPackage.SLOTS__SLOT:
 				getSlot().clear();
-				getSlot().addAll((Collection)newValue);
+				getSlot().addAll((Collection<? extends String>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -153,6 +152,7 @@ public class SlotsImpl extends EObjectImpl implements Slots {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SLOTS__GROUP:
@@ -173,6 +173,7 @@ public class SlotsImpl extends EObjectImpl implements Slots {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SLOTS__GROUP:
@@ -190,11 +191,12 @@ public class SlotsImpl extends EObjectImpl implements Slots {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (group: "); //$NON-NLS-1$
+		result.append(" (group: ");
 		result.append(group);
 		result.append(')');
 		return result.toString();

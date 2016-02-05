@@ -2,8 +2,6 @@
  */
 package org.casa.dsltesting.Qt48Xmlschema.util;
 
-import java.util.List;
-
 import org.casa.dsltesting.Qt48Xmlschema.Action;
 import org.casa.dsltesting.Qt48Xmlschema.ActionGroup;
 import org.casa.dsltesting.Qt48Xmlschema.ActionRef;
@@ -70,9 +68,9 @@ import org.casa.dsltesting.Qt48Xmlschema.UI;
 import org.casa.dsltesting.Qt48Xmlschema.Url;
 import org.casa.dsltesting.Qt48Xmlschema.Widget;
 import org.casa.dsltesting.Qt48Xmlschema.WidgetData;
-
-import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.util.Switch;
 
 /**
  * <!-- begin-user-doc -->
@@ -87,7 +85,7 @@ import org.eclipse.emf.ecore.EObject;
  * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage
  * @generated
  */
-public class Qt48XmlschemaSwitch {
+public class Qt48XmlschemaSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
@@ -109,14 +107,16 @@ public class Qt48XmlschemaSwitch {
 	}
 
 	/**
-	 * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
+	 * Checks whether this is a switch for the given package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the first non-null result returned by a <code>caseXXX</code> call.
+	 * @param ePackage the package in question.
+	 * @return whether this is a switch for the given package.
 	 * @generated
 	 */
-	public Object doSwitch(EObject theEObject) {
-		return doSwitch(theEObject.eClass(), theEObject);
+	@Override
+	protected boolean isSwitchFor(EPackage ePackage) {
+		return ePackage == modelPackage;
 	}
 
 	/**
@@ -126,421 +126,402 @@ public class Qt48XmlschemaSwitch {
 	 * @return the first non-null result returned by a <code>caseXXX</code> call.
 	 * @generated
 	 */
-	protected Object doSwitch(EClass theEClass, EObject theEObject) {
-		if (theEClass.eContainer() == modelPackage) {
-			return doSwitch(theEClass.getClassifierID(), theEObject);
-		}
-		else {
-			List eSuperTypes = theEClass.getESuperTypes();
-			return
-				eSuperTypes.isEmpty() ?
-					defaultCase(theEObject) :
-					doSwitch((EClass)eSuperTypes.get(0), theEObject);
-		}
-	}
-
-	/**
-	 * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the first non-null result returned by a <code>caseXXX</code> call.
-	 * @generated
-	 */
-	protected Object doSwitch(int classifierID, EObject theEObject) {
+	@Override
+	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
 			case Qt48XmlschemaPackage.ACTION: {
 				Action action = (Action)theEObject;
-				Object result = caseAction(action);
+				T result = caseAction(action);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.ACTION_GROUP: {
 				ActionGroup actionGroup = (ActionGroup)theEObject;
-				Object result = caseActionGroup(actionGroup);
+				T result = caseActionGroup(actionGroup);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.ACTION_REF: {
 				ActionRef actionRef = (ActionRef)theEObject;
-				Object result = caseActionRef(actionRef);
+				T result = caseActionRef(actionRef);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.BRUSH: {
 				Brush brush = (Brush)theEObject;
-				Object result = caseBrush(brush);
+				T result = caseBrush(brush);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.BUTTON_GROUP: {
 				ButtonGroup buttonGroup = (ButtonGroup)theEObject;
-				Object result = caseButtonGroup(buttonGroup);
+				T result = caseButtonGroup(buttonGroup);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.BUTTON_GROUPS: {
 				ButtonGroups buttonGroups = (ButtonGroups)theEObject;
-				Object result = caseButtonGroups(buttonGroups);
+				T result = caseButtonGroups(buttonGroups);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.CHAR: {
 				Char char_ = (Char)theEObject;
-				Object result = caseChar(char_);
+				T result = caseChar(char_);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.COLOR: {
 				Color color = (Color)theEObject;
-				Object result = caseColor(color);
+				T result = caseColor(color);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.COLOR_GROUP: {
 				ColorGroup colorGroup = (ColorGroup)theEObject;
-				Object result = caseColorGroup(colorGroup);
+				T result = caseColorGroup(colorGroup);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.COLOR_ROLE: {
 				ColorRole colorRole = (ColorRole)theEObject;
-				Object result = caseColorRole(colorRole);
+				T result = caseColorRole(colorRole);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.COLUMN: {
 				Column column = (Column)theEObject;
-				Object result = caseColumn(column);
+				T result = caseColumn(column);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.CONNECTION: {
 				Connection connection = (Connection)theEObject;
-				Object result = caseConnection(connection);
+				T result = caseConnection(connection);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.CONNECTION_HINT: {
 				ConnectionHint connectionHint = (ConnectionHint)theEObject;
-				Object result = caseConnectionHint(connectionHint);
+				T result = caseConnectionHint(connectionHint);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.CONNECTION_HINTS: {
 				ConnectionHints connectionHints = (ConnectionHints)theEObject;
-				Object result = caseConnectionHints(connectionHints);
+				T result = caseConnectionHints(connectionHints);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.CONNECTIONS: {
 				Connections connections = (Connections)theEObject;
-				Object result = caseConnections(connections);
+				T result = caseConnections(connections);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.CUSTOM_WIDGET: {
 				CustomWidget customWidget = (CustomWidget)theEObject;
-				Object result = caseCustomWidget(customWidget);
+				T result = caseCustomWidget(customWidget);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.CUSTOM_WIDGETS: {
 				CustomWidgets customWidgets = (CustomWidgets)theEObject;
-				Object result = caseCustomWidgets(customWidgets);
+				T result = caseCustomWidgets(customWidgets);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.DATE: {
 				Date date = (Date)theEObject;
-				Object result = caseDate(date);
+				T result = caseDate(date);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.DATE_TIME: {
 				DateTime dateTime = (DateTime)theEObject;
-				Object result = caseDateTime(dateTime);
+				T result = caseDateTime(dateTime);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.DESIGNER_DATA: {
 				DesignerData designerData = (DesignerData)theEObject;
-				Object result = caseDesignerData(designerData);
+				T result = caseDesignerData(designerData);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.DOCUMENT_ROOT: {
 				DocumentRoot documentRoot = (DocumentRoot)theEObject;
-				Object result = caseDocumentRoot(documentRoot);
+				T result = caseDocumentRoot(documentRoot);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.FONT: {
 				Font font = (Font)theEObject;
-				Object result = caseFont(font);
+				T result = caseFont(font);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.GRADIENT: {
 				Gradient gradient = (Gradient)theEObject;
-				Object result = caseGradient(gradient);
+				T result = caseGradient(gradient);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.GRADIENT_STOP: {
 				GradientStop gradientStop = (GradientStop)theEObject;
-				Object result = caseGradientStop(gradientStop);
+				T result = caseGradientStop(gradientStop);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.HEADER: {
 				Header header = (Header)theEObject;
-				Object result = caseHeader(header);
+				T result = caseHeader(header);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.IMAGE: {
 				Image image = (Image)theEObject;
-				Object result = caseImage(image);
+				T result = caseImage(image);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.IMAGE_DATA: {
 				ImageData imageData = (ImageData)theEObject;
-				Object result = caseImageData(imageData);
+				T result = caseImageData(imageData);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.IMAGES: {
 				Images images = (Images)theEObject;
-				Object result = caseImages(images);
+				T result = caseImages(images);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.INCLUDE: {
 				Include include = (Include)theEObject;
-				Object result = caseInclude(include);
+				T result = caseInclude(include);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.INCLUDES: {
 				Includes includes = (Includes)theEObject;
-				Object result = caseIncludes(includes);
+				T result = caseIncludes(includes);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.ITEM: {
 				Item item = (Item)theEObject;
-				Object result = caseItem(item);
+				T result = caseItem(item);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.LAYOUT: {
 				Layout layout = (Layout)theEObject;
-				Object result = caseLayout(layout);
+				T result = caseLayout(layout);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.LAYOUT_DEFAULT: {
 				LayoutDefault layoutDefault = (LayoutDefault)theEObject;
-				Object result = caseLayoutDefault(layoutDefault);
+				T result = caseLayoutDefault(layoutDefault);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.LAYOUT_FUNCTION: {
 				LayoutFunction layoutFunction = (LayoutFunction)theEObject;
-				Object result = caseLayoutFunction(layoutFunction);
+				T result = caseLayoutFunction(layoutFunction);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.LAYOUT_ITEM: {
 				LayoutItem layoutItem = (LayoutItem)theEObject;
-				Object result = caseLayoutItem(layoutItem);
+				T result = caseLayoutItem(layoutItem);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.LOCALE: {
 				Locale locale = (Locale)theEObject;
-				Object result = caseLocale(locale);
+				T result = caseLocale(locale);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.PALETTE: {
 				Palette palette = (Palette)theEObject;
-				Object result = casePalette(palette);
+				T result = casePalette(palette);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.POINT: {
 				Point point = (Point)theEObject;
-				Object result = casePoint(point);
+				T result = casePoint(point);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.POINT_F: {
 				PointF pointF = (PointF)theEObject;
-				Object result = casePointF(pointF);
+				T result = casePointF(pointF);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.PROPERTIES: {
 				Properties properties = (Properties)theEObject;
-				Object result = caseProperties(properties);
+				T result = caseProperties(properties);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.PROPERTY: {
 				Property property = (Property)theEObject;
-				Object result = caseProperty(property);
+				T result = caseProperty(property);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.PROPERTY_DATA: {
 				PropertyData propertyData = (PropertyData)theEObject;
-				Object result = casePropertyData(propertyData);
+				T result = casePropertyData(propertyData);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.PROPERTY_SPECIFICATIONS: {
 				PropertySpecifications propertySpecifications = (PropertySpecifications)theEObject;
-				Object result = casePropertySpecifications(propertySpecifications);
+				T result = casePropertySpecifications(propertySpecifications);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.RECT: {
 				Rect rect = (Rect)theEObject;
-				Object result = caseRect(rect);
+				T result = caseRect(rect);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.RECT_F: {
 				RectF rectF = (RectF)theEObject;
-				Object result = caseRectF(rectF);
+				T result = caseRectF(rectF);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.RESOURCE: {
 				Resource resource = (Resource)theEObject;
-				Object result = caseResource(resource);
+				T result = caseResource(resource);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.RESOURCE_ICON: {
 				ResourceIcon resourceIcon = (ResourceIcon)theEObject;
-				Object result = caseResourceIcon(resourceIcon);
+				T result = caseResourceIcon(resourceIcon);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.RESOURCE_PIXMAP: {
 				ResourcePixmap resourcePixmap = (ResourcePixmap)theEObject;
-				Object result = caseResourcePixmap(resourcePixmap);
+				T result = caseResourcePixmap(resourcePixmap);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.RESOURCES: {
 				Resources resources = (Resources)theEObject;
-				Object result = caseResources(resources);
+				T result = caseResources(resources);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.ROW: {
 				Row row = (Row)theEObject;
-				Object result = caseRow(row);
+				T result = caseRow(row);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.SCRIPT: {
 				Script script = (Script)theEObject;
-				Object result = caseScript(script);
+				T result = caseScript(script);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.SIZE: {
 				Size size = (Size)theEObject;
-				Object result = caseSize(size);
+				T result = caseSize(size);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.SIZE_F: {
 				SizeF sizeF = (SizeF)theEObject;
-				Object result = caseSizeF(sizeF);
+				T result = caseSizeF(sizeF);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.SIZE_POLICY: {
 				SizePolicy sizePolicy = (SizePolicy)theEObject;
-				Object result = caseSizePolicy(sizePolicy);
+				T result = caseSizePolicy(sizePolicy);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.SIZE_POLICY_DATA: {
 				SizePolicyData sizePolicyData = (SizePolicyData)theEObject;
-				Object result = caseSizePolicyData(sizePolicyData);
+				T result = caseSizePolicyData(sizePolicyData);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.SLOTS: {
 				Slots slots = (Slots)theEObject;
-				Object result = caseSlots(slots);
+				T result = caseSlots(slots);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.SPACER: {
 				Spacer spacer = (Spacer)theEObject;
-				Object result = caseSpacer(spacer);
+				T result = caseSpacer(spacer);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.STRING: {
 				org.casa.dsltesting.Qt48Xmlschema.String string = (org.casa.dsltesting.Qt48Xmlschema.String)theEObject;
-				Object result = caseString(string);
+				T result = caseString(string);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.STRING_LIST: {
 				StringList stringList = (StringList)theEObject;
-				Object result = caseStringList(stringList);
+				T result = caseStringList(stringList);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.STRING_PROPERTY_SPECIFICATION: {
 				StringPropertySpecification stringPropertySpecification = (StringPropertySpecification)theEObject;
-				Object result = caseStringPropertySpecification(stringPropertySpecification);
+				T result = caseStringPropertySpecification(stringPropertySpecification);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.TAB_STOPS: {
 				TabStops tabStops = (TabStops)theEObject;
-				Object result = caseTabStops(tabStops);
+				T result = caseTabStops(tabStops);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.TIME: {
 				Time time = (Time)theEObject;
-				Object result = caseTime(time);
+				T result = caseTime(time);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.UI: {
 				UI ui = (UI)theEObject;
-				Object result = caseUI(ui);
+				T result = caseUI(ui);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.URL: {
 				Url url = (Url)theEObject;
-				Object result = caseUrl(url);
+				T result = caseUrl(url);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.WIDGET: {
 				Widget widget = (Widget)theEObject;
-				Object result = caseWidget(widget);
+				T result = caseWidget(widget);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Qt48XmlschemaPackage.WIDGET_DATA: {
 				WidgetData widgetData = (WidgetData)theEObject;
-				Object result = caseWidgetData(widgetData);
+				T result = caseWidgetData(widgetData);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -559,7 +540,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseAction(Action object) {
+	public T caseAction(Action object) {
 		return null;
 	}
 
@@ -574,7 +555,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseActionGroup(ActionGroup object) {
+	public T caseActionGroup(ActionGroup object) {
 		return null;
 	}
 
@@ -589,7 +570,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseActionRef(ActionRef object) {
+	public T caseActionRef(ActionRef object) {
 		return null;
 	}
 
@@ -604,7 +585,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseBrush(Brush object) {
+	public T caseBrush(Brush object) {
 		return null;
 	}
 
@@ -619,7 +600,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseButtonGroup(ButtonGroup object) {
+	public T caseButtonGroup(ButtonGroup object) {
 		return null;
 	}
 
@@ -634,7 +615,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseButtonGroups(ButtonGroups object) {
+	public T caseButtonGroups(ButtonGroups object) {
 		return null;
 	}
 
@@ -649,7 +630,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseChar(Char object) {
+	public T caseChar(Char object) {
 		return null;
 	}
 
@@ -664,7 +645,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseColor(Color object) {
+	public T caseColor(Color object) {
 		return null;
 	}
 
@@ -679,7 +660,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseColorGroup(ColorGroup object) {
+	public T caseColorGroup(ColorGroup object) {
 		return null;
 	}
 
@@ -694,7 +675,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseColorRole(ColorRole object) {
+	public T caseColorRole(ColorRole object) {
 		return null;
 	}
 
@@ -709,7 +690,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseColumn(Column object) {
+	public T caseColumn(Column object) {
 		return null;
 	}
 
@@ -724,7 +705,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseConnection(Connection object) {
+	public T caseConnection(Connection object) {
 		return null;
 	}
 
@@ -739,7 +720,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseConnectionHint(ConnectionHint object) {
+	public T caseConnectionHint(ConnectionHint object) {
 		return null;
 	}
 
@@ -754,7 +735,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseConnectionHints(ConnectionHints object) {
+	public T caseConnectionHints(ConnectionHints object) {
 		return null;
 	}
 
@@ -769,7 +750,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseConnections(Connections object) {
+	public T caseConnections(Connections object) {
 		return null;
 	}
 
@@ -784,7 +765,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseCustomWidget(CustomWidget object) {
+	public T caseCustomWidget(CustomWidget object) {
 		return null;
 	}
 
@@ -799,7 +780,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseCustomWidgets(CustomWidgets object) {
+	public T caseCustomWidgets(CustomWidgets object) {
 		return null;
 	}
 
@@ -814,7 +795,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseDate(Date object) {
+	public T caseDate(Date object) {
 		return null;
 	}
 
@@ -829,7 +810,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseDateTime(DateTime object) {
+	public T caseDateTime(DateTime object) {
 		return null;
 	}
 
@@ -844,7 +825,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseDesignerData(DesignerData object) {
+	public T caseDesignerData(DesignerData object) {
 		return null;
 	}
 
@@ -859,7 +840,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseDocumentRoot(DocumentRoot object) {
+	public T caseDocumentRoot(DocumentRoot object) {
 		return null;
 	}
 
@@ -874,7 +855,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseFont(Font object) {
+	public T caseFont(Font object) {
 		return null;
 	}
 
@@ -889,7 +870,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseGradient(Gradient object) {
+	public T caseGradient(Gradient object) {
 		return null;
 	}
 
@@ -904,7 +885,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseGradientStop(GradientStop object) {
+	public T caseGradientStop(GradientStop object) {
 		return null;
 	}
 
@@ -919,7 +900,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseHeader(Header object) {
+	public T caseHeader(Header object) {
 		return null;
 	}
 
@@ -934,7 +915,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseImage(Image object) {
+	public T caseImage(Image object) {
 		return null;
 	}
 
@@ -949,7 +930,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseImageData(ImageData object) {
+	public T caseImageData(ImageData object) {
 		return null;
 	}
 
@@ -964,7 +945,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseImages(Images object) {
+	public T caseImages(Images object) {
 		return null;
 	}
 
@@ -979,7 +960,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseInclude(Include object) {
+	public T caseInclude(Include object) {
 		return null;
 	}
 
@@ -994,7 +975,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseIncludes(Includes object) {
+	public T caseIncludes(Includes object) {
 		return null;
 	}
 
@@ -1009,7 +990,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseItem(Item object) {
+	public T caseItem(Item object) {
 		return null;
 	}
 
@@ -1024,7 +1005,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseLayout(Layout object) {
+	public T caseLayout(Layout object) {
 		return null;
 	}
 
@@ -1039,7 +1020,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseLayoutDefault(LayoutDefault object) {
+	public T caseLayoutDefault(LayoutDefault object) {
 		return null;
 	}
 
@@ -1054,7 +1035,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseLayoutFunction(LayoutFunction object) {
+	public T caseLayoutFunction(LayoutFunction object) {
 		return null;
 	}
 
@@ -1069,7 +1050,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseLayoutItem(LayoutItem object) {
+	public T caseLayoutItem(LayoutItem object) {
 		return null;
 	}
 
@@ -1084,7 +1065,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseLocale(Locale object) {
+	public T caseLocale(Locale object) {
 		return null;
 	}
 
@@ -1099,7 +1080,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object casePalette(Palette object) {
+	public T casePalette(Palette object) {
 		return null;
 	}
 
@@ -1114,7 +1095,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object casePoint(Point object) {
+	public T casePoint(Point object) {
 		return null;
 	}
 
@@ -1129,7 +1110,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object casePointF(PointF object) {
+	public T casePointF(PointF object) {
 		return null;
 	}
 
@@ -1144,7 +1125,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseProperties(Properties object) {
+	public T caseProperties(Properties object) {
 		return null;
 	}
 
@@ -1159,7 +1140,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseProperty(Property object) {
+	public T caseProperty(Property object) {
 		return null;
 	}
 
@@ -1174,7 +1155,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object casePropertyData(PropertyData object) {
+	public T casePropertyData(PropertyData object) {
 		return null;
 	}
 
@@ -1189,7 +1170,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object casePropertySpecifications(PropertySpecifications object) {
+	public T casePropertySpecifications(PropertySpecifications object) {
 		return null;
 	}
 
@@ -1204,7 +1185,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseRect(Rect object) {
+	public T caseRect(Rect object) {
 		return null;
 	}
 
@@ -1219,7 +1200,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseRectF(RectF object) {
+	public T caseRectF(RectF object) {
 		return null;
 	}
 
@@ -1234,7 +1215,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseResource(Resource object) {
+	public T caseResource(Resource object) {
 		return null;
 	}
 
@@ -1249,7 +1230,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseResourceIcon(ResourceIcon object) {
+	public T caseResourceIcon(ResourceIcon object) {
 		return null;
 	}
 
@@ -1264,7 +1245,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseResourcePixmap(ResourcePixmap object) {
+	public T caseResourcePixmap(ResourcePixmap object) {
 		return null;
 	}
 
@@ -1279,7 +1260,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseResources(Resources object) {
+	public T caseResources(Resources object) {
 		return null;
 	}
 
@@ -1294,7 +1275,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseRow(Row object) {
+	public T caseRow(Row object) {
 		return null;
 	}
 
@@ -1309,7 +1290,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseScript(Script object) {
+	public T caseScript(Script object) {
 		return null;
 	}
 
@@ -1324,7 +1305,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseSize(Size object) {
+	public T caseSize(Size object) {
 		return null;
 	}
 
@@ -1339,7 +1320,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseSizeF(SizeF object) {
+	public T caseSizeF(SizeF object) {
 		return null;
 	}
 
@@ -1354,7 +1335,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseSizePolicy(SizePolicy object) {
+	public T caseSizePolicy(SizePolicy object) {
 		return null;
 	}
 
@@ -1369,7 +1350,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseSizePolicyData(SizePolicyData object) {
+	public T caseSizePolicyData(SizePolicyData object) {
 		return null;
 	}
 
@@ -1384,7 +1365,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseSlots(Slots object) {
+	public T caseSlots(Slots object) {
 		return null;
 	}
 
@@ -1399,7 +1380,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseSpacer(Spacer object) {
+	public T caseSpacer(Spacer object) {
 		return null;
 	}
 
@@ -1414,7 +1395,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseString(org.casa.dsltesting.Qt48Xmlschema.String object) {
+	public T caseString(org.casa.dsltesting.Qt48Xmlschema.String object) {
 		return null;
 	}
 
@@ -1429,7 +1410,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseStringList(StringList object) {
+	public T caseStringList(StringList object) {
 		return null;
 	}
 
@@ -1444,7 +1425,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseStringPropertySpecification(StringPropertySpecification object) {
+	public T caseStringPropertySpecification(StringPropertySpecification object) {
 		return null;
 	}
 
@@ -1459,7 +1440,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseTabStops(TabStops object) {
+	public T caseTabStops(TabStops object) {
 		return null;
 	}
 
@@ -1474,7 +1455,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseTime(Time object) {
+	public T caseTime(Time object) {
 		return null;
 	}
 
@@ -1489,7 +1470,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseUI(UI object) {
+	public T caseUI(UI object) {
 		return null;
 	}
 
@@ -1504,7 +1485,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseUrl(Url object) {
+	public T caseUrl(Url object) {
 		return null;
 	}
 
@@ -1519,7 +1500,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseWidget(Widget object) {
+	public T caseWidget(Widget object) {
 		return null;
 	}
 
@@ -1534,7 +1515,7 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public Object caseWidgetData(WidgetData object) {
+	public T caseWidgetData(WidgetData object) {
 		return null;
 	}
 
@@ -1549,7 +1530,8 @@ public class Qt48XmlschemaSwitch {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */
-	public Object defaultCase(EObject object) {
+	@Override
+	public T defaultCase(EObject object) {
 		return null;
 	}
 

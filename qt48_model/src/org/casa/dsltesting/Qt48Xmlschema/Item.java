@@ -59,11 +59,11 @@ public interface Item extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Property</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getItem_Property()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Property" containment="true" transient="true" volatile="true" derived="true"
+	 * @model containment="true" transient="true" volatile="true" derived="true"
 	 *        extendedMetaData="kind='element' name='property' namespace='##targetNamespace' group='group:0'"
 	 * @generated
 	 */
-	EList getProperty();
+	EList<Property> getProperty();
 
 	/**
 	 * Returns the value of the '<em><b>Item</b></em>' containment reference list.
@@ -76,11 +76,11 @@ public interface Item extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Item</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getItem_Item()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Item" containment="true" transient="true" volatile="true" derived="true"
+	 * @model containment="true" transient="true" volatile="true" derived="true"
 	 *        extendedMetaData="kind='element' name='item' namespace='##targetNamespace' group='group:0'"
 	 * @generated
 	 */
-	EList getItem();
+	EList<Item> getItem();
 
 	/**
 	 * Returns the value of the '<em><b>Column</b></em>' attribute.

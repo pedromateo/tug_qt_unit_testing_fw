@@ -34,10 +34,10 @@ public interface Images extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Image</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getImages_Image()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Image" containment="true" required="true"
+	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='image' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getImage();
+	EList<Image> getImage();
 
 } // Images

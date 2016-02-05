@@ -56,7 +56,7 @@ public interface Widget extends EObject {
 	 *        extendedMetaData="kind='element' name='class' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getClass_();
+	EList<String> getClass_();
 
 	/**
 	 * Returns the value of the '<em><b>Property</b></em>' containment reference list.
@@ -69,11 +69,11 @@ public interface Widget extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Property</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getWidget_Property()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Property" containment="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='property' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getProperty();
+	EList<Property> getProperty();
 
 	/**
 	 * Returns the value of the '<em><b>Script</b></em>' containment reference list.
@@ -86,11 +86,11 @@ public interface Widget extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Script</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getWidget_Script()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Script" containment="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='script' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getScript();
+	EList<Script> getScript();
 
 	/**
 	 * Returns the value of the '<em><b>Widgetdata</b></em>' containment reference list.
@@ -103,11 +103,11 @@ public interface Widget extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Widgetdata</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getWidget_Widgetdata()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.WidgetData" containment="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='widgetdata' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getWidgetdata();
+	EList<WidgetData> getWidgetdata();
 
 	/**
 	 * Returns the value of the '<em><b>Attribute</b></em>' containment reference list.
@@ -120,11 +120,11 @@ public interface Widget extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Attribute</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getWidget_Attribute()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Property" containment="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='attribute' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getAttribute();
+	EList<Property> getAttribute();
 
 	/**
 	 * Returns the value of the '<em><b>Row</b></em>' containment reference list.
@@ -137,11 +137,11 @@ public interface Widget extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Row</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getWidget_Row()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Row" containment="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='row' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getRow();
+	EList<Row> getRow();
 
 	/**
 	 * Returns the value of the '<em><b>Column</b></em>' containment reference list.
@@ -154,11 +154,11 @@ public interface Widget extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Column</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getWidget_Column()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Column" containment="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='column' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getColumn();
+	EList<Column> getColumn();
 
 	/**
 	 * Returns the value of the '<em><b>Item</b></em>' containment reference list.
@@ -171,11 +171,11 @@ public interface Widget extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Item</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getWidget_Item()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Item" containment="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='item' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getItem();
+	EList<Item> getItem();
 
 	/**
 	 * Returns the value of the '<em><b>Layout</b></em>' containment reference list.
@@ -188,11 +188,11 @@ public interface Widget extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Layout</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getWidget_Layout()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Layout" containment="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='layout' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getLayout();
+	EList<Layout> getLayout();
 
 	/**
 	 * Returns the value of the '<em><b>Widget</b></em>' containment reference list.
@@ -205,11 +205,11 @@ public interface Widget extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Widget</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getWidget_Widget()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Widget" containment="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='widget' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getWidget();
+	EList<Widget> getWidget();
 
 	/**
 	 * Returns the value of the '<em><b>Action</b></em>' containment reference list.
@@ -222,11 +222,11 @@ public interface Widget extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Action</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getWidget_Action()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Action" containment="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='action' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getAction();
+	EList<Action> getAction();
 
 	/**
 	 * Returns the value of the '<em><b>Actiongroup</b></em>' containment reference list.
@@ -239,11 +239,11 @@ public interface Widget extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Actiongroup</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getWidget_Actiongroup()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.ActionGroup" containment="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='actiongroup' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getActiongroup();
+	EList<ActionGroup> getActiongroup();
 
 	/**
 	 * Returns the value of the '<em><b>Addaction</b></em>' containment reference list.
@@ -256,11 +256,11 @@ public interface Widget extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Addaction</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getWidget_Addaction()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.ActionRef" containment="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='addaction' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getAddaction();
+	EList<ActionRef> getAddaction();
 
 	/**
 	 * Returns the value of the '<em><b>Zorder</b></em>' attribute list.
@@ -277,7 +277,7 @@ public interface Widget extends EObject {
 	 *        extendedMetaData="kind='element' name='zorder' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getZorder();
+	EList<String> getZorder();
 
 	/**
 	 * Returns the value of the '<em><b>Class1</b></em>' attribute.

@@ -3,15 +3,11 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import org.casa.dsltesting.Qt48Xmlschema.PointF;
-
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +23,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class PointFImpl extends EObjectImpl implements PointF {
+public class PointFImpl extends MinimalEObjectImpl.Container implements PointF {
 	/**
 	 * The default value of the '{@link #getX() <em>X</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -100,6 +96,7 @@ public class PointFImpl extends EObjectImpl implements PointF {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.POINT_F;
 	}
@@ -201,12 +198,13 @@ public class PointFImpl extends EObjectImpl implements PointF {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.POINT_F__X:
-				return new Double(getX());
+				return getX();
 			case Qt48XmlschemaPackage.POINT_F__Y:
-				return new Double(getY());
+				return getY();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -216,13 +214,14 @@ public class PointFImpl extends EObjectImpl implements PointF {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.POINT_F__X:
-				setX(((Double)newValue).doubleValue());
+				setX((Double)newValue);
 				return;
 			case Qt48XmlschemaPackage.POINT_F__Y:
-				setY(((Double)newValue).doubleValue());
+				setY((Double)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -233,6 +232,7 @@ public class PointFImpl extends EObjectImpl implements PointF {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.POINT_F__X:
@@ -250,6 +250,7 @@ public class PointFImpl extends EObjectImpl implements PointF {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.POINT_F__X:
@@ -265,14 +266,15 @@ public class PointFImpl extends EObjectImpl implements PointF {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (x: "); //$NON-NLS-1$
-		if (xESet) result.append(x); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", y: "); //$NON-NLS-1$
-		if (yESet) result.append(y); else result.append("<unset>"); //$NON-NLS-1$
+		result.append(" (x: ");
+		if (xESet) result.append(x); else result.append("<unset>");
+		result.append(", y: ");
+		if (yESet) result.append(y); else result.append("<unset>");
 		result.append(')');
 		return result.toString();
 	}

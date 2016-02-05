@@ -3,20 +3,14 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.util.Collection;
-
 import org.casa.dsltesting.Qt48Xmlschema.PropertySpecifications;
-
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
+import org.casa.dsltesting.Qt48Xmlschema.StringPropertySpecification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.BasicFeatureMap;
 import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -35,7 +29,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class PropertySpecificationsImpl extends EObjectImpl implements PropertySpecifications {
+public class PropertySpecificationsImpl extends MinimalEObjectImpl.Container implements PropertySpecifications {
 	/**
 	 * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -60,6 +54,7 @@ public class PropertySpecificationsImpl extends EObjectImpl implements PropertyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.PROPERTY_SPECIFICATIONS;
 	}
@@ -81,7 +76,7 @@ public class PropertySpecificationsImpl extends EObjectImpl implements PropertyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getStringpropertyspecification() {
+	public EList<StringPropertySpecification> getStringpropertyspecification() {
 		return getGroup().list(Qt48XmlschemaPackage.Literals.PROPERTY_SPECIFICATIONS__STRINGPROPERTYSPECIFICATION);
 	}
 
@@ -90,12 +85,13 @@ public class PropertySpecificationsImpl extends EObjectImpl implements PropertyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.PROPERTY_SPECIFICATIONS__GROUP:
-				return ((InternalEList)getGroup()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.PROPERTY_SPECIFICATIONS__STRINGPROPERTYSPECIFICATION:
-				return ((InternalEList)getStringpropertyspecification()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getStringpropertyspecification()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -105,6 +101,7 @@ public class PropertySpecificationsImpl extends EObjectImpl implements PropertyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.PROPERTY_SPECIFICATIONS__GROUP:
@@ -121,6 +118,8 @@ public class PropertySpecificationsImpl extends EObjectImpl implements PropertyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+		@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.PROPERTY_SPECIFICATIONS__GROUP:
@@ -128,7 +127,7 @@ public class PropertySpecificationsImpl extends EObjectImpl implements PropertyS
 				return;
 			case Qt48XmlschemaPackage.PROPERTY_SPECIFICATIONS__STRINGPROPERTYSPECIFICATION:
 				getStringpropertyspecification().clear();
-				getStringpropertyspecification().addAll((Collection)newValue);
+				getStringpropertyspecification().addAll((Collection<? extends StringPropertySpecification>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -139,6 +138,7 @@ public class PropertySpecificationsImpl extends EObjectImpl implements PropertyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.PROPERTY_SPECIFICATIONS__GROUP:
@@ -156,6 +156,7 @@ public class PropertySpecificationsImpl extends EObjectImpl implements PropertyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.PROPERTY_SPECIFICATIONS__GROUP:
@@ -171,11 +172,12 @@ public class PropertySpecificationsImpl extends EObjectImpl implements PropertyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (group: "); //$NON-NLS-1$
+		result.append(" (group: ");
 		result.append(group);
 		result.append(')');
 		return result.toString();

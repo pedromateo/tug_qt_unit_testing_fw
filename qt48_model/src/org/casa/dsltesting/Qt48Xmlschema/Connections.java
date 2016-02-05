@@ -34,10 +34,10 @@ public interface Connections extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Connection</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getConnections_Connection()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Connection" containment="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='connection' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getConnection();
+	EList<Connection> getConnection();
 
 } // Connections

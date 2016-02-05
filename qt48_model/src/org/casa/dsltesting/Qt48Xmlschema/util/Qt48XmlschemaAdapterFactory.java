@@ -113,6 +113,7 @@ public class Qt48XmlschemaAdapterFactory extends AdapterFactoryImpl {
 	 * @return whether this factory is applicable for the type of the object.
 	 * @generated
 	 */
+	@Override
 	public boolean isFactoryForType(Object object) {
 		if (object == modelPackage) {
 			return true;
@@ -129,207 +130,274 @@ public class Qt48XmlschemaAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected Qt48XmlschemaSwitch modelSwitch =
-		new Qt48XmlschemaSwitch() {
-			public Object caseAction(Action object) {
+	protected Qt48XmlschemaSwitch<Adapter> modelSwitch =
+		new Qt48XmlschemaSwitch<Adapter>() {
+			@Override
+			public Adapter caseAction(Action object) {
 				return createActionAdapter();
 			}
-			public Object caseActionGroup(ActionGroup object) {
+			@Override
+			public Adapter caseActionGroup(ActionGroup object) {
 				return createActionGroupAdapter();
 			}
-			public Object caseActionRef(ActionRef object) {
+			@Override
+			public Adapter caseActionRef(ActionRef object) {
 				return createActionRefAdapter();
 			}
-			public Object caseBrush(Brush object) {
+			@Override
+			public Adapter caseBrush(Brush object) {
 				return createBrushAdapter();
 			}
-			public Object caseButtonGroup(ButtonGroup object) {
+			@Override
+			public Adapter caseButtonGroup(ButtonGroup object) {
 				return createButtonGroupAdapter();
 			}
-			public Object caseButtonGroups(ButtonGroups object) {
+			@Override
+			public Adapter caseButtonGroups(ButtonGroups object) {
 				return createButtonGroupsAdapter();
 			}
-			public Object caseChar(Char object) {
+			@Override
+			public Adapter caseChar(Char object) {
 				return createCharAdapter();
 			}
-			public Object caseColor(Color object) {
+			@Override
+			public Adapter caseColor(Color object) {
 				return createColorAdapter();
 			}
-			public Object caseColorGroup(ColorGroup object) {
+			@Override
+			public Adapter caseColorGroup(ColorGroup object) {
 				return createColorGroupAdapter();
 			}
-			public Object caseColorRole(ColorRole object) {
+			@Override
+			public Adapter caseColorRole(ColorRole object) {
 				return createColorRoleAdapter();
 			}
-			public Object caseColumn(Column object) {
+			@Override
+			public Adapter caseColumn(Column object) {
 				return createColumnAdapter();
 			}
-			public Object caseConnection(Connection object) {
+			@Override
+			public Adapter caseConnection(Connection object) {
 				return createConnectionAdapter();
 			}
-			public Object caseConnectionHint(ConnectionHint object) {
+			@Override
+			public Adapter caseConnectionHint(ConnectionHint object) {
 				return createConnectionHintAdapter();
 			}
-			public Object caseConnectionHints(ConnectionHints object) {
+			@Override
+			public Adapter caseConnectionHints(ConnectionHints object) {
 				return createConnectionHintsAdapter();
 			}
-			public Object caseConnections(Connections object) {
+			@Override
+			public Adapter caseConnections(Connections object) {
 				return createConnectionsAdapter();
 			}
-			public Object caseCustomWidget(CustomWidget object) {
+			@Override
+			public Adapter caseCustomWidget(CustomWidget object) {
 				return createCustomWidgetAdapter();
 			}
-			public Object caseCustomWidgets(CustomWidgets object) {
+			@Override
+			public Adapter caseCustomWidgets(CustomWidgets object) {
 				return createCustomWidgetsAdapter();
 			}
-			public Object caseDate(Date object) {
+			@Override
+			public Adapter caseDate(Date object) {
 				return createDateAdapter();
 			}
-			public Object caseDateTime(DateTime object) {
+			@Override
+			public Adapter caseDateTime(DateTime object) {
 				return createDateTimeAdapter();
 			}
-			public Object caseDesignerData(DesignerData object) {
+			@Override
+			public Adapter caseDesignerData(DesignerData object) {
 				return createDesignerDataAdapter();
 			}
-			public Object caseDocumentRoot(DocumentRoot object) {
+			@Override
+			public Adapter caseDocumentRoot(DocumentRoot object) {
 				return createDocumentRootAdapter();
 			}
-			public Object caseFont(Font object) {
+			@Override
+			public Adapter caseFont(Font object) {
 				return createFontAdapter();
 			}
-			public Object caseGradient(Gradient object) {
+			@Override
+			public Adapter caseGradient(Gradient object) {
 				return createGradientAdapter();
 			}
-			public Object caseGradientStop(GradientStop object) {
+			@Override
+			public Adapter caseGradientStop(GradientStop object) {
 				return createGradientStopAdapter();
 			}
-			public Object caseHeader(Header object) {
+			@Override
+			public Adapter caseHeader(Header object) {
 				return createHeaderAdapter();
 			}
-			public Object caseImage(Image object) {
+			@Override
+			public Adapter caseImage(Image object) {
 				return createImageAdapter();
 			}
-			public Object caseImageData(ImageData object) {
+			@Override
+			public Adapter caseImageData(ImageData object) {
 				return createImageDataAdapter();
 			}
-			public Object caseImages(Images object) {
+			@Override
+			public Adapter caseImages(Images object) {
 				return createImagesAdapter();
 			}
-			public Object caseInclude(Include object) {
+			@Override
+			public Adapter caseInclude(Include object) {
 				return createIncludeAdapter();
 			}
-			public Object caseIncludes(Includes object) {
+			@Override
+			public Adapter caseIncludes(Includes object) {
 				return createIncludesAdapter();
 			}
-			public Object caseItem(Item object) {
+			@Override
+			public Adapter caseItem(Item object) {
 				return createItemAdapter();
 			}
-			public Object caseLayout(Layout object) {
+			@Override
+			public Adapter caseLayout(Layout object) {
 				return createLayoutAdapter();
 			}
-			public Object caseLayoutDefault(LayoutDefault object) {
+			@Override
+			public Adapter caseLayoutDefault(LayoutDefault object) {
 				return createLayoutDefaultAdapter();
 			}
-			public Object caseLayoutFunction(LayoutFunction object) {
+			@Override
+			public Adapter caseLayoutFunction(LayoutFunction object) {
 				return createLayoutFunctionAdapter();
 			}
-			public Object caseLayoutItem(LayoutItem object) {
+			@Override
+			public Adapter caseLayoutItem(LayoutItem object) {
 				return createLayoutItemAdapter();
 			}
-			public Object caseLocale(Locale object) {
+			@Override
+			public Adapter caseLocale(Locale object) {
 				return createLocaleAdapter();
 			}
-			public Object casePalette(Palette object) {
+			@Override
+			public Adapter casePalette(Palette object) {
 				return createPaletteAdapter();
 			}
-			public Object casePoint(Point object) {
+			@Override
+			public Adapter casePoint(Point object) {
 				return createPointAdapter();
 			}
-			public Object casePointF(PointF object) {
+			@Override
+			public Adapter casePointF(PointF object) {
 				return createPointFAdapter();
 			}
-			public Object caseProperties(Properties object) {
+			@Override
+			public Adapter caseProperties(Properties object) {
 				return createPropertiesAdapter();
 			}
-			public Object caseProperty(Property object) {
+			@Override
+			public Adapter caseProperty(Property object) {
 				return createPropertyAdapter();
 			}
-			public Object casePropertyData(PropertyData object) {
+			@Override
+			public Adapter casePropertyData(PropertyData object) {
 				return createPropertyDataAdapter();
 			}
-			public Object casePropertySpecifications(PropertySpecifications object) {
+			@Override
+			public Adapter casePropertySpecifications(PropertySpecifications object) {
 				return createPropertySpecificationsAdapter();
 			}
-			public Object caseRect(Rect object) {
+			@Override
+			public Adapter caseRect(Rect object) {
 				return createRectAdapter();
 			}
-			public Object caseRectF(RectF object) {
+			@Override
+			public Adapter caseRectF(RectF object) {
 				return createRectFAdapter();
 			}
-			public Object caseResource(Resource object) {
+			@Override
+			public Adapter caseResource(Resource object) {
 				return createResourceAdapter();
 			}
-			public Object caseResourceIcon(ResourceIcon object) {
+			@Override
+			public Adapter caseResourceIcon(ResourceIcon object) {
 				return createResourceIconAdapter();
 			}
-			public Object caseResourcePixmap(ResourcePixmap object) {
+			@Override
+			public Adapter caseResourcePixmap(ResourcePixmap object) {
 				return createResourcePixmapAdapter();
 			}
-			public Object caseResources(Resources object) {
+			@Override
+			public Adapter caseResources(Resources object) {
 				return createResourcesAdapter();
 			}
-			public Object caseRow(Row object) {
+			@Override
+			public Adapter caseRow(Row object) {
 				return createRowAdapter();
 			}
-			public Object caseScript(Script object) {
+			@Override
+			public Adapter caseScript(Script object) {
 				return createScriptAdapter();
 			}
-			public Object caseSize(Size object) {
+			@Override
+			public Adapter caseSize(Size object) {
 				return createSizeAdapter();
 			}
-			public Object caseSizeF(SizeF object) {
+			@Override
+			public Adapter caseSizeF(SizeF object) {
 				return createSizeFAdapter();
 			}
-			public Object caseSizePolicy(SizePolicy object) {
+			@Override
+			public Adapter caseSizePolicy(SizePolicy object) {
 				return createSizePolicyAdapter();
 			}
-			public Object caseSizePolicyData(SizePolicyData object) {
+			@Override
+			public Adapter caseSizePolicyData(SizePolicyData object) {
 				return createSizePolicyDataAdapter();
 			}
-			public Object caseSlots(Slots object) {
+			@Override
+			public Adapter caseSlots(Slots object) {
 				return createSlotsAdapter();
 			}
-			public Object caseSpacer(Spacer object) {
+			@Override
+			public Adapter caseSpacer(Spacer object) {
 				return createSpacerAdapter();
 			}
-			public Object caseString(org.casa.dsltesting.Qt48Xmlschema.String object) {
+			@Override
+			public Adapter caseString(org.casa.dsltesting.Qt48Xmlschema.String object) {
 				return createStringAdapter();
 			}
-			public Object caseStringList(StringList object) {
+			@Override
+			public Adapter caseStringList(StringList object) {
 				return createStringListAdapter();
 			}
-			public Object caseStringPropertySpecification(StringPropertySpecification object) {
+			@Override
+			public Adapter caseStringPropertySpecification(StringPropertySpecification object) {
 				return createStringPropertySpecificationAdapter();
 			}
-			public Object caseTabStops(TabStops object) {
+			@Override
+			public Adapter caseTabStops(TabStops object) {
 				return createTabStopsAdapter();
 			}
-			public Object caseTime(Time object) {
+			@Override
+			public Adapter caseTime(Time object) {
 				return createTimeAdapter();
 			}
-			public Object caseUI(UI object) {
+			@Override
+			public Adapter caseUI(UI object) {
 				return createUIAdapter();
 			}
-			public Object caseUrl(Url object) {
+			@Override
+			public Adapter caseUrl(Url object) {
 				return createUrlAdapter();
 			}
-			public Object caseWidget(Widget object) {
+			@Override
+			public Adapter caseWidget(Widget object) {
 				return createWidgetAdapter();
 			}
-			public Object caseWidgetData(WidgetData object) {
+			@Override
+			public Adapter caseWidgetData(WidgetData object) {
 				return createWidgetDataAdapter();
 			}
-			public Object defaultCase(EObject object) {
+			@Override
+			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
 		};
@@ -342,8 +410,9 @@ public class Qt48XmlschemaAdapterFactory extends AdapterFactoryImpl {
 	 * @return the adapter for the <code>target</code>.
 	 * @generated
 	 */
+	@Override
 	public Adapter createAdapter(Notifier target) {
-		return (Adapter)modelSwitch.doSwitch((EObject)target);
+		return modelSwitch.doSwitch((EObject)target);
 	}
 
 

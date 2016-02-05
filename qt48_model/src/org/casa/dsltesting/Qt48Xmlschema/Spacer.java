@@ -37,11 +37,11 @@ public interface Spacer extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Property</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getSpacer_Property()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Property" containment="true" required="true"
+	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='property' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getProperty();
+	EList<Property> getProperty();
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.

@@ -3,28 +3,22 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
 import java.math.BigInteger;
-
 import org.casa.dsltesting.Qt48Xmlschema.CustomWidget;
 import org.casa.dsltesting.Qt48Xmlschema.Header;
 import org.casa.dsltesting.Qt48Xmlschema.Properties;
 import org.casa.dsltesting.Qt48Xmlschema.PropertySpecifications;
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Script;
 import org.casa.dsltesting.Qt48Xmlschema.Size;
 import org.casa.dsltesting.Qt48Xmlschema.SizePolicyData;
 import org.casa.dsltesting.Qt48Xmlschema.Slots;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,7 +44,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class CustomWidgetImpl extends EObjectImpl implements CustomWidget {
+public class CustomWidgetImpl extends MinimalEObjectImpl.Container implements CustomWidget {
 	/**
 	 * The default value of the '{@link #getClass_() <em>Class</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -235,6 +229,7 @@ public class CustomWidgetImpl extends EObjectImpl implements CustomWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.CUSTOM_WIDGET;
 	}
@@ -650,6 +645,7 @@ public class CustomWidgetImpl extends EObjectImpl implements CustomWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CUSTOM_WIDGET__HEADER:
@@ -675,6 +671,7 @@ public class CustomWidgetImpl extends EObjectImpl implements CustomWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CUSTOM_WIDGET__CLASS:
@@ -710,6 +707,7 @@ public class CustomWidgetImpl extends EObjectImpl implements CustomWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CUSTOM_WIDGET__CLASS:
@@ -757,6 +755,7 @@ public class CustomWidgetImpl extends EObjectImpl implements CustomWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CUSTOM_WIDGET__CLASS:
@@ -804,6 +803,7 @@ public class CustomWidgetImpl extends EObjectImpl implements CustomWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CUSTOM_WIDGET__CLASS:
@@ -839,19 +839,20 @@ public class CustomWidgetImpl extends EObjectImpl implements CustomWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (class: "); //$NON-NLS-1$
+		result.append(" (class: ");
 		result.append(class_);
-		result.append(", extends: "); //$NON-NLS-1$
+		result.append(", extends: ");
 		result.append(extends_);
-		result.append(", addpagemethod: "); //$NON-NLS-1$
+		result.append(", addpagemethod: ");
 		result.append(addpagemethod);
-		result.append(", container: "); //$NON-NLS-1$
+		result.append(", container: ");
 		result.append(container);
-		result.append(", pixmap: "); //$NON-NLS-1$
+		result.append(", pixmap: ");
 		result.append(pixmap);
 		result.append(')');
 		return result.toString();

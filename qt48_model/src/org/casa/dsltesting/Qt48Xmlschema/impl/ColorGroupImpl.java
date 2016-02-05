@@ -3,20 +3,15 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.util.Collection;
-
+import org.casa.dsltesting.Qt48Xmlschema.Color;
 import org.casa.dsltesting.Qt48Xmlschema.ColorGroup;
-
-
+import org.casa.dsltesting.Qt48Xmlschema.ColorRole;
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.BasicFeatureMap;
 import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -36,7 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ColorGroupImpl extends EObjectImpl implements ColorGroup {
+public class ColorGroupImpl extends MinimalEObjectImpl.Container implements ColorGroup {
 	/**
 	 * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -61,6 +56,7 @@ public class ColorGroupImpl extends EObjectImpl implements ColorGroup {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.COLOR_GROUP;
 	}
@@ -82,7 +78,7 @@ public class ColorGroupImpl extends EObjectImpl implements ColorGroup {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getColorrole() {
+	public EList<ColorRole> getColorrole() {
 		return getGroup().list(Qt48XmlschemaPackage.Literals.COLOR_GROUP__COLORROLE);
 	}
 
@@ -91,7 +87,7 @@ public class ColorGroupImpl extends EObjectImpl implements ColorGroup {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getColor() {
+	public EList<Color> getColor() {
 		return getGroup().list(Qt48XmlschemaPackage.Literals.COLOR_GROUP__COLOR);
 	}
 
@@ -100,14 +96,15 @@ public class ColorGroupImpl extends EObjectImpl implements ColorGroup {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.COLOR_GROUP__GROUP:
-				return ((InternalEList)getGroup()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.COLOR_GROUP__COLORROLE:
-				return ((InternalEList)getColorrole()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getColorrole()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.COLOR_GROUP__COLOR:
-				return ((InternalEList)getColor()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getColor()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -117,6 +114,7 @@ public class ColorGroupImpl extends EObjectImpl implements ColorGroup {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.COLOR_GROUP__GROUP:
@@ -135,6 +133,8 @@ public class ColorGroupImpl extends EObjectImpl implements ColorGroup {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+		@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.COLOR_GROUP__GROUP:
@@ -142,11 +142,11 @@ public class ColorGroupImpl extends EObjectImpl implements ColorGroup {
 				return;
 			case Qt48XmlschemaPackage.COLOR_GROUP__COLORROLE:
 				getColorrole().clear();
-				getColorrole().addAll((Collection)newValue);
+				getColorrole().addAll((Collection<? extends ColorRole>)newValue);
 				return;
 			case Qt48XmlschemaPackage.COLOR_GROUP__COLOR:
 				getColor().clear();
-				getColor().addAll((Collection)newValue);
+				getColor().addAll((Collection<? extends Color>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -157,6 +157,7 @@ public class ColorGroupImpl extends EObjectImpl implements ColorGroup {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.COLOR_GROUP__GROUP:
@@ -177,6 +178,7 @@ public class ColorGroupImpl extends EObjectImpl implements ColorGroup {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.COLOR_GROUP__GROUP:
@@ -194,11 +196,12 @@ public class ColorGroupImpl extends EObjectImpl implements ColorGroup {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (group: "); //$NON-NLS-1$
+		result.append(" (group: ");
 		result.append(group);
 		result.append(')');
 		return result.toString();

@@ -3,9 +3,7 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
 import java.math.BigInteger;
-
 import org.casa.dsltesting.Qt48Xmlschema.ButtonGroups;
 import org.casa.dsltesting.Qt48Xmlschema.Connections;
 import org.casa.dsltesting.Qt48Xmlschema.CustomWidgets;
@@ -14,22 +12,18 @@ import org.casa.dsltesting.Qt48Xmlschema.Images;
 import org.casa.dsltesting.Qt48Xmlschema.Includes;
 import org.casa.dsltesting.Qt48Xmlschema.LayoutDefault;
 import org.casa.dsltesting.Qt48Xmlschema.LayoutFunction;
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Resources;
 import org.casa.dsltesting.Qt48Xmlschema.Slots;
 import org.casa.dsltesting.Qt48Xmlschema.TabStops;
 import org.casa.dsltesting.Qt48Xmlschema.UI;
 import org.casa.dsltesting.Qt48Xmlschema.Widget;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -65,7 +59,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class UIImpl extends EObjectImpl implements UI {
+public class UIImpl extends MinimalEObjectImpl.Container implements UI {
 	/**
 	 * The default value of the '{@link #getAuthor() <em>Author</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -400,6 +394,7 @@ public class UIImpl extends EObjectImpl implements UI {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.UI;
 	}
@@ -1135,6 +1130,7 @@ public class UIImpl extends EObjectImpl implements UI {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.UI__WIDGET:
@@ -1170,6 +1166,7 @@ public class UIImpl extends EObjectImpl implements UI {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.UI__AUTHOR:
@@ -1225,6 +1222,7 @@ public class UIImpl extends EObjectImpl implements UI {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.UI__AUTHOR:
@@ -1302,6 +1300,7 @@ public class UIImpl extends EObjectImpl implements UI {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.UI__AUTHOR:
@@ -1379,6 +1378,7 @@ public class UIImpl extends EObjectImpl implements UI {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.UI__AUTHOR:
@@ -1434,29 +1434,30 @@ public class UIImpl extends EObjectImpl implements UI {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (author: "); //$NON-NLS-1$
+		result.append(" (author: ");
 		result.append(author);
-		result.append(", comment: "); //$NON-NLS-1$
+		result.append(", comment: ");
 		result.append(comment);
-		result.append(", exportmacro: "); //$NON-NLS-1$
+		result.append(", exportmacro: ");
 		result.append(exportmacro);
-		result.append(", class: "); //$NON-NLS-1$
+		result.append(", class: ");
 		result.append(class_);
-		result.append(", pixmapfunction: "); //$NON-NLS-1$
+		result.append(", pixmapfunction: ");
 		result.append(pixmapfunction);
-		result.append(", displayname: "); //$NON-NLS-1$
+		result.append(", displayname: ");
 		result.append(displayname);
-		result.append(", language: "); //$NON-NLS-1$
+		result.append(", language: ");
 		result.append(language);
-		result.append(", stdsetdef: "); //$NON-NLS-1$
+		result.append(", stdsetdef: ");
 		result.append(stdsetdef);
-		result.append(", stdSetDef1: "); //$NON-NLS-1$
+		result.append(", stdSetDef1: ");
 		result.append(stdSetDef1);
-		result.append(", version: "); //$NON-NLS-1$
+		result.append(", version: ");
 		result.append(version);
 		result.append(')');
 		return result.toString();

@@ -3,17 +3,12 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.math.BigInteger;
-
 import org.casa.dsltesting.Qt48Xmlschema.Color;
-
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +26,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class ColorImpl extends EObjectImpl implements Color {
+public class ColorImpl extends MinimalEObjectImpl.Container implements Color {
 	/**
 	 * The default value of the '{@link #getRed() <em>Red</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -126,6 +121,7 @@ public class ColorImpl extends EObjectImpl implements Color {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.COLOR;
 	}
@@ -219,6 +215,7 @@ public class ColorImpl extends EObjectImpl implements Color {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.COLOR__RED:
@@ -238,6 +235,7 @@ public class ColorImpl extends EObjectImpl implements Color {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.COLOR__RED:
@@ -261,6 +259,7 @@ public class ColorImpl extends EObjectImpl implements Color {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.COLOR__RED:
@@ -284,6 +283,7 @@ public class ColorImpl extends EObjectImpl implements Color {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.COLOR__RED:
@@ -303,17 +303,18 @@ public class ColorImpl extends EObjectImpl implements Color {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (red: "); //$NON-NLS-1$
+		result.append(" (red: ");
 		result.append(red);
-		result.append(", green: "); //$NON-NLS-1$
+		result.append(", green: ");
 		result.append(green);
-		result.append(", blue: "); //$NON-NLS-1$
+		result.append(", blue: ");
 		result.append(blue);
-		result.append(", alpha: "); //$NON-NLS-1$
+		result.append(", alpha: ");
 		result.append(alpha);
 		result.append(')');
 		return result.toString();

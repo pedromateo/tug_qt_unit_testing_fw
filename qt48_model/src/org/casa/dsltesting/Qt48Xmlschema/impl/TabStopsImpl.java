@@ -3,19 +3,12 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
 import java.util.Collection;
-
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.TabStops;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
-
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EDataTypeEList;
 
 /**
@@ -31,7 +24,7 @@ import org.eclipse.emf.ecore.util.EDataTypeEList;
  *
  * @generated
  */
-public class TabStopsImpl extends EObjectImpl implements TabStops {
+public class TabStopsImpl extends MinimalEObjectImpl.Container implements TabStops {
 	/**
 	 * The cached value of the '{@link #getTabstop() <em>Tabstop</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -40,7 +33,7 @@ public class TabStopsImpl extends EObjectImpl implements TabStops {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList tabstop;
+	protected EList<String> tabstop;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -56,6 +49,7 @@ public class TabStopsImpl extends EObjectImpl implements TabStops {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.TAB_STOPS;
 	}
@@ -65,9 +59,9 @@ public class TabStopsImpl extends EObjectImpl implements TabStops {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getTabstop() {
+	public EList<String> getTabstop() {
 		if (tabstop == null) {
-			tabstop = new EDataTypeEList(String.class, this, Qt48XmlschemaPackage.TAB_STOPS__TABSTOP);
+			tabstop = new EDataTypeEList<String>(String.class, this, Qt48XmlschemaPackage.TAB_STOPS__TABSTOP);
 		}
 		return tabstop;
 	}
@@ -77,6 +71,7 @@ public class TabStopsImpl extends EObjectImpl implements TabStops {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.TAB_STOPS__TABSTOP:
@@ -90,11 +85,13 @@ public class TabStopsImpl extends EObjectImpl implements TabStops {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+		@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.TAB_STOPS__TABSTOP:
 				getTabstop().clear();
-				getTabstop().addAll((Collection)newValue);
+				getTabstop().addAll((Collection<? extends String>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -105,6 +102,7 @@ public class TabStopsImpl extends EObjectImpl implements TabStops {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.TAB_STOPS__TABSTOP:
@@ -119,6 +117,7 @@ public class TabStopsImpl extends EObjectImpl implements TabStops {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.TAB_STOPS__TABSTOP:
@@ -132,11 +131,12 @@ public class TabStopsImpl extends EObjectImpl implements TabStops {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (tabstop: "); //$NON-NLS-1$
+		result.append(" (tabstop: ");
 		result.append(tabstop);
 		result.append(')');
 		return result.toString();

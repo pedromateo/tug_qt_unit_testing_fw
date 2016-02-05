@@ -3,21 +3,14 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.util.Collection;
-
 import org.casa.dsltesting.Qt48Xmlschema.CustomWidget;
 import org.casa.dsltesting.Qt48Xmlschema.CustomWidgets;
-
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -34,7 +27,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class CustomWidgetsImpl extends EObjectImpl implements CustomWidgets {
+public class CustomWidgetsImpl extends MinimalEObjectImpl.Container implements CustomWidgets {
 	/**
 	 * The cached value of the '{@link #getCustomwidget() <em>Customwidget</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -43,7 +36,7 @@ public class CustomWidgetsImpl extends EObjectImpl implements CustomWidgets {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList customwidget;
+	protected EList<CustomWidget> customwidget;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,6 +52,7 @@ public class CustomWidgetsImpl extends EObjectImpl implements CustomWidgets {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.CUSTOM_WIDGETS;
 	}
@@ -68,9 +62,9 @@ public class CustomWidgetsImpl extends EObjectImpl implements CustomWidgets {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getCustomwidget() {
+	public EList<CustomWidget> getCustomwidget() {
 		if (customwidget == null) {
-			customwidget = new EObjectContainmentEList(CustomWidget.class, this, Qt48XmlschemaPackage.CUSTOM_WIDGETS__CUSTOMWIDGET);
+			customwidget = new EObjectContainmentEList<CustomWidget>(CustomWidget.class, this, Qt48XmlschemaPackage.CUSTOM_WIDGETS__CUSTOMWIDGET);
 		}
 		return customwidget;
 	}
@@ -80,10 +74,11 @@ public class CustomWidgetsImpl extends EObjectImpl implements CustomWidgets {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CUSTOM_WIDGETS__CUSTOMWIDGET:
-				return ((InternalEList)getCustomwidget()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getCustomwidget()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -93,6 +88,7 @@ public class CustomWidgetsImpl extends EObjectImpl implements CustomWidgets {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CUSTOM_WIDGETS__CUSTOMWIDGET:
@@ -106,11 +102,13 @@ public class CustomWidgetsImpl extends EObjectImpl implements CustomWidgets {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+		@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CUSTOM_WIDGETS__CUSTOMWIDGET:
 				getCustomwidget().clear();
-				getCustomwidget().addAll((Collection)newValue);
+				getCustomwidget().addAll((Collection<? extends CustomWidget>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -121,6 +119,7 @@ public class CustomWidgetsImpl extends EObjectImpl implements CustomWidgets {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CUSTOM_WIDGETS__CUSTOMWIDGET:
@@ -135,6 +134,7 @@ public class CustomWidgetsImpl extends EObjectImpl implements CustomWidgets {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CUSTOM_WIDGETS__CUSTOMWIDGET:

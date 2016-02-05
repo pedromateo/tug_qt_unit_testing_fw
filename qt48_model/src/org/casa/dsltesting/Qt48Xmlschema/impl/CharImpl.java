@@ -3,17 +3,12 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.math.BigInteger;
-
 import org.casa.dsltesting.Qt48Xmlschema.Char;
-
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +23,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class CharImpl extends EObjectImpl implements Char {
+public class CharImpl extends MinimalEObjectImpl.Container implements Char {
 	/**
 	 * The default value of the '{@link #getUnicode() <em>Unicode</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -63,6 +58,7 @@ public class CharImpl extends EObjectImpl implements Char {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.CHAR;
 	}
@@ -93,6 +89,7 @@ public class CharImpl extends EObjectImpl implements Char {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CHAR__UNICODE:
@@ -106,6 +103,7 @@ public class CharImpl extends EObjectImpl implements Char {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CHAR__UNICODE:
@@ -120,6 +118,7 @@ public class CharImpl extends EObjectImpl implements Char {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CHAR__UNICODE:
@@ -134,6 +133,7 @@ public class CharImpl extends EObjectImpl implements Char {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CHAR__UNICODE:
@@ -147,11 +147,12 @@ public class CharImpl extends EObjectImpl implements Char {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (unicode: "); //$NON-NLS-1$
+		result.append(" (unicode: ");
 		result.append(unicode);
 		result.append(')');
 		return result.toString();

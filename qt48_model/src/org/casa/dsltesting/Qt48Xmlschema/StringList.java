@@ -2,6 +2,7 @@
  */
 package org.casa.dsltesting.Qt48Xmlschema;
 
+import java.lang.String;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
@@ -38,6 +39,6 @@ public interface StringList extends EObject {
 	 *        extendedMetaData="kind='element' name='string' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getString();
+	EList<String> getString();
 
 } // StringList

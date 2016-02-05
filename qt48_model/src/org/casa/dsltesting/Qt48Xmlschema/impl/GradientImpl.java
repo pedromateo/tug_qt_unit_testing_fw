@@ -3,25 +3,17 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
 import java.util.Collection;
-
 import org.casa.dsltesting.Qt48Xmlschema.Gradient;
 import org.casa.dsltesting.Qt48Xmlschema.GradientStop;
-
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -51,7 +43,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class GradientImpl extends EObjectImpl implements Gradient {
+public class GradientImpl extends MinimalEObjectImpl.Container implements Gradient {
 	/**
 	 * The cached value of the '{@link #getGradientStop() <em>Gradient Stop</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -60,7 +52,7 @@ public class GradientImpl extends EObjectImpl implements Gradient {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList gradientStop;
+	protected EList<GradientStop> gradientStop;
 
 	/**
 	 * The default value of the '{@link #getAngle() <em>Angle</em>}' attribute.
@@ -426,6 +418,7 @@ public class GradientImpl extends EObjectImpl implements Gradient {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.GRADIENT;
 	}
@@ -435,9 +428,9 @@ public class GradientImpl extends EObjectImpl implements Gradient {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getGradientStop() {
+	public EList<GradientStop> getGradientStop() {
 		if (gradientStop == null) {
-			gradientStop = new EObjectContainmentEList(GradientStop.class, this, Qt48XmlschemaPackage.GRADIENT__GRADIENT_STOP);
+			gradientStop = new EObjectContainmentEList<GradientStop>(GradientStop.class, this, Qt48XmlschemaPackage.GRADIENT__GRADIENT_STOP);
 		}
 		return gradientStop;
 	}
@@ -970,10 +963,11 @@ public class GradientImpl extends EObjectImpl implements Gradient {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.GRADIENT__GRADIENT_STOP:
-				return ((InternalEList)getGradientStop()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getGradientStop()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -983,34 +977,35 @@ public class GradientImpl extends EObjectImpl implements Gradient {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.GRADIENT__GRADIENT_STOP:
 				return getGradientStop();
 			case Qt48XmlschemaPackage.GRADIENT__ANGLE:
-				return new Double(getAngle());
+				return getAngle();
 			case Qt48XmlschemaPackage.GRADIENT__CENTRALX:
-				return new Double(getCentralx());
+				return getCentralx();
 			case Qt48XmlschemaPackage.GRADIENT__CENTRALY:
-				return new Double(getCentraly());
+				return getCentraly();
 			case Qt48XmlschemaPackage.GRADIENT__COORDINATEMODE:
 				return getCoordinatemode();
 			case Qt48XmlschemaPackage.GRADIENT__ENDX:
-				return new Double(getEndx());
+				return getEndx();
 			case Qt48XmlschemaPackage.GRADIENT__ENDY:
-				return new Double(getEndy());
+				return getEndy();
 			case Qt48XmlschemaPackage.GRADIENT__FOCALX:
-				return new Double(getFocalx());
+				return getFocalx();
 			case Qt48XmlschemaPackage.GRADIENT__FOCALY:
-				return new Double(getFocaly());
+				return getFocaly();
 			case Qt48XmlschemaPackage.GRADIENT__RADIUS:
-				return new Double(getRadius());
+				return getRadius();
 			case Qt48XmlschemaPackage.GRADIENT__SPREAD:
 				return getSpread();
 			case Qt48XmlschemaPackage.GRADIENT__STARTX:
-				return new Double(getStartx());
+				return getStartx();
 			case Qt48XmlschemaPackage.GRADIENT__STARTY:
-				return new Double(getStarty());
+				return getStarty();
 			case Qt48XmlschemaPackage.GRADIENT__TYPE:
 				return getType();
 		}
@@ -1022,47 +1017,49 @@ public class GradientImpl extends EObjectImpl implements Gradient {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+		@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.GRADIENT__GRADIENT_STOP:
 				getGradientStop().clear();
-				getGradientStop().addAll((Collection)newValue);
+				getGradientStop().addAll((Collection<? extends GradientStop>)newValue);
 				return;
 			case Qt48XmlschemaPackage.GRADIENT__ANGLE:
-				setAngle(((Double)newValue).doubleValue());
+				setAngle((Double)newValue);
 				return;
 			case Qt48XmlschemaPackage.GRADIENT__CENTRALX:
-				setCentralx(((Double)newValue).doubleValue());
+				setCentralx((Double)newValue);
 				return;
 			case Qt48XmlschemaPackage.GRADIENT__CENTRALY:
-				setCentraly(((Double)newValue).doubleValue());
+				setCentraly((Double)newValue);
 				return;
 			case Qt48XmlschemaPackage.GRADIENT__COORDINATEMODE:
 				setCoordinatemode((String)newValue);
 				return;
 			case Qt48XmlschemaPackage.GRADIENT__ENDX:
-				setEndx(((Double)newValue).doubleValue());
+				setEndx((Double)newValue);
 				return;
 			case Qt48XmlschemaPackage.GRADIENT__ENDY:
-				setEndy(((Double)newValue).doubleValue());
+				setEndy((Double)newValue);
 				return;
 			case Qt48XmlschemaPackage.GRADIENT__FOCALX:
-				setFocalx(((Double)newValue).doubleValue());
+				setFocalx((Double)newValue);
 				return;
 			case Qt48XmlschemaPackage.GRADIENT__FOCALY:
-				setFocaly(((Double)newValue).doubleValue());
+				setFocaly((Double)newValue);
 				return;
 			case Qt48XmlschemaPackage.GRADIENT__RADIUS:
-				setRadius(((Double)newValue).doubleValue());
+				setRadius((Double)newValue);
 				return;
 			case Qt48XmlschemaPackage.GRADIENT__SPREAD:
 				setSpread((String)newValue);
 				return;
 			case Qt48XmlschemaPackage.GRADIENT__STARTX:
-				setStartx(((Double)newValue).doubleValue());
+				setStartx((Double)newValue);
 				return;
 			case Qt48XmlschemaPackage.GRADIENT__STARTY:
-				setStarty(((Double)newValue).doubleValue());
+				setStarty((Double)newValue);
 				return;
 			case Qt48XmlschemaPackage.GRADIENT__TYPE:
 				setType((String)newValue);
@@ -1076,6 +1073,7 @@ public class GradientImpl extends EObjectImpl implements Gradient {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.GRADIENT__GRADIENT_STOP:
@@ -1129,6 +1127,7 @@ public class GradientImpl extends EObjectImpl implements Gradient {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.GRADIENT__GRADIENT_STOP:
@@ -1168,35 +1167,36 @@ public class GradientImpl extends EObjectImpl implements Gradient {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (angle: "); //$NON-NLS-1$
-		if (angleESet) result.append(angle); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", centralx: "); //$NON-NLS-1$
-		if (centralxESet) result.append(centralx); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", centraly: "); //$NON-NLS-1$
-		if (centralyESet) result.append(centraly); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", coordinatemode: "); //$NON-NLS-1$
+		result.append(" (angle: ");
+		if (angleESet) result.append(angle); else result.append("<unset>");
+		result.append(", centralx: ");
+		if (centralxESet) result.append(centralx); else result.append("<unset>");
+		result.append(", centraly: ");
+		if (centralyESet) result.append(centraly); else result.append("<unset>");
+		result.append(", coordinatemode: ");
 		result.append(coordinatemode);
-		result.append(", endx: "); //$NON-NLS-1$
-		if (endxESet) result.append(endx); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", endy: "); //$NON-NLS-1$
-		if (endyESet) result.append(endy); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", focalx: "); //$NON-NLS-1$
-		if (focalxESet) result.append(focalx); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", focaly: "); //$NON-NLS-1$
-		if (focalyESet) result.append(focaly); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", radius: "); //$NON-NLS-1$
-		if (radiusESet) result.append(radius); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", spread: "); //$NON-NLS-1$
+		result.append(", endx: ");
+		if (endxESet) result.append(endx); else result.append("<unset>");
+		result.append(", endy: ");
+		if (endyESet) result.append(endy); else result.append("<unset>");
+		result.append(", focalx: ");
+		if (focalxESet) result.append(focalx); else result.append("<unset>");
+		result.append(", focaly: ");
+		if (focalyESet) result.append(focaly); else result.append("<unset>");
+		result.append(", radius: ");
+		if (radiusESet) result.append(radius); else result.append("<unset>");
+		result.append(", spread: ");
 		result.append(spread);
-		result.append(", startx: "); //$NON-NLS-1$
-		if (startxESet) result.append(startx); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", starty: "); //$NON-NLS-1$
-		if (startyESet) result.append(starty); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", type: "); //$NON-NLS-1$
+		result.append(", startx: ");
+		if (startxESet) result.append(startx); else result.append("<unset>");
+		result.append(", starty: ");
+		if (startyESet) result.append(starty); else result.append("<unset>");
+		result.append(", type: ");
 		result.append(type);
 		result.append(')');
 		return result.toString();

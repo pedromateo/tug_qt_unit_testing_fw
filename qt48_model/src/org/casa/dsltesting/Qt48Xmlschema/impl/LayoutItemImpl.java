@@ -3,24 +3,18 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
 import java.math.BigInteger;
-
 import org.casa.dsltesting.Qt48Xmlschema.Layout;
 import org.casa.dsltesting.Qt48Xmlschema.LayoutItem;
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Spacer;
 import org.casa.dsltesting.Qt48Xmlschema.Widget;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +36,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class LayoutItemImpl extends EObjectImpl implements LayoutItem {
+public class LayoutItemImpl extends MinimalEObjectImpl.Container implements LayoutItem {
 	/**
 	 * The cached value of the '{@link #getWidget() <em>Widget</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -187,6 +181,7 @@ public class LayoutItemImpl extends EObjectImpl implements LayoutItem {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.LAYOUT_ITEM;
 	}
@@ -430,6 +425,7 @@ public class LayoutItemImpl extends EObjectImpl implements LayoutItem {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.LAYOUT_ITEM__WIDGET:
@@ -447,6 +443,7 @@ public class LayoutItemImpl extends EObjectImpl implements LayoutItem {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.LAYOUT_ITEM__WIDGET:
@@ -474,6 +471,7 @@ public class LayoutItemImpl extends EObjectImpl implements LayoutItem {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.LAYOUT_ITEM__WIDGET:
@@ -509,6 +507,7 @@ public class LayoutItemImpl extends EObjectImpl implements LayoutItem {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.LAYOUT_ITEM__WIDGET:
@@ -544,6 +543,7 @@ public class LayoutItemImpl extends EObjectImpl implements LayoutItem {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.LAYOUT_ITEM__WIDGET:
@@ -571,19 +571,20 @@ public class LayoutItemImpl extends EObjectImpl implements LayoutItem {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (alignment: "); //$NON-NLS-1$
+		result.append(" (alignment: ");
 		result.append(alignment);
-		result.append(", colspan: "); //$NON-NLS-1$
+		result.append(", colspan: ");
 		result.append(colspan);
-		result.append(", column: "); //$NON-NLS-1$
+		result.append(", column: ");
 		result.append(column);
-		result.append(", row: "); //$NON-NLS-1$
+		result.append(", row: ");
 		result.append(row);
-		result.append(", rowspan: "); //$NON-NLS-1$
+		result.append(", rowspan: ");
 		result.append(rowspan);
 		result.append(')');
 		return result.toString();

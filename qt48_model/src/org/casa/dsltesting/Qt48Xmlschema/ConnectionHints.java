@@ -34,10 +34,10 @@ public interface ConnectionHints extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Hint</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getConnectionHints_Hint()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.ConnectionHint" containment="true" required="true"
+	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='hint' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getHint();
+	EList<ConnectionHint> getHint();
 
 } // ConnectionHints

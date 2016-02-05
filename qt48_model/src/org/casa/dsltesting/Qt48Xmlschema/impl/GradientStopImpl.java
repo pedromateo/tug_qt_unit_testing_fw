@@ -4,17 +4,13 @@ package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import org.casa.dsltesting.Qt48Xmlschema.Color;
 import org.casa.dsltesting.Qt48Xmlschema.GradientStop;
-
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +26,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class GradientStopImpl extends EObjectImpl implements GradientStop {
+public class GradientStopImpl extends MinimalEObjectImpl.Container implements GradientStop {
 	/**
 	 * The cached value of the '{@link #getColor() <em>Color</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -84,6 +80,7 @@ public class GradientStopImpl extends EObjectImpl implements GradientStop {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.GRADIENT_STOP;
 	}
@@ -182,6 +179,7 @@ public class GradientStopImpl extends EObjectImpl implements GradientStop {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.GRADIENT_STOP__COLOR:
@@ -195,12 +193,13 @@ public class GradientStopImpl extends EObjectImpl implements GradientStop {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.GRADIENT_STOP__COLOR:
 				return getColor();
 			case Qt48XmlschemaPackage.GRADIENT_STOP__POSITION:
-				return new Double(getPosition());
+				return getPosition();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -210,13 +209,14 @@ public class GradientStopImpl extends EObjectImpl implements GradientStop {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.GRADIENT_STOP__COLOR:
 				setColor((Color)newValue);
 				return;
 			case Qt48XmlschemaPackage.GRADIENT_STOP__POSITION:
-				setPosition(((Double)newValue).doubleValue());
+				setPosition((Double)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -227,6 +227,7 @@ public class GradientStopImpl extends EObjectImpl implements GradientStop {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.GRADIENT_STOP__COLOR:
@@ -244,6 +245,7 @@ public class GradientStopImpl extends EObjectImpl implements GradientStop {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.GRADIENT_STOP__COLOR:
@@ -259,12 +261,13 @@ public class GradientStopImpl extends EObjectImpl implements GradientStop {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (position: "); //$NON-NLS-1$
-		if (positionESet) result.append(position); else result.append("<unset>"); //$NON-NLS-1$
+		result.append(" (position: ");
+		if (positionESet) result.append(position); else result.append("<unset>");
 		result.append(')');
 		return result.toString();
 	}

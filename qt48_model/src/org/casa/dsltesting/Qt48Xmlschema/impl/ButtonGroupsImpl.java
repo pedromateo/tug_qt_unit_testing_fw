@@ -3,21 +3,14 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.util.Collection;
-
 import org.casa.dsltesting.Qt48Xmlschema.ButtonGroup;
 import org.casa.dsltesting.Qt48Xmlschema.ButtonGroups;
-
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -34,7 +27,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ButtonGroupsImpl extends EObjectImpl implements ButtonGroups {
+public class ButtonGroupsImpl extends MinimalEObjectImpl.Container implements ButtonGroups {
 	/**
 	 * The cached value of the '{@link #getButtongroup() <em>Buttongroup</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -43,7 +36,7 @@ public class ButtonGroupsImpl extends EObjectImpl implements ButtonGroups {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList buttongroup;
+	protected EList<ButtonGroup> buttongroup;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,6 +52,7 @@ public class ButtonGroupsImpl extends EObjectImpl implements ButtonGroups {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.BUTTON_GROUPS;
 	}
@@ -68,9 +62,9 @@ public class ButtonGroupsImpl extends EObjectImpl implements ButtonGroups {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getButtongroup() {
+	public EList<ButtonGroup> getButtongroup() {
 		if (buttongroup == null) {
-			buttongroup = new EObjectContainmentEList(ButtonGroup.class, this, Qt48XmlschemaPackage.BUTTON_GROUPS__BUTTONGROUP);
+			buttongroup = new EObjectContainmentEList<ButtonGroup>(ButtonGroup.class, this, Qt48XmlschemaPackage.BUTTON_GROUPS__BUTTONGROUP);
 		}
 		return buttongroup;
 	}
@@ -80,10 +74,11 @@ public class ButtonGroupsImpl extends EObjectImpl implements ButtonGroups {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.BUTTON_GROUPS__BUTTONGROUP:
-				return ((InternalEList)getButtongroup()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getButtongroup()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -93,6 +88,7 @@ public class ButtonGroupsImpl extends EObjectImpl implements ButtonGroups {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.BUTTON_GROUPS__BUTTONGROUP:
@@ -106,11 +102,13 @@ public class ButtonGroupsImpl extends EObjectImpl implements ButtonGroups {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+		@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.BUTTON_GROUPS__BUTTONGROUP:
 				getButtongroup().clear();
-				getButtongroup().addAll((Collection)newValue);
+				getButtongroup().addAll((Collection<? extends ButtonGroup>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -121,6 +119,7 @@ public class ButtonGroupsImpl extends EObjectImpl implements ButtonGroups {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.BUTTON_GROUPS__BUTTONGROUP:
@@ -135,6 +134,7 @@ public class ButtonGroupsImpl extends EObjectImpl implements ButtonGroups {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.BUTTON_GROUPS__BUTTONGROUP:

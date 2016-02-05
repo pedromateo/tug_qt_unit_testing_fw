@@ -3,20 +3,14 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
 import org.casa.dsltesting.Qt48Xmlschema.Header;
-
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.BasicFeatureMap;
 import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -35,7 +29,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class HeaderImpl extends EObjectImpl implements Header {
+public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	/**
 	 * The cached value of the '{@link #getMixed() <em>Mixed</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -80,6 +74,7 @@ public class HeaderImpl extends EObjectImpl implements Header {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.HEADER;
 	}
@@ -122,10 +117,11 @@ public class HeaderImpl extends EObjectImpl implements Header {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.HEADER__MIXED:
-				return ((InternalEList)getMixed()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getMixed()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -135,6 +131,7 @@ public class HeaderImpl extends EObjectImpl implements Header {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.HEADER__MIXED:
@@ -151,6 +148,7 @@ public class HeaderImpl extends EObjectImpl implements Header {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.HEADER__MIXED:
@@ -168,6 +166,7 @@ public class HeaderImpl extends EObjectImpl implements Header {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.HEADER__MIXED:
@@ -185,6 +184,7 @@ public class HeaderImpl extends EObjectImpl implements Header {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.HEADER__MIXED:
@@ -200,13 +200,14 @@ public class HeaderImpl extends EObjectImpl implements Header {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (mixed: "); //$NON-NLS-1$
+		result.append(" (mixed: ");
 		result.append(mixed);
-		result.append(", location: "); //$NON-NLS-1$
+		result.append(", location: ");
 		result.append(location);
 		result.append(')');
 		return result.toString();

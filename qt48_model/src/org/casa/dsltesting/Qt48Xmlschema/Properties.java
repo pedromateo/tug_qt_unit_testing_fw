@@ -34,10 +34,10 @@ public interface Properties extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Property</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getProperties_Property()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.PropertyData" containment="true" required="true"
+	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='property' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getProperty();
+	EList<PropertyData> getProperty();
 
 } // Properties
