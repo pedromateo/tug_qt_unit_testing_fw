@@ -3,21 +3,14 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.util.Collection;
-
 import org.casa.dsltesting.Qt48Xmlschema.Connection;
 import org.casa.dsltesting.Qt48Xmlschema.Connections;
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -34,7 +27,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ConnectionsImpl extends EObjectImpl implements Connections {
+public class ConnectionsImpl extends MinimalEObjectImpl.Container implements Connections {
 	/**
 	 * The cached value of the '{@link #getConnection() <em>Connection</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -43,7 +36,7 @@ public class ConnectionsImpl extends EObjectImpl implements Connections {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList connection;
+	protected EList<Connection> connection;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,6 +52,7 @@ public class ConnectionsImpl extends EObjectImpl implements Connections {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.CONNECTIONS;
 	}
@@ -68,9 +62,9 @@ public class ConnectionsImpl extends EObjectImpl implements Connections {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getConnection() {
+	public EList<Connection> getConnection() {
 		if (connection == null) {
-			connection = new EObjectContainmentEList(Connection.class, this, Qt48XmlschemaPackage.CONNECTIONS__CONNECTION);
+			connection = new EObjectContainmentEList<Connection>(Connection.class, this, Qt48XmlschemaPackage.CONNECTIONS__CONNECTION);
 		}
 		return connection;
 	}
@@ -80,10 +74,11 @@ public class ConnectionsImpl extends EObjectImpl implements Connections {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CONNECTIONS__CONNECTION:
-				return ((InternalEList)getConnection()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getConnection()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -93,6 +88,7 @@ public class ConnectionsImpl extends EObjectImpl implements Connections {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CONNECTIONS__CONNECTION:
@@ -106,11 +102,13 @@ public class ConnectionsImpl extends EObjectImpl implements Connections {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+		@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CONNECTIONS__CONNECTION:
 				getConnection().clear();
-				getConnection().addAll((Collection)newValue);
+				getConnection().addAll((Collection<? extends Connection>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -121,6 +119,7 @@ public class ConnectionsImpl extends EObjectImpl implements Connections {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CONNECTIONS__CONNECTION:
@@ -135,6 +134,7 @@ public class ConnectionsImpl extends EObjectImpl implements Connections {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.CONNECTIONS__CONNECTION:

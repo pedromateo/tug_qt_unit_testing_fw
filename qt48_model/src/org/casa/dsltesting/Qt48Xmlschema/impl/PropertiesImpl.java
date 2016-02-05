@@ -3,21 +3,14 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.util.Collection;
-
 import org.casa.dsltesting.Qt48Xmlschema.Properties;
 import org.casa.dsltesting.Qt48Xmlschema.PropertyData;
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -34,7 +27,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class PropertiesImpl extends EObjectImpl implements Properties {
+public class PropertiesImpl extends MinimalEObjectImpl.Container implements Properties {
 	/**
 	 * The cached value of the '{@link #getProperty() <em>Property</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -43,7 +36,7 @@ public class PropertiesImpl extends EObjectImpl implements Properties {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList property;
+	protected EList<PropertyData> property;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,6 +52,7 @@ public class PropertiesImpl extends EObjectImpl implements Properties {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.PROPERTIES;
 	}
@@ -68,9 +62,9 @@ public class PropertiesImpl extends EObjectImpl implements Properties {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getProperty() {
+	public EList<PropertyData> getProperty() {
 		if (property == null) {
-			property = new EObjectContainmentEList(PropertyData.class, this, Qt48XmlschemaPackage.PROPERTIES__PROPERTY);
+			property = new EObjectContainmentEList<PropertyData>(PropertyData.class, this, Qt48XmlschemaPackage.PROPERTIES__PROPERTY);
 		}
 		return property;
 	}
@@ -80,10 +74,11 @@ public class PropertiesImpl extends EObjectImpl implements Properties {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.PROPERTIES__PROPERTY:
-				return ((InternalEList)getProperty()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getProperty()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -93,6 +88,7 @@ public class PropertiesImpl extends EObjectImpl implements Properties {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.PROPERTIES__PROPERTY:
@@ -106,11 +102,13 @@ public class PropertiesImpl extends EObjectImpl implements Properties {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+		@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.PROPERTIES__PROPERTY:
 				getProperty().clear();
-				getProperty().addAll((Collection)newValue);
+				getProperty().addAll((Collection<? extends PropertyData>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -121,6 +119,7 @@ public class PropertiesImpl extends EObjectImpl implements Properties {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.PROPERTIES__PROPERTY:
@@ -135,6 +134,7 @@ public class PropertiesImpl extends EObjectImpl implements Properties {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.PROPERTIES__PROPERTY:

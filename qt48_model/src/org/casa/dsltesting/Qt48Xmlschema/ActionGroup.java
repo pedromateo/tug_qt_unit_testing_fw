@@ -60,11 +60,11 @@ public interface ActionGroup extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Action</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getActionGroup_Action()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Action" containment="true" transient="true" volatile="true" derived="true"
+	 * @model containment="true" transient="true" volatile="true" derived="true"
 	 *        extendedMetaData="kind='element' name='action' namespace='##targetNamespace' group='group:0'"
 	 * @generated
 	 */
-	EList getAction();
+	EList<Action> getAction();
 
 	/**
 	 * Returns the value of the '<em><b>Actiongroup</b></em>' containment reference list.
@@ -77,11 +77,11 @@ public interface ActionGroup extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Actiongroup</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getActionGroup_Actiongroup()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.ActionGroup" containment="true" transient="true" volatile="true" derived="true"
+	 * @model containment="true" transient="true" volatile="true" derived="true"
 	 *        extendedMetaData="kind='element' name='actiongroup' namespace='##targetNamespace' group='group:0'"
 	 * @generated
 	 */
-	EList getActiongroup();
+	EList<ActionGroup> getActiongroup();
 
 	/**
 	 * Returns the value of the '<em><b>Property</b></em>' containment reference list.
@@ -94,11 +94,11 @@ public interface ActionGroup extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Property</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getActionGroup_Property()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Property" containment="true" transient="true" volatile="true" derived="true"
+	 * @model containment="true" transient="true" volatile="true" derived="true"
 	 *        extendedMetaData="kind='element' name='property' namespace='##targetNamespace' group='group:0'"
 	 * @generated
 	 */
-	EList getProperty();
+	EList<Property> getProperty();
 
 	/**
 	 * Returns the value of the '<em><b>Attribute</b></em>' containment reference list.
@@ -111,11 +111,11 @@ public interface ActionGroup extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Attribute</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getActionGroup_Attribute()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Property" containment="true" transient="true" volatile="true" derived="true"
+	 * @model containment="true" transient="true" volatile="true" derived="true"
 	 *        extendedMetaData="kind='element' name='attribute' namespace='##targetNamespace' group='group:0'"
 	 * @generated
 	 */
-	EList getAttribute();
+	EList<Property> getAttribute();
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.

@@ -3,19 +3,12 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
 import java.util.Collection;
-
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.StringList;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
-
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EDataTypeEList;
 
 /**
@@ -31,7 +24,7 @@ import org.eclipse.emf.ecore.util.EDataTypeEList;
  *
  * @generated
  */
-public class StringListImpl extends EObjectImpl implements StringList {
+public class StringListImpl extends MinimalEObjectImpl.Container implements StringList {
 	/**
 	 * The cached value of the '{@link #getString() <em>String</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -40,7 +33,7 @@ public class StringListImpl extends EObjectImpl implements StringList {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList string;
+	protected EList<String> string;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -56,6 +49,7 @@ public class StringListImpl extends EObjectImpl implements StringList {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.STRING_LIST;
 	}
@@ -65,9 +59,9 @@ public class StringListImpl extends EObjectImpl implements StringList {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getString() {
+	public EList<String> getString() {
 		if (string == null) {
-			string = new EDataTypeEList(String.class, this, Qt48XmlschemaPackage.STRING_LIST__STRING);
+			string = new EDataTypeEList<String>(String.class, this, Qt48XmlschemaPackage.STRING_LIST__STRING);
 		}
 		return string;
 	}
@@ -77,6 +71,7 @@ public class StringListImpl extends EObjectImpl implements StringList {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.STRING_LIST__STRING:
@@ -90,11 +85,13 @@ public class StringListImpl extends EObjectImpl implements StringList {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+		@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.STRING_LIST__STRING:
 				getString().clear();
-				getString().addAll((Collection)newValue);
+				getString().addAll((Collection<? extends String>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -105,6 +102,7 @@ public class StringListImpl extends EObjectImpl implements StringList {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.STRING_LIST__STRING:
@@ -119,6 +117,7 @@ public class StringListImpl extends EObjectImpl implements StringList {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.STRING_LIST__STRING:
@@ -132,11 +131,12 @@ public class StringListImpl extends EObjectImpl implements StringList {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (string: "); //$NON-NLS-1$
+		result.append(" (string: ");
 		result.append(string);
 		result.append(')');
 		return result.toString();

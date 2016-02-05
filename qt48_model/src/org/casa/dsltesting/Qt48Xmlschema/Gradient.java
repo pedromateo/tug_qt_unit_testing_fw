@@ -49,11 +49,11 @@ public interface Gradient extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Gradient Stop</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getGradient_GradientStop()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.GradientStop" containment="true" required="true"
+	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='gradientStop' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getGradientStop();
+	EList<GradientStop> getGradientStop();
 
 	/**
 	 * Returns the value of the '<em><b>Angle</b></em>' attribute.

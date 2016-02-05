@@ -123,6 +123,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int ACTION_FEATURE_COUNT = 5;
 
 	/**
+	 * The number of operations of the '<em>Action</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ActionGroupImpl <em>Action Group</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -196,6 +205,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int ACTION_GROUP_FEATURE_COUNT = 6;
 
 	/**
+	 * The number of operations of the '<em>Action Group</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_GROUP_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ActionRefImpl <em>Action Ref</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -222,6 +240,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int ACTION_REF_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Action Ref</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_REF_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.BrushImpl <em>Brush</em>}' class.
@@ -279,6 +306,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int BRUSH_FEATURE_COUNT = 4;
 
 	/**
+	 * The number of operations of the '<em>Brush</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRUSH_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ButtonGroupImpl <em>Button Group</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -334,6 +370,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int BUTTON_GROUP_FEATURE_COUNT = 4;
 
 	/**
+	 * The number of operations of the '<em>Button Group</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUTTON_GROUP_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ButtonGroupsImpl <em>Button Groups</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -362,6 +407,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int BUTTON_GROUPS_FEATURE_COUNT = 1;
 
 	/**
+	 * The number of operations of the '<em>Button Groups</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUTTON_GROUPS_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.CharImpl <em>Char</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -388,6 +442,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int CHAR_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Char</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHAR_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ColorImpl <em>Color</em>}' class.
@@ -445,6 +508,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int COLOR_FEATURE_COUNT = 4;
 
 	/**
+	 * The number of operations of the '<em>Color</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLOR_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ColorGroupImpl <em>Color Group</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -491,6 +563,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int COLOR_GROUP_FEATURE_COUNT = 3;
 
 	/**
+	 * The number of operations of the '<em>Color Group</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLOR_GROUP_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ColorRoleImpl <em>Color Role</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -528,6 +609,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int COLOR_ROLE_FEATURE_COUNT = 2;
 
 	/**
+	 * The number of operations of the '<em>Color Role</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLOR_ROLE_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ColumnImpl <em>Column</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -554,6 +644,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int COLUMN_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Column</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ConnectionImpl <em>Connection</em>}' class.
@@ -620,6 +719,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int CONNECTION_FEATURE_COUNT = 5;
 
 	/**
+	 * The number of operations of the '<em>Connection</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTION_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ConnectionHintImpl <em>Connection Hint</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -666,6 +774,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int CONNECTION_HINT_FEATURE_COUNT = 3;
 
 	/**
+	 * The number of operations of the '<em>Connection Hint</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTION_HINT_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ConnectionHintsImpl <em>Connection Hints</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -694,6 +811,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int CONNECTION_HINTS_FEATURE_COUNT = 1;
 
 	/**
+	 * The number of operations of the '<em>Connection Hints</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTION_HINTS_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ConnectionsImpl <em>Connections</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -720,6 +846,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONNECTIONS_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Connections</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTIONS_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.CustomWidgetImpl <em>Custom Widget</em>}' class.
@@ -849,6 +984,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int CUSTOM_WIDGET_FEATURE_COUNT = 12;
 
 	/**
+	 * The number of operations of the '<em>Custom Widget</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOM_WIDGET_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.CustomWidgetsImpl <em>Custom Widgets</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -875,6 +1019,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int CUSTOM_WIDGETS_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Custom Widgets</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOM_WIDGETS_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.DateImpl <em>Date</em>}' class.
@@ -921,6 +1074,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int DATE_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Date</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATE_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.DateTimeImpl <em>Date Time</em>}' class.
@@ -996,6 +1158,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int DATE_TIME_FEATURE_COUNT = 6;
 
 	/**
+	 * The number of operations of the '<em>Date Time</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATE_TIME_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.DesignerDataImpl <em>Designer Data</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1022,6 +1193,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int DESIGNER_DATA_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Designer Data</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DESIGNER_DATA_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.DocumentRootImpl <em>Document Root</em>}' class.
@@ -1077,6 +1257,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int DOCUMENT_ROOT_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>Document Root</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.FontImpl <em>Font</em>}' class.
@@ -1186,6 +1375,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int FONT_FEATURE_COUNT = 10;
+
+	/**
+	 * The number of operations of the '<em>Font</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FONT_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.GradientImpl <em>Gradient</em>}' class.
@@ -1333,6 +1531,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int GRADIENT_FEATURE_COUNT = 14;
 
 	/**
+	 * The number of operations of the '<em>Gradient</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRADIENT_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.GradientStopImpl <em>Gradient Stop</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1368,6 +1575,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int GRADIENT_STOP_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Gradient Stop</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRADIENT_STOP_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.HeaderImpl <em>Header</em>}' class.
@@ -1407,6 +1623,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int HEADER_FEATURE_COUNT = 2;
 
 	/**
+	 * The number of operations of the '<em>Header</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEADER_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ImageImpl <em>Image</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1442,6 +1667,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int IMAGE_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Image</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ImageDataImpl <em>Image Data</em>}' class.
@@ -1490,6 +1724,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int IMAGE_DATA_FEATURE_COUNT = 3;
 
 	/**
+	 * The number of operations of the '<em>Image Data</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ImagesImpl <em>Images</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1516,6 +1759,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int IMAGES_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Images</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGES_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.IncludeImpl <em>Include</em>}' class.
@@ -1564,6 +1816,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int INCLUDE_FEATURE_COUNT = 3;
 
 	/**
+	 * The number of operations of the '<em>Include</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INCLUDE_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.IncludesImpl <em>Includes</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1590,6 +1851,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int INCLUDES_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Includes</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INCLUDES_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ItemImpl <em>Item</em>}' class.
@@ -1654,6 +1924,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int ITEM_FEATURE_COUNT = 5;
+
+	/**
+	 * The number of operations of the '<em>Item</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ITEM_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.LayoutImpl <em>Layout</em>}' class.
@@ -1774,6 +2053,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int LAYOUT_FEATURE_COUNT = 11;
 
 	/**
+	 * The number of operations of the '<em>Layout</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAYOUT_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.LayoutDefaultImpl <em>Layout Default</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1811,6 +2099,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int LAYOUT_DEFAULT_FEATURE_COUNT = 2;
 
 	/**
+	 * The number of operations of the '<em>Layout Default</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAYOUT_DEFAULT_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.LayoutFunctionImpl <em>Layout Function</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1846,6 +2143,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int LAYOUT_FUNCTION_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Layout Function</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAYOUT_FUNCTION_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.LayoutItemImpl <em>Layout Item</em>}' class.
@@ -1939,6 +2245,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int LAYOUT_ITEM_FEATURE_COUNT = 8;
 
 	/**
+	 * The number of operations of the '<em>Layout Item</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAYOUT_ITEM_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.LocaleImpl <em>Locale</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1974,6 +2289,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int LOCALE_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Locale</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCALE_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.PaletteImpl <em>Palette</em>}' class.
@@ -2022,6 +2346,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int PALETTE_FEATURE_COUNT = 3;
 
 	/**
+	 * The number of operations of the '<em>Palette</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PALETTE_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.PointImpl <em>Point</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2057,6 +2390,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int POINT_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Point</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POINT_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.PointFImpl <em>Point F</em>}' class.
@@ -2096,6 +2438,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int POINT_F_FEATURE_COUNT = 2;
 
 	/**
+	 * The number of operations of the '<em>Point F</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POINT_F_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.PropertiesImpl <em>Properties</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2122,6 +2473,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROPERTIES_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Properties</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROPERTIES_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.PropertyImpl <em>Property</em>}' class.
@@ -2458,6 +2818,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int PROPERTY_FEATURE_COUNT = 35;
 
 	/**
+	 * The number of operations of the '<em>Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROPERTY_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.PropertyDataImpl <em>Property Data</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2484,6 +2853,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROPERTY_DATA_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Property Data</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROPERTY_DATA_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.PropertySpecificationsImpl <em>Property Specifications</em>}' class.
@@ -2521,6 +2899,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROPERTY_SPECIFICATIONS_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Property Specifications</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROPERTY_SPECIFICATIONS_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.RectImpl <em>Rect</em>}' class.
@@ -2578,6 +2965,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int RECT_FEATURE_COUNT = 4;
 
 	/**
+	 * The number of operations of the '<em>Rect</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECT_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.RectFImpl <em>Rect F</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2633,6 +3029,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int RECT_F_FEATURE_COUNT = 4;
 
 	/**
+	 * The number of operations of the '<em>Rect F</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECT_F_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ResourceImpl <em>Resource</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2659,6 +3064,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int RESOURCE_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Resource</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ResourceIconImpl <em>Resource Icon</em>}' class.
@@ -2779,6 +3193,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int RESOURCE_ICON_FEATURE_COUNT = 11;
 
 	/**
+	 * The number of operations of the '<em>Resource Icon</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE_ICON_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ResourcePixmapImpl <em>Resource Pixmap</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2825,6 +3248,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int RESOURCE_PIXMAP_FEATURE_COUNT = 3;
 
 	/**
+	 * The number of operations of the '<em>Resource Pixmap</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE_PIXMAP_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ResourcesImpl <em>Resources</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2862,6 +3294,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int RESOURCES_FEATURE_COUNT = 2;
 
 	/**
+	 * The number of operations of the '<em>Resources</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCES_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.RowImpl <em>Row</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2888,6 +3329,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int ROW_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Row</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROW_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.ScriptImpl <em>Script</em>}' class.
@@ -2927,6 +3377,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int SCRIPT_FEATURE_COUNT = 2;
 
 	/**
+	 * The number of operations of the '<em>Script</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCRIPT_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.SizeImpl <em>Size</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2964,6 +3423,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int SIZE_FEATURE_COUNT = 2;
 
 	/**
+	 * The number of operations of the '<em>Size</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIZE_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.SizeFImpl <em>Size F</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2999,6 +3467,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int SIZE_F_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Size F</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIZE_F_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.SizePolicyImpl <em>Size Policy</em>}' class.
@@ -3074,6 +3551,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int SIZE_POLICY_FEATURE_COUNT = 6;
 
 	/**
+	 * The number of operations of the '<em>Size Policy</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIZE_POLICY_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.SizePolicyDataImpl <em>Size Policy Data</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3109,6 +3595,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int SIZE_POLICY_DATA_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Size Policy Data</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIZE_POLICY_DATA_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.SlotsImpl <em>Slots</em>}' class.
@@ -3157,6 +3652,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int SLOTS_FEATURE_COUNT = 3;
 
 	/**
+	 * The number of operations of the '<em>Slots</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SLOTS_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.SpacerImpl <em>Spacer</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3192,6 +3696,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int SPACER_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Spacer</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPACER_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.StringImpl <em>String</em>}' class.
@@ -3249,6 +3762,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int STRING_FEATURE_COUNT = 4;
 
 	/**
+	 * The number of operations of the '<em>String</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRING_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.StringListImpl <em>String List</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3275,6 +3797,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int STRING_LIST_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>String List</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRING_LIST_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.StringPropertySpecificationImpl <em>String Property Specification</em>}' class.
@@ -3323,6 +3854,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int STRING_PROPERTY_SPECIFICATION_FEATURE_COUNT = 3;
 
 	/**
+	 * The number of operations of the '<em>String Property Specification</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRING_PROPERTY_SPECIFICATION_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.TabStopsImpl <em>Tab Stops</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3349,6 +3889,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int TAB_STOPS_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Tab Stops</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TAB_STOPS_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.TimeImpl <em>Time</em>}' class.
@@ -3395,6 +3944,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int TIME_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Time</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TIME_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.UIImpl <em>UI</em>}' class.
@@ -3614,6 +4172,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int UI_FEATURE_COUNT = 22;
 
 	/**
+	 * The number of operations of the '<em>UI</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UI_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.UrlImpl <em>Url</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3640,6 +4207,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int URL_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Url</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int URL_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.WidgetImpl <em>Widget</em>}' class.
@@ -3814,6 +4390,15 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	int WIDGET_FEATURE_COUNT = 17;
 
 	/**
+	 * The number of operations of the '<em>Widget</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WIDGET_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.casa.dsltesting.Qt48Xmlschema.impl.WidgetDataImpl <em>Widget Data</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3840,6 +4425,16 @@ public interface Qt48XmlschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int WIDGET_DATA_FEATURE_COUNT = 1;
+
+
+	/**
+	 * The number of operations of the '<em>Widget Data</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WIDGET_DATA_OPERATION_COUNT = 0;
 
 
 	/**

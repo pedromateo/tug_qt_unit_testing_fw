@@ -34,10 +34,10 @@ public interface Includes extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Include</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getIncludes_Include()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Include" containment="true" required="true"
+	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='include' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getInclude();
+	EList<Include> getInclude();
 
 } // Includes

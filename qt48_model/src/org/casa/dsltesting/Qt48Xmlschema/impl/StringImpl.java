@@ -3,19 +3,13 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.BasicFeatureMap;
 import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -36,7 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class StringImpl extends EObjectImpl implements org.casa.dsltesting.Qt48Xmlschema.String {
+public class StringImpl extends MinimalEObjectImpl.Container implements org.casa.dsltesting.Qt48Xmlschema.String {
 	/**
 	 * The cached value of the '{@link #getMixed() <em>Mixed</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -121,6 +115,7 @@ public class StringImpl extends EObjectImpl implements org.casa.dsltesting.Qt48X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.STRING;
 	}
@@ -205,10 +200,11 @@ public class StringImpl extends EObjectImpl implements org.casa.dsltesting.Qt48X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.STRING__MIXED:
-				return ((InternalEList)getMixed()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getMixed()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -218,6 +214,7 @@ public class StringImpl extends EObjectImpl implements org.casa.dsltesting.Qt48X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.STRING__MIXED:
@@ -238,6 +235,7 @@ public class StringImpl extends EObjectImpl implements org.casa.dsltesting.Qt48X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.STRING__MIXED:
@@ -261,6 +259,7 @@ public class StringImpl extends EObjectImpl implements org.casa.dsltesting.Qt48X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.STRING__MIXED:
@@ -284,6 +283,7 @@ public class StringImpl extends EObjectImpl implements org.casa.dsltesting.Qt48X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.STRING__MIXED:
@@ -303,17 +303,18 @@ public class StringImpl extends EObjectImpl implements org.casa.dsltesting.Qt48X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (mixed: "); //$NON-NLS-1$
+		result.append(" (mixed: ");
 		result.append(mixed);
-		result.append(", comment: "); //$NON-NLS-1$
+		result.append(", comment: ");
 		result.append(comment);
-		result.append(", extracomment: "); //$NON-NLS-1$
+		result.append(", extracomment: ");
 		result.append(extracomment);
-		result.append(", notr: "); //$NON-NLS-1$
+		result.append(", notr: ");
 		result.append(notr);
 		result.append(')');
 		return result.toString();

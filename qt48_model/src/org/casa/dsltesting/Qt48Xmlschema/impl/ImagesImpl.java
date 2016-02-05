@@ -3,21 +3,14 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.util.Collection;
-
 import org.casa.dsltesting.Qt48Xmlschema.Image;
 import org.casa.dsltesting.Qt48Xmlschema.Images;
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -34,7 +27,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ImagesImpl extends EObjectImpl implements Images {
+public class ImagesImpl extends MinimalEObjectImpl.Container implements Images {
 	/**
 	 * The cached value of the '{@link #getImage() <em>Image</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -43,7 +36,7 @@ public class ImagesImpl extends EObjectImpl implements Images {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList image;
+	protected EList<Image> image;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,6 +52,7 @@ public class ImagesImpl extends EObjectImpl implements Images {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.IMAGES;
 	}
@@ -68,9 +62,9 @@ public class ImagesImpl extends EObjectImpl implements Images {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getImage() {
+	public EList<Image> getImage() {
 		if (image == null) {
-			image = new EObjectContainmentEList(Image.class, this, Qt48XmlschemaPackage.IMAGES__IMAGE);
+			image = new EObjectContainmentEList<Image>(Image.class, this, Qt48XmlschemaPackage.IMAGES__IMAGE);
 		}
 		return image;
 	}
@@ -80,10 +74,11 @@ public class ImagesImpl extends EObjectImpl implements Images {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.IMAGES__IMAGE:
-				return ((InternalEList)getImage()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getImage()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -93,6 +88,7 @@ public class ImagesImpl extends EObjectImpl implements Images {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.IMAGES__IMAGE:
@@ -106,11 +102,13 @@ public class ImagesImpl extends EObjectImpl implements Images {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+		@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.IMAGES__IMAGE:
 				getImage().clear();
-				getImage().addAll((Collection)newValue);
+				getImage().addAll((Collection<? extends Image>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -121,6 +119,7 @@ public class ImagesImpl extends EObjectImpl implements Images {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.IMAGES__IMAGE:
@@ -135,6 +134,7 @@ public class ImagesImpl extends EObjectImpl implements Images {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.IMAGES__IMAGE:

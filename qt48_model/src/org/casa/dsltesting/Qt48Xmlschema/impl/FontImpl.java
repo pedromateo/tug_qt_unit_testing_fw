@@ -3,19 +3,13 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
 import java.math.BigInteger;
-
 import org.casa.dsltesting.Qt48Xmlschema.Font;
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,7 +33,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class FontImpl extends EObjectImpl implements Font {
+public class FontImpl extends MinimalEObjectImpl.Container implements Font {
 	/**
 	 * The default value of the '{@link #getFamily() <em>Family</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -308,6 +302,7 @@ public class FontImpl extends EObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.FONT;
 	}
@@ -677,6 +672,7 @@ public class FontImpl extends EObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.FONT__FAMILY:
@@ -686,19 +682,19 @@ public class FontImpl extends EObjectImpl implements Font {
 			case Qt48XmlschemaPackage.FONT__WEIGHT:
 				return getWeight();
 			case Qt48XmlschemaPackage.FONT__ITALIC:
-				return isItalic() ? Boolean.TRUE : Boolean.FALSE;
+				return isItalic();
 			case Qt48XmlschemaPackage.FONT__BOLD:
-				return isBold() ? Boolean.TRUE : Boolean.FALSE;
+				return isBold();
 			case Qt48XmlschemaPackage.FONT__UNDERLINE:
-				return isUnderline() ? Boolean.TRUE : Boolean.FALSE;
+				return isUnderline();
 			case Qt48XmlschemaPackage.FONT__STRIKEOUT:
-				return isStrikeout() ? Boolean.TRUE : Boolean.FALSE;
+				return isStrikeout();
 			case Qt48XmlschemaPackage.FONT__ANTIALIASING:
-				return isAntialiasing() ? Boolean.TRUE : Boolean.FALSE;
+				return isAntialiasing();
 			case Qt48XmlschemaPackage.FONT__STYLESTRATEGY:
 				return getStylestrategy();
 			case Qt48XmlschemaPackage.FONT__KERNING:
-				return isKerning() ? Boolean.TRUE : Boolean.FALSE;
+				return isKerning();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -708,6 +704,7 @@ public class FontImpl extends EObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.FONT__FAMILY:
@@ -720,25 +717,25 @@ public class FontImpl extends EObjectImpl implements Font {
 				setWeight((BigInteger)newValue);
 				return;
 			case Qt48XmlschemaPackage.FONT__ITALIC:
-				setItalic(((Boolean)newValue).booleanValue());
+				setItalic((Boolean)newValue);
 				return;
 			case Qt48XmlschemaPackage.FONT__BOLD:
-				setBold(((Boolean)newValue).booleanValue());
+				setBold((Boolean)newValue);
 				return;
 			case Qt48XmlschemaPackage.FONT__UNDERLINE:
-				setUnderline(((Boolean)newValue).booleanValue());
+				setUnderline((Boolean)newValue);
 				return;
 			case Qt48XmlschemaPackage.FONT__STRIKEOUT:
-				setStrikeout(((Boolean)newValue).booleanValue());
+				setStrikeout((Boolean)newValue);
 				return;
 			case Qt48XmlschemaPackage.FONT__ANTIALIASING:
-				setAntialiasing(((Boolean)newValue).booleanValue());
+				setAntialiasing((Boolean)newValue);
 				return;
 			case Qt48XmlschemaPackage.FONT__STYLESTRATEGY:
 				setStylestrategy((String)newValue);
 				return;
 			case Qt48XmlschemaPackage.FONT__KERNING:
-				setKerning(((Boolean)newValue).booleanValue());
+				setKerning((Boolean)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -749,6 +746,7 @@ public class FontImpl extends EObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.FONT__FAMILY:
@@ -790,6 +788,7 @@ public class FontImpl extends EObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.FONT__FAMILY:
@@ -821,30 +820,31 @@ public class FontImpl extends EObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (family: "); //$NON-NLS-1$
+		result.append(" (family: ");
 		result.append(family);
-		result.append(", pointsize: "); //$NON-NLS-1$
+		result.append(", pointsize: ");
 		result.append(pointsize);
-		result.append(", weight: "); //$NON-NLS-1$
+		result.append(", weight: ");
 		result.append(weight);
-		result.append(", italic: "); //$NON-NLS-1$
-		if (italicESet) result.append(italic); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", bold: "); //$NON-NLS-1$
-		if (boldESet) result.append(bold); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", underline: "); //$NON-NLS-1$
-		if (underlineESet) result.append(underline); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", strikeout: "); //$NON-NLS-1$
-		if (strikeoutESet) result.append(strikeout); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", antialiasing: "); //$NON-NLS-1$
-		if (antialiasingESet) result.append(antialiasing); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", stylestrategy: "); //$NON-NLS-1$
+		result.append(", italic: ");
+		if (italicESet) result.append(italic); else result.append("<unset>");
+		result.append(", bold: ");
+		if (boldESet) result.append(bold); else result.append("<unset>");
+		result.append(", underline: ");
+		if (underlineESet) result.append(underline); else result.append("<unset>");
+		result.append(", strikeout: ");
+		if (strikeoutESet) result.append(strikeout); else result.append("<unset>");
+		result.append(", antialiasing: ");
+		if (antialiasingESet) result.append(antialiasing); else result.append("<unset>");
+		result.append(", stylestrategy: ");
 		result.append(stylestrategy);
-		result.append(", kerning: "); //$NON-NLS-1$
-		if (kerningESet) result.append(kerning); else result.append("<unset>"); //$NON-NLS-1$
+		result.append(", kerning: ");
+		if (kerningESet) result.append(kerning); else result.append("<unset>");
 		result.append(')');
 		return result.toString();
 	}

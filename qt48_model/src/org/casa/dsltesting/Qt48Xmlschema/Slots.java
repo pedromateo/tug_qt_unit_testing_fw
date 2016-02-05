@@ -2,6 +2,7 @@
  */
 package org.casa.dsltesting.Qt48Xmlschema;
 
+import java.lang.String;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
@@ -59,7 +60,7 @@ public interface Slots extends EObject {
 	 *        extendedMetaData="kind='element' name='signal' namespace='##targetNamespace' group='group:0'"
 	 * @generated
 	 */
-	EList getSignal();
+	EList<String> getSignal();
 
 	/**
 	 * Returns the value of the '<em><b>Slot</b></em>' attribute list.
@@ -76,6 +77,6 @@ public interface Slots extends EObject {
 	 *        extendedMetaData="kind='element' name='slot' namespace='##targetNamespace' group='group:0'"
 	 * @generated
 	 */
-	EList getSlot();
+	EList<String> getSlot();
 
 } // Slots

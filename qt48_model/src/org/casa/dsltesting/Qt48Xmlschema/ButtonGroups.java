@@ -34,10 +34,10 @@ public interface ButtonGroups extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Buttongroup</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getButtonGroups_Buttongroup()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.ButtonGroup" containment="true" required="true"
+	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='buttongroup' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getButtongroup();
+	EList<ButtonGroup> getButtongroup();
 
 } // ButtonGroups

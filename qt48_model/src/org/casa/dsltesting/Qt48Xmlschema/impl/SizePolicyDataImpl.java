@@ -3,17 +3,12 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.math.BigInteger;
-
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.SizePolicyData;
-
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +24,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class SizePolicyDataImpl extends EObjectImpl implements SizePolicyData {
+public class SizePolicyDataImpl extends MinimalEObjectImpl.Container implements SizePolicyData {
 	/**
 	 * The default value of the '{@link #getHordata() <em>Hordata</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -84,6 +79,7 @@ public class SizePolicyDataImpl extends EObjectImpl implements SizePolicyData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.SIZE_POLICY_DATA;
 	}
@@ -135,6 +131,7 @@ public class SizePolicyDataImpl extends EObjectImpl implements SizePolicyData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SIZE_POLICY_DATA__HORDATA:
@@ -150,6 +147,7 @@ public class SizePolicyDataImpl extends EObjectImpl implements SizePolicyData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SIZE_POLICY_DATA__HORDATA:
@@ -167,6 +165,7 @@ public class SizePolicyDataImpl extends EObjectImpl implements SizePolicyData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SIZE_POLICY_DATA__HORDATA:
@@ -184,6 +183,7 @@ public class SizePolicyDataImpl extends EObjectImpl implements SizePolicyData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SIZE_POLICY_DATA__HORDATA:
@@ -199,13 +199,14 @@ public class SizePolicyDataImpl extends EObjectImpl implements SizePolicyData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (hordata: "); //$NON-NLS-1$
+		result.append(" (hordata: ");
 		result.append(hordata);
-		result.append(", verdata: "); //$NON-NLS-1$
+		result.append(", verdata: ");
 		result.append(verdata);
 		result.append(')');
 		return result.toString();

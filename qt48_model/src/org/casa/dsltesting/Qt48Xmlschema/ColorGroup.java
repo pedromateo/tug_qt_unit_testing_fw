@@ -55,11 +55,11 @@ public interface ColorGroup extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Colorrole</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getColorGroup_Colorrole()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.ColorRole" containment="true" transient="true" volatile="true" derived="true"
+	 * @model containment="true" transient="true" volatile="true" derived="true"
 	 *        extendedMetaData="kind='element' name='colorrole' namespace='##targetNamespace' group='group:0'"
 	 * @generated
 	 */
-	EList getColorrole();
+	EList<ColorRole> getColorrole();
 
 	/**
 	 * Returns the value of the '<em><b>Color</b></em>' containment reference list.
@@ -72,10 +72,10 @@ public interface ColorGroup extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Color</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getColorGroup_Color()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Color" containment="true" transient="true" volatile="true" derived="true"
+	 * @model containment="true" transient="true" volatile="true" derived="true"
 	 *        extendedMetaData="kind='element' name='color' namespace='##targetNamespace' group='group:0'"
 	 * @generated
 	 */
-	EList getColor();
+	EList<Color> getColor();
 
 } // ColorGroup

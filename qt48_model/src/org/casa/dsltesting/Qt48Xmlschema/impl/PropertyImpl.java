@@ -3,9 +3,7 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
 import java.math.BigInteger;
-
 import org.casa.dsltesting.Qt48Xmlschema.Brush;
 import org.casa.dsltesting.Qt48Xmlschema.Char;
 import org.casa.dsltesting.Qt48Xmlschema.Color;
@@ -17,7 +15,6 @@ import org.casa.dsltesting.Qt48Xmlschema.Palette;
 import org.casa.dsltesting.Qt48Xmlschema.Point;
 import org.casa.dsltesting.Qt48Xmlschema.PointF;
 import org.casa.dsltesting.Qt48Xmlschema.Property;
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Rect;
 import org.casa.dsltesting.Qt48Xmlschema.RectF;
@@ -29,15 +26,12 @@ import org.casa.dsltesting.Qt48Xmlschema.SizePolicy;
 import org.casa.dsltesting.Qt48Xmlschema.StringList;
 import org.casa.dsltesting.Qt48Xmlschema.Time;
 import org.casa.dsltesting.Qt48Xmlschema.Url;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -86,7 +80,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class PropertyImpl extends EObjectImpl implements Property {
+public class PropertyImpl extends MinimalEObjectImpl.Container implements Property {
 	/**
 	 * The default value of the '{@link #getBool() <em>Bool</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -627,6 +621,7 @@ public class PropertyImpl extends EObjectImpl implements Property {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.PROPERTY;
 	}
@@ -1933,6 +1928,7 @@ public class PropertyImpl extends EObjectImpl implements Property {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.PROPERTY__COLOR:
@@ -1986,6 +1982,7 @@ public class PropertyImpl extends EObjectImpl implements Property {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.PROPERTY__BOOL:
@@ -2027,9 +2024,9 @@ public class PropertyImpl extends EObjectImpl implements Property {
 			case Qt48XmlschemaPackage.PROPERTY__NUMBER:
 				return getNumber();
 			case Qt48XmlschemaPackage.PROPERTY__FLOAT:
-				return new Float(getFloat());
+				return getFloat();
 			case Qt48XmlschemaPackage.PROPERTY__DOUBLE:
-				return new Double(getDouble());
+				return getDouble();
 			case Qt48XmlschemaPackage.PROPERTY__DATE:
 				return getDate();
 			case Qt48XmlschemaPackage.PROPERTY__TIME:
@@ -2043,13 +2040,13 @@ public class PropertyImpl extends EObjectImpl implements Property {
 			case Qt48XmlschemaPackage.PROPERTY__SIZEF:
 				return getSizef();
 			case Qt48XmlschemaPackage.PROPERTY__LONGLONG:
-				return new Long(getLonglong());
+				return getLonglong();
 			case Qt48XmlschemaPackage.PROPERTY__CHAR:
 				return getChar();
 			case Qt48XmlschemaPackage.PROPERTY__URL:
 				return getUrl();
 			case Qt48XmlschemaPackage.PROPERTY__UINT:
-				return new Long(getUint());
+				return getUint();
 			case Qt48XmlschemaPackage.PROPERTY__ULONGLONG:
 				return getUlonglong();
 			case Qt48XmlschemaPackage.PROPERTY__BRUSH:
@@ -2067,6 +2064,7 @@ public class PropertyImpl extends EObjectImpl implements Property {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.PROPERTY__BOOL:
@@ -2127,10 +2125,10 @@ public class PropertyImpl extends EObjectImpl implements Property {
 				setNumber((BigInteger)newValue);
 				return;
 			case Qt48XmlschemaPackage.PROPERTY__FLOAT:
-				setFloat(((Float)newValue).floatValue());
+				setFloat((Float)newValue);
 				return;
 			case Qt48XmlschemaPackage.PROPERTY__DOUBLE:
-				setDouble(((Double)newValue).doubleValue());
+				setDouble((Double)newValue);
 				return;
 			case Qt48XmlschemaPackage.PROPERTY__DATE:
 				setDate((Date)newValue);
@@ -2151,7 +2149,7 @@ public class PropertyImpl extends EObjectImpl implements Property {
 				setSizef((SizeF)newValue);
 				return;
 			case Qt48XmlschemaPackage.PROPERTY__LONGLONG:
-				setLonglong(((Long)newValue).longValue());
+				setLonglong((Long)newValue);
 				return;
 			case Qt48XmlschemaPackage.PROPERTY__CHAR:
 				setChar((Char)newValue);
@@ -2160,7 +2158,7 @@ public class PropertyImpl extends EObjectImpl implements Property {
 				setUrl((Url)newValue);
 				return;
 			case Qt48XmlschemaPackage.PROPERTY__UINT:
-				setUint(((Long)newValue).longValue());
+				setUint((Long)newValue);
 				return;
 			case Qt48XmlschemaPackage.PROPERTY__ULONGLONG:
 				setUlonglong((BigInteger)newValue);
@@ -2183,6 +2181,7 @@ public class PropertyImpl extends EObjectImpl implements Property {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.PROPERTY__BOOL:
@@ -2299,6 +2298,7 @@ public class PropertyImpl extends EObjectImpl implements Property {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.PROPERTY__BOOL:
@@ -2380,37 +2380,38 @@ public class PropertyImpl extends EObjectImpl implements Property {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (bool: "); //$NON-NLS-1$
+		result.append(" (bool: ");
 		result.append(bool);
-		result.append(", cstring: "); //$NON-NLS-1$
+		result.append(", cstring: ");
 		result.append(cstring);
-		result.append(", cursor: "); //$NON-NLS-1$
+		result.append(", cursor: ");
 		result.append(cursor);
-		result.append(", cursorshape: "); //$NON-NLS-1$
+		result.append(", cursorshape: ");
 		result.append(cursorshape);
-		result.append(", enum: "); //$NON-NLS-1$
+		result.append(", enum: ");
 		result.append(enum_);
-		result.append(", set: "); //$NON-NLS-1$
+		result.append(", set: ");
 		result.append(set);
-		result.append(", number: "); //$NON-NLS-1$
+		result.append(", number: ");
 		result.append(number);
-		result.append(", float: "); //$NON-NLS-1$
-		if (floatESet) result.append(float_); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", double: "); //$NON-NLS-1$
-		if (doubleESet) result.append(double_); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", longlong: "); //$NON-NLS-1$
-		if (longlongESet) result.append(longlong); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", uint: "); //$NON-NLS-1$
-		if (uintESet) result.append(uint); else result.append("<unset>"); //$NON-NLS-1$
-		result.append(", ulonglong: "); //$NON-NLS-1$
+		result.append(", float: ");
+		if (floatESet) result.append(float_); else result.append("<unset>");
+		result.append(", double: ");
+		if (doubleESet) result.append(double_); else result.append("<unset>");
+		result.append(", longlong: ");
+		if (longlongESet) result.append(longlong); else result.append("<unset>");
+		result.append(", uint: ");
+		if (uintESet) result.append(uint); else result.append("<unset>");
+		result.append(", ulonglong: ");
 		result.append(ulonglong);
-		result.append(", name: "); //$NON-NLS-1$
+		result.append(", name: ");
 		result.append(name);
-		result.append(", stdset: "); //$NON-NLS-1$
+		result.append(", stdset: ");
 		result.append(stdset);
 		result.append(')');
 		return result.toString();

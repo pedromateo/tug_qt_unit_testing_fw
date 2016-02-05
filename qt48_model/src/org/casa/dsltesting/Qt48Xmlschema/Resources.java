@@ -37,11 +37,11 @@ public interface Resources extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Include</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getResources_Include()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Resource" containment="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='include' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getInclude();
+	EList<Resource> getInclude();
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.

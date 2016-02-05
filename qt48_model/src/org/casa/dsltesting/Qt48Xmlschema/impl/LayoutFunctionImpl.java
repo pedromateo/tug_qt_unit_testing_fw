@@ -3,17 +3,12 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
 import org.casa.dsltesting.Qt48Xmlschema.LayoutFunction;
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +24,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class LayoutFunctionImpl extends EObjectImpl implements LayoutFunction {
+public class LayoutFunctionImpl extends MinimalEObjectImpl.Container implements LayoutFunction {
 	/**
 	 * The default value of the '{@link #getMargin() <em>Margin</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -84,6 +79,7 @@ public class LayoutFunctionImpl extends EObjectImpl implements LayoutFunction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.LAYOUT_FUNCTION;
 	}
@@ -135,6 +131,7 @@ public class LayoutFunctionImpl extends EObjectImpl implements LayoutFunction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.LAYOUT_FUNCTION__MARGIN:
@@ -150,6 +147,7 @@ public class LayoutFunctionImpl extends EObjectImpl implements LayoutFunction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.LAYOUT_FUNCTION__MARGIN:
@@ -167,6 +165,7 @@ public class LayoutFunctionImpl extends EObjectImpl implements LayoutFunction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.LAYOUT_FUNCTION__MARGIN:
@@ -184,6 +183,7 @@ public class LayoutFunctionImpl extends EObjectImpl implements LayoutFunction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.LAYOUT_FUNCTION__MARGIN:
@@ -199,13 +199,14 @@ public class LayoutFunctionImpl extends EObjectImpl implements LayoutFunction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (margin: "); //$NON-NLS-1$
+		result.append(" (margin: ");
 		result.append(margin);
-		result.append(", spacing: "); //$NON-NLS-1$
+		result.append(", spacing: ");
 		result.append(spacing);
 		result.append(')');
 		return result.toString();

@@ -3,25 +3,17 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
 import java.util.Collection;
-
 import org.casa.dsltesting.Qt48Xmlschema.Property;
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Spacer;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -39,7 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class SpacerImpl extends EObjectImpl implements Spacer {
+public class SpacerImpl extends MinimalEObjectImpl.Container implements Spacer {
 	/**
 	 * The cached value of the '{@link #getProperty() <em>Property</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -48,7 +40,7 @@ public class SpacerImpl extends EObjectImpl implements Spacer {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList property;
+	protected EList<Property> property;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -84,6 +76,7 @@ public class SpacerImpl extends EObjectImpl implements Spacer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.SPACER;
 	}
@@ -93,9 +86,9 @@ public class SpacerImpl extends EObjectImpl implements Spacer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getProperty() {
+	public EList<Property> getProperty() {
 		if (property == null) {
-			property = new EObjectContainmentEList(Property.class, this, Qt48XmlschemaPackage.SPACER__PROPERTY);
+			property = new EObjectContainmentEList<Property>(Property.class, this, Qt48XmlschemaPackage.SPACER__PROPERTY);
 		}
 		return property;
 	}
@@ -126,10 +119,11 @@ public class SpacerImpl extends EObjectImpl implements Spacer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SPACER__PROPERTY:
-				return ((InternalEList)getProperty()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getProperty()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -139,6 +133,7 @@ public class SpacerImpl extends EObjectImpl implements Spacer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SPACER__PROPERTY:
@@ -154,11 +149,13 @@ public class SpacerImpl extends EObjectImpl implements Spacer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+		@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SPACER__PROPERTY:
 				getProperty().clear();
-				getProperty().addAll((Collection)newValue);
+				getProperty().addAll((Collection<? extends Property>)newValue);
 				return;
 			case Qt48XmlschemaPackage.SPACER__NAME:
 				setName((String)newValue);
@@ -172,6 +169,7 @@ public class SpacerImpl extends EObjectImpl implements Spacer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SPACER__PROPERTY:
@@ -189,6 +187,7 @@ public class SpacerImpl extends EObjectImpl implements Spacer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.SPACER__PROPERTY:
@@ -204,11 +203,12 @@ public class SpacerImpl extends EObjectImpl implements Spacer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: "); //$NON-NLS-1$
+		result.append(" (name: ");
 		result.append(name);
 		result.append(')');
 		return result.toString();

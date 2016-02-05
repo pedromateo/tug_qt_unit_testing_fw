@@ -34,10 +34,10 @@ public interface Row extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Property</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getRow_Property()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.Property" containment="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='property' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getProperty();
+	EList<Property> getProperty();
 
 } // Row

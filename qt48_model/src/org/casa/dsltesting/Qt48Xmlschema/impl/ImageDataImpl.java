@@ -3,22 +3,15 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
 import java.math.BigInteger;
-
 import org.casa.dsltesting.Qt48Xmlschema.ImageData;
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
-
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.BasicFeatureMap;
 import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -38,7 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ImageDataImpl extends EObjectImpl implements ImageData {
+public class ImageDataImpl extends MinimalEObjectImpl.Container implements ImageData {
 	/**
 	 * The cached value of the '{@link #getMixed() <em>Mixed</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -103,6 +96,7 @@ public class ImageDataImpl extends EObjectImpl implements ImageData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.IMAGE_DATA;
 	}
@@ -166,10 +160,11 @@ public class ImageDataImpl extends EObjectImpl implements ImageData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.IMAGE_DATA__MIXED:
-				return ((InternalEList)getMixed()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getMixed()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -179,6 +174,7 @@ public class ImageDataImpl extends EObjectImpl implements ImageData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.IMAGE_DATA__MIXED:
@@ -197,6 +193,7 @@ public class ImageDataImpl extends EObjectImpl implements ImageData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.IMAGE_DATA__MIXED:
@@ -217,6 +214,7 @@ public class ImageDataImpl extends EObjectImpl implements ImageData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.IMAGE_DATA__MIXED:
@@ -237,6 +235,7 @@ public class ImageDataImpl extends EObjectImpl implements ImageData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.IMAGE_DATA__MIXED:
@@ -254,15 +253,16 @@ public class ImageDataImpl extends EObjectImpl implements ImageData {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (mixed: "); //$NON-NLS-1$
+		result.append(" (mixed: ");
 		result.append(mixed);
-		result.append(", format: "); //$NON-NLS-1$
+		result.append(", format: ");
 		result.append(format);
-		result.append(", length: "); //$NON-NLS-1$
+		result.append(", length: ");
 		result.append(length);
 		result.append(')');
 		return result.toString();

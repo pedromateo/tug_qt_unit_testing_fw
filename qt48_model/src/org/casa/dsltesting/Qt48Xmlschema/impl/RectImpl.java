@@ -3,17 +3,12 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.math.BigInteger;
-
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Rect;
-
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +26,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class RectImpl extends EObjectImpl implements Rect {
+public class RectImpl extends MinimalEObjectImpl.Container implements Rect {
 	/**
 	 * The default value of the '{@link #getX() <em>X</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -126,6 +121,7 @@ public class RectImpl extends EObjectImpl implements Rect {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.RECT;
 	}
@@ -219,6 +215,7 @@ public class RectImpl extends EObjectImpl implements Rect {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.RECT__X:
@@ -238,6 +235,7 @@ public class RectImpl extends EObjectImpl implements Rect {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.RECT__X:
@@ -261,6 +259,7 @@ public class RectImpl extends EObjectImpl implements Rect {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.RECT__X:
@@ -284,6 +283,7 @@ public class RectImpl extends EObjectImpl implements Rect {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.RECT__X:
@@ -303,17 +303,18 @@ public class RectImpl extends EObjectImpl implements Rect {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (x: "); //$NON-NLS-1$
+		result.append(" (x: ");
 		result.append(x);
-		result.append(", y: "); //$NON-NLS-1$
+		result.append(", y: ");
 		result.append(y);
-		result.append(", width: "); //$NON-NLS-1$
+		result.append(", width: ");
 		result.append(width);
-		result.append(", height: "); //$NON-NLS-1$
+		result.append(", height: ");
 		result.append(height);
 		result.append(')');
 		return result.toString();

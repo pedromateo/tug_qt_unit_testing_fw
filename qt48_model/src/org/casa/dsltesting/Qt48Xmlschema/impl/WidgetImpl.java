@@ -3,9 +3,7 @@
 package org.casa.dsltesting.Qt48Xmlschema.impl;
 
 import java.lang.String;
-
 import java.util.Collection;
-
 import org.casa.dsltesting.Qt48Xmlschema.Action;
 import org.casa.dsltesting.Qt48Xmlschema.ActionGroup;
 import org.casa.dsltesting.Qt48Xmlschema.ActionRef;
@@ -13,24 +11,18 @@ import org.casa.dsltesting.Qt48Xmlschema.Column;
 import org.casa.dsltesting.Qt48Xmlschema.Item;
 import org.casa.dsltesting.Qt48Xmlschema.Layout;
 import org.casa.dsltesting.Qt48Xmlschema.Property;
-import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage;
 import org.casa.dsltesting.Qt48Xmlschema.Row;
 import org.casa.dsltesting.Qt48Xmlschema.Script;
 import org.casa.dsltesting.Qt48Xmlschema.Widget;
 import org.casa.dsltesting.Qt48Xmlschema.WidgetData;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EDataTypeEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -64,7 +56,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class WidgetImpl extends EObjectImpl implements Widget {
+public class WidgetImpl extends MinimalEObjectImpl.Container implements Widget {
 	/**
 	 * The cached value of the '{@link #getClass_() <em>Class</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -73,7 +65,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList class_;
+	protected EList<String> class_;
 
 	/**
 	 * The cached value of the '{@link #getProperty() <em>Property</em>}' containment reference list.
@@ -83,7 +75,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList property;
+	protected EList<Property> property;
 
 	/**
 	 * The cached value of the '{@link #getScript() <em>Script</em>}' containment reference list.
@@ -93,7 +85,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList script;
+	protected EList<Script> script;
 
 	/**
 	 * The cached value of the '{@link #getWidgetdata() <em>Widgetdata</em>}' containment reference list.
@@ -103,7 +95,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList widgetdata;
+	protected EList<WidgetData> widgetdata;
 
 	/**
 	 * The cached value of the '{@link #getAttribute() <em>Attribute</em>}' containment reference list.
@@ -113,7 +105,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList attribute;
+	protected EList<Property> attribute;
 
 	/**
 	 * The cached value of the '{@link #getRow() <em>Row</em>}' containment reference list.
@@ -123,7 +115,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList row;
+	protected EList<Row> row;
 
 	/**
 	 * The cached value of the '{@link #getColumn() <em>Column</em>}' containment reference list.
@@ -133,7 +125,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList column;
+	protected EList<Column> column;
 
 	/**
 	 * The cached value of the '{@link #getItem() <em>Item</em>}' containment reference list.
@@ -143,7 +135,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList item;
+	protected EList<Item> item;
 
 	/**
 	 * The cached value of the '{@link #getLayout() <em>Layout</em>}' containment reference list.
@@ -153,7 +145,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList layout;
+	protected EList<Layout> layout;
 
 	/**
 	 * The cached value of the '{@link #getWidget() <em>Widget</em>}' containment reference list.
@@ -163,7 +155,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList widget;
+	protected EList<Widget> widget;
 
 	/**
 	 * The cached value of the '{@link #getAction() <em>Action</em>}' containment reference list.
@@ -173,7 +165,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList action;
+	protected EList<Action> action;
 
 	/**
 	 * The cached value of the '{@link #getActiongroup() <em>Actiongroup</em>}' containment reference list.
@@ -183,7 +175,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList actiongroup;
+	protected EList<ActionGroup> actiongroup;
 
 	/**
 	 * The cached value of the '{@link #getAddaction() <em>Addaction</em>}' containment reference list.
@@ -193,7 +185,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList addaction;
+	protected EList<ActionRef> addaction;
 
 	/**
 	 * The cached value of the '{@link #getZorder() <em>Zorder</em>}' attribute list.
@@ -203,7 +195,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList zorder;
+	protected EList<String> zorder;
 
 	/**
 	 * The default value of the '{@link #getClass1() <em>Class1</em>}' attribute.
@@ -288,6 +280,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected EClass eStaticClass() {
 		return Qt48XmlschemaPackage.Literals.WIDGET;
 	}
@@ -297,9 +290,9 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getClass_() {
+	public EList<String> getClass_() {
 		if (class_ == null) {
-			class_ = new EDataTypeEList(String.class, this, Qt48XmlschemaPackage.WIDGET__CLASS);
+			class_ = new EDataTypeEList<String>(String.class, this, Qt48XmlschemaPackage.WIDGET__CLASS);
 		}
 		return class_;
 	}
@@ -309,9 +302,9 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getProperty() {
+	public EList<Property> getProperty() {
 		if (property == null) {
-			property = new EObjectContainmentEList(Property.class, this, Qt48XmlschemaPackage.WIDGET__PROPERTY);
+			property = new EObjectContainmentEList<Property>(Property.class, this, Qt48XmlschemaPackage.WIDGET__PROPERTY);
 		}
 		return property;
 	}
@@ -321,9 +314,9 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getScript() {
+	public EList<Script> getScript() {
 		if (script == null) {
-			script = new EObjectContainmentEList(Script.class, this, Qt48XmlschemaPackage.WIDGET__SCRIPT);
+			script = new EObjectContainmentEList<Script>(Script.class, this, Qt48XmlschemaPackage.WIDGET__SCRIPT);
 		}
 		return script;
 	}
@@ -333,9 +326,9 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getWidgetdata() {
+	public EList<WidgetData> getWidgetdata() {
 		if (widgetdata == null) {
-			widgetdata = new EObjectContainmentEList(WidgetData.class, this, Qt48XmlschemaPackage.WIDGET__WIDGETDATA);
+			widgetdata = new EObjectContainmentEList<WidgetData>(WidgetData.class, this, Qt48XmlschemaPackage.WIDGET__WIDGETDATA);
 		}
 		return widgetdata;
 	}
@@ -345,9 +338,9 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getAttribute() {
+	public EList<Property> getAttribute() {
 		if (attribute == null) {
-			attribute = new EObjectContainmentEList(Property.class, this, Qt48XmlschemaPackage.WIDGET__ATTRIBUTE);
+			attribute = new EObjectContainmentEList<Property>(Property.class, this, Qt48XmlschemaPackage.WIDGET__ATTRIBUTE);
 		}
 		return attribute;
 	}
@@ -357,9 +350,9 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getRow() {
+	public EList<Row> getRow() {
 		if (row == null) {
-			row = new EObjectContainmentEList(Row.class, this, Qt48XmlschemaPackage.WIDGET__ROW);
+			row = new EObjectContainmentEList<Row>(Row.class, this, Qt48XmlschemaPackage.WIDGET__ROW);
 		}
 		return row;
 	}
@@ -369,9 +362,9 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getColumn() {
+	public EList<Column> getColumn() {
 		if (column == null) {
-			column = new EObjectContainmentEList(Column.class, this, Qt48XmlschemaPackage.WIDGET__COLUMN);
+			column = new EObjectContainmentEList<Column>(Column.class, this, Qt48XmlschemaPackage.WIDGET__COLUMN);
 		}
 		return column;
 	}
@@ -381,9 +374,9 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getItem() {
+	public EList<Item> getItem() {
 		if (item == null) {
-			item = new EObjectContainmentEList(Item.class, this, Qt48XmlschemaPackage.WIDGET__ITEM);
+			item = new EObjectContainmentEList<Item>(Item.class, this, Qt48XmlschemaPackage.WIDGET__ITEM);
 		}
 		return item;
 	}
@@ -393,9 +386,9 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getLayout() {
+	public EList<Layout> getLayout() {
 		if (layout == null) {
-			layout = new EObjectContainmentEList(Layout.class, this, Qt48XmlschemaPackage.WIDGET__LAYOUT);
+			layout = new EObjectContainmentEList<Layout>(Layout.class, this, Qt48XmlschemaPackage.WIDGET__LAYOUT);
 		}
 		return layout;
 	}
@@ -405,9 +398,9 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getWidget() {
+	public EList<Widget> getWidget() {
 		if (widget == null) {
-			widget = new EObjectContainmentEList(Widget.class, this, Qt48XmlschemaPackage.WIDGET__WIDGET);
+			widget = new EObjectContainmentEList<Widget>(Widget.class, this, Qt48XmlschemaPackage.WIDGET__WIDGET);
 		}
 		return widget;
 	}
@@ -417,9 +410,9 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getAction() {
+	public EList<Action> getAction() {
 		if (action == null) {
-			action = new EObjectContainmentEList(Action.class, this, Qt48XmlschemaPackage.WIDGET__ACTION);
+			action = new EObjectContainmentEList<Action>(Action.class, this, Qt48XmlschemaPackage.WIDGET__ACTION);
 		}
 		return action;
 	}
@@ -429,9 +422,9 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getActiongroup() {
+	public EList<ActionGroup> getActiongroup() {
 		if (actiongroup == null) {
-			actiongroup = new EObjectContainmentEList(ActionGroup.class, this, Qt48XmlschemaPackage.WIDGET__ACTIONGROUP);
+			actiongroup = new EObjectContainmentEList<ActionGroup>(ActionGroup.class, this, Qt48XmlschemaPackage.WIDGET__ACTIONGROUP);
 		}
 		return actiongroup;
 	}
@@ -441,9 +434,9 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getAddaction() {
+	public EList<ActionRef> getAddaction() {
 		if (addaction == null) {
-			addaction = new EObjectContainmentEList(ActionRef.class, this, Qt48XmlschemaPackage.WIDGET__ADDACTION);
+			addaction = new EObjectContainmentEList<ActionRef>(ActionRef.class, this, Qt48XmlschemaPackage.WIDGET__ADDACTION);
 		}
 		return addaction;
 	}
@@ -453,9 +446,9 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getZorder() {
+	public EList<String> getZorder() {
 		if (zorder == null) {
-			zorder = new EDataTypeEList(String.class, this, Qt48XmlschemaPackage.WIDGET__ZORDER);
+			zorder = new EDataTypeEList<String>(String.class, this, Qt48XmlschemaPackage.WIDGET__ZORDER);
 		}
 		return zorder;
 	}
@@ -553,32 +546,33 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.WIDGET__PROPERTY:
-				return ((InternalEList)getProperty()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getProperty()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.WIDGET__SCRIPT:
-				return ((InternalEList)getScript()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getScript()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.WIDGET__WIDGETDATA:
-				return ((InternalEList)getWidgetdata()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getWidgetdata()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.WIDGET__ATTRIBUTE:
-				return ((InternalEList)getAttribute()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getAttribute()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.WIDGET__ROW:
-				return ((InternalEList)getRow()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getRow()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.WIDGET__COLUMN:
-				return ((InternalEList)getColumn()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getColumn()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.WIDGET__ITEM:
-				return ((InternalEList)getItem()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getItem()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.WIDGET__LAYOUT:
-				return ((InternalEList)getLayout()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getLayout()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.WIDGET__WIDGET:
-				return ((InternalEList)getWidget()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getWidget()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.WIDGET__ACTION:
-				return ((InternalEList)getAction()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getAction()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.WIDGET__ACTIONGROUP:
-				return ((InternalEList)getActiongroup()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getActiongroup()).basicRemove(otherEnd, msgs);
 			case Qt48XmlschemaPackage.WIDGET__ADDACTION:
-				return ((InternalEList)getAddaction()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getAddaction()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -588,6 +582,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.WIDGET__CLASS:
@@ -623,7 +618,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 			case Qt48XmlschemaPackage.WIDGET__NAME:
 				return getName();
 			case Qt48XmlschemaPackage.WIDGET__NATIVE:
-				return isNative() ? Boolean.TRUE : Boolean.FALSE;
+				return isNative();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -633,63 +628,65 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+		@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.WIDGET__CLASS:
 				getClass_().clear();
-				getClass_().addAll((Collection)newValue);
+				getClass_().addAll((Collection<? extends String>)newValue);
 				return;
 			case Qt48XmlschemaPackage.WIDGET__PROPERTY:
 				getProperty().clear();
-				getProperty().addAll((Collection)newValue);
+				getProperty().addAll((Collection<? extends Property>)newValue);
 				return;
 			case Qt48XmlschemaPackage.WIDGET__SCRIPT:
 				getScript().clear();
-				getScript().addAll((Collection)newValue);
+				getScript().addAll((Collection<? extends Script>)newValue);
 				return;
 			case Qt48XmlschemaPackage.WIDGET__WIDGETDATA:
 				getWidgetdata().clear();
-				getWidgetdata().addAll((Collection)newValue);
+				getWidgetdata().addAll((Collection<? extends WidgetData>)newValue);
 				return;
 			case Qt48XmlschemaPackage.WIDGET__ATTRIBUTE:
 				getAttribute().clear();
-				getAttribute().addAll((Collection)newValue);
+				getAttribute().addAll((Collection<? extends Property>)newValue);
 				return;
 			case Qt48XmlschemaPackage.WIDGET__ROW:
 				getRow().clear();
-				getRow().addAll((Collection)newValue);
+				getRow().addAll((Collection<? extends Row>)newValue);
 				return;
 			case Qt48XmlschemaPackage.WIDGET__COLUMN:
 				getColumn().clear();
-				getColumn().addAll((Collection)newValue);
+				getColumn().addAll((Collection<? extends Column>)newValue);
 				return;
 			case Qt48XmlschemaPackage.WIDGET__ITEM:
 				getItem().clear();
-				getItem().addAll((Collection)newValue);
+				getItem().addAll((Collection<? extends Item>)newValue);
 				return;
 			case Qt48XmlschemaPackage.WIDGET__LAYOUT:
 				getLayout().clear();
-				getLayout().addAll((Collection)newValue);
+				getLayout().addAll((Collection<? extends Layout>)newValue);
 				return;
 			case Qt48XmlschemaPackage.WIDGET__WIDGET:
 				getWidget().clear();
-				getWidget().addAll((Collection)newValue);
+				getWidget().addAll((Collection<? extends Widget>)newValue);
 				return;
 			case Qt48XmlschemaPackage.WIDGET__ACTION:
 				getAction().clear();
-				getAction().addAll((Collection)newValue);
+				getAction().addAll((Collection<? extends Action>)newValue);
 				return;
 			case Qt48XmlschemaPackage.WIDGET__ACTIONGROUP:
 				getActiongroup().clear();
-				getActiongroup().addAll((Collection)newValue);
+				getActiongroup().addAll((Collection<? extends ActionGroup>)newValue);
 				return;
 			case Qt48XmlschemaPackage.WIDGET__ADDACTION:
 				getAddaction().clear();
-				getAddaction().addAll((Collection)newValue);
+				getAddaction().addAll((Collection<? extends ActionRef>)newValue);
 				return;
 			case Qt48XmlschemaPackage.WIDGET__ZORDER:
 				getZorder().clear();
-				getZorder().addAll((Collection)newValue);
+				getZorder().addAll((Collection<? extends String>)newValue);
 				return;
 			case Qt48XmlschemaPackage.WIDGET__CLASS1:
 				setClass1((String)newValue);
@@ -698,7 +695,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 				setName((String)newValue);
 				return;
 			case Qt48XmlschemaPackage.WIDGET__NATIVE:
-				setNative(((Boolean)newValue).booleanValue());
+				setNative((Boolean)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -709,6 +706,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.WIDGET__CLASS:
@@ -771,6 +769,7 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case Qt48XmlschemaPackage.WIDGET__CLASS:
@@ -816,20 +815,21 @@ public class WidgetImpl extends EObjectImpl implements Widget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (class: "); //$NON-NLS-1$
+		result.append(" (class: ");
 		result.append(class_);
-		result.append(", zorder: "); //$NON-NLS-1$
+		result.append(", zorder: ");
 		result.append(zorder);
-		result.append(", class1: "); //$NON-NLS-1$
+		result.append(", class1: ");
 		result.append(class1);
-		result.append(", name: "); //$NON-NLS-1$
+		result.append(", name: ");
 		result.append(name);
-		result.append(", native: "); //$NON-NLS-1$
-		if (nativeESet) result.append(native_); else result.append("<unset>"); //$NON-NLS-1$
+		result.append(", native: ");
+		if (nativeESet) result.append(native_); else result.append("<unset>");
 		result.append(')');
 		return result.toString();
 	}

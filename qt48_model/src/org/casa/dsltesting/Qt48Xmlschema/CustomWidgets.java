@@ -34,10 +34,10 @@ public interface CustomWidgets extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Customwidget</em>' containment reference list.
 	 * @see org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage#getCustomWidgets_Customwidget()
-	 * @model type="org.casa.dsltesting.Qt48Xmlschema.CustomWidget" containment="true" required="true"
+	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='customwidget' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList getCustomwidget();
+	EList<CustomWidget> getCustomwidget();
 
 } // CustomWidgets

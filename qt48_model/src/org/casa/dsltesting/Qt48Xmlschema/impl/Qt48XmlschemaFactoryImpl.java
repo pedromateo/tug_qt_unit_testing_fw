@@ -119,6 +119,7 @@ public class Qt48XmlschemaFactoryImpl extends EFactoryImpl implements Qt48Xmlsch
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case Qt48XmlschemaPackage.ACTION: return createAction();
@@ -188,7 +189,7 @@ public class Qt48XmlschemaFactoryImpl extends EFactoryImpl implements Qt48Xmlsch
 			case Qt48XmlschemaPackage.WIDGET: return createWidget();
 			case Qt48XmlschemaPackage.WIDGET_DATA: return createWidgetData();
 			default:
-				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier"); //$NON-NLS-1$ //$NON-NLS-2$
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
 	}
 
@@ -867,6 +868,7 @@ public class Qt48XmlschemaFactoryImpl extends EFactoryImpl implements Qt48Xmlsch
 	 * @deprecated
 	 * @generated
 	 */
+	@Deprecated
 	public static Qt48XmlschemaPackage getPackage() {
 		return Qt48XmlschemaPackage.eINSTANCE;
 	}
