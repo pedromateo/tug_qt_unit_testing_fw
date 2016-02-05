@@ -1426,7 +1426,7 @@ public abstract class WizardWindowWidget {
 			}
 		});
 		ImageIcon menuIcon = new ImageIcon(
-				this.getClass().getResource("/org/eclipse/tug/resources/icons/menu_icon_mobileversion.png"));
+				this.getClass().getClassLoader().getResource("images/icons/menu_icon_mobileversion.png"));
 		but_menu.setIcon(menuIcon);
 
 		// set fixed size to bottom-left and bottom-right panel
@@ -1470,7 +1470,7 @@ public abstract class WizardWindowWidget {
 		///
 
 		// help icon configuration
-		ImageIcon helpIcon = new ImageIcon(WizardWindowWidget.class.getResource("/org/eclipse/tug/resources/icons/help_icon.png"));
+		ImageIcon helpIcon = new ImageIcon(WizardWindowWidget.class.getClassLoader().getResource("images/icons/help_icon.png"));
 		Image helpImg = helpIcon.getImage() ;  
 		helpImg = helpImg.getScaledInstance( 25, 25,  java.awt.Image.SCALE_SMOOTH ) ;  
 		helpIcon = new ImageIcon(helpImg);

@@ -28,7 +28,7 @@ import org.fife.ui.rsyntaxtextarea.*;
 @SuppressWarnings("serial")
 public class EditImplFrame extends JDialog implements WindowListener
 {
-	public final static String IMAGE_FOLDER = "icons" + Defines.PATH_SEP;
+	public final static String IMAGE_FOLDER = EditImplFrame.class.getResource("images/icons").getPath();
 	
 	/**
 	 * Maximum screen width.

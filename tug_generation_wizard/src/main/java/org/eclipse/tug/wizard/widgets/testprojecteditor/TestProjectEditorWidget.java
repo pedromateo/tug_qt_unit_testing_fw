@@ -163,9 +163,9 @@ public abstract class TestProjectEditorWidget extends JPanel{
 
 		// change tree icons
 		ImageIcon leafIcon = new ImageIcon(
-				this.getClass().getResource("/org/eclipse/tug/resources/icons/test_icon.png"));
+				this.getClass().getClassLoader().getResource("images/icons/test_icon.png"));
 		ImageIcon folderIcon = new ImageIcon(
-				this.getClass().getResource("/org/eclipse/tug/resources/icons/ts_icon.png"));
+				this.getClass().getClassLoader().getResource("images/icons/ts_icon.png"));
 		if (leafIcon != null) {
 			DefaultTreeCellRenderer renderer = 
 					new DefaultTreeCellRenderer();

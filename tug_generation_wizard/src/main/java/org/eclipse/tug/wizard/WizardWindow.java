@@ -50,7 +50,7 @@ public class WizardWindow extends WizardWindowGen{
 		final String splashMsg2 = "TUG v" + TUG_VERSION + " :: Loading Qt model utilities.";
 		final String splashMsg3 = "TUG v" + TUG_VERSION + " :: Launching TUG wizard application.";
 		if (!TESTING_MODE){
-			URL urlToImage = WizardWindow.class.getResource("/org/eclipse/tug/resources/splash/tug_splash.png");
+			URL urlToImage = WizardWindow.class.getClassLoader().getResource("images/splash/tug_splash.png");
 			//System.out.println(urlToImage.getPath());
 			//Image spimage = ImageIO.read(urlToImage);
 			UISplashScreen.splash(
