@@ -93,11 +93,11 @@ public class MyGenerator extends Generate {
 			}
 		}
 		else{
-			if (!isInWorkspace(org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage.class)) {
+			if (!isInWorkspace(org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage.class)) {
 				//resourceSet.getPackageRegistry().put(MyPackage.eINSTANCE.getNsURI(), MyPackage.eINSTANCE);
 				resourceSet.getPackageRegistry().put(
-						org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage.eNS_URI,// eINSTANCE.getNsURI(), 
-						org.casa.dsltesting.Qt48Xmlschema.Qt48XmlSchemaPackage.eINSTANCE);
+						org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage.eNS_URI,// eINSTANCE.getNsURI(), 
+						org.casa.dsltesting.Qt48Xmlschema.Qt48XmlschemaPackage.eINSTANCE);
 			}
 		}
 
