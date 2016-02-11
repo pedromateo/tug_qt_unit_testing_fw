@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>tug_generation_wizard</groupId>
-  <artifactId>tug_generation_wizard</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <groupId>tug</groupId>
+  <artifactId>generation_wizard</artifactId>
+  <version>1.8.5</version>
   
   
   
@@ -26,7 +26,7 @@
      <dependency>
      	<groupId>tug</groupId>
      	<artifactId>qt48_model</artifactId>
-     	<version>0.0.1-SNAPSHOT</version>
+     	<version>1.0.0</version>
      </dependency>
      
      
@@ -99,4 +99,10 @@
       
     </plugins>
   </build>
+  <name>TUG GUI Unit Testing for Qt apps</name>
+  <url>http://pedromateo.github.io/tug_qt_unit_testing_fw/</url>
+  <organization>
+  	<name>Pedro Mateo - Cátedra SAES</name>
+  	<url>http://www.pedromateo.es/</url>
+  </organization>
 </project>

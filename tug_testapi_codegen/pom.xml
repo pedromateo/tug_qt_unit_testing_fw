@@ -26,7 +26,7 @@
   <artifactId>testapi_codegen</artifactId>
   <version>1.0.0</version> <!-- This version should match the version of your project in the MANIFEST.MF-->
   <packaging>jar</packaging>
-  <name>QT model</name>
+  <name>TUG GUI Unit Testing for Qt apps</name>
   <description>QT model generator</description>
 <repositories>
    
@@ -88,7 +88,7 @@
           </execution>
         </executions>
         <configuration>
-          <useBinaryResources>false</useBinaryResources>
+          <useBinaryResources>true</useBinaryResources>
           <acceleoProject>
             <root>${project.basedir}</root>
             <entries>
@@ -107,4 +107,9 @@
      </plugin>
    </plugins>
  </build>
+ <url>http://pedromateo.github.io/tug_qt_unit_testing_fw/</url>
+ <organization>
+ 	<name>Pedro Mateo - Cátedra SAES</name>
+ 	<url>http://www.pedromateo.es/</url>
+ </organization>
 </project>

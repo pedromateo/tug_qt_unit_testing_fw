@@ -1,31 +1,14 @@
 package org.eclipse.tug.wizard;
 
 import java.awt.Color;
-import java.awt.EventQueue;
 import java.awt.Frame;
 import java.awt.event.ActionEvent;
-import java.awt.event.ContainerEvent;
-import java.awt.event.MouseEvent;
 import java.awt.event.WindowEvent;
-import java.beans.PropertyChangeEvent;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.util.Enumeration;
-
-import javax.swing.AbstractButton;
-import javax.swing.ButtonModel;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
-import javax.swing.event.TreeSelectionEvent;
-import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.DefaultTreeModel;
-import javax.swing.tree.TreePath;
 
 import org.eclipse.tug.utils.DialogsUtils;
 import org.eclipse.tug.utils.FileParseUtils;
-import org.eclipse.tug.utils.FileSystemUtils;
 import org.eclipse.tug.utils.FileSystemUtils;
 import org.eclipse.tug.wizard.widgets.testprojecteditor.TestProjectEditor;
 import org.eclipse.tug.wizard.widgets.testprojecteditor.model.TestNode;

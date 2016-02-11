@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Acceleo Generator Module Runtime Plug-in
-Bundle-SymbolicName: testapi_generator
+Bundle-SymbolicName: tug_testapi_codegen
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: es.um.casa.qt_test_api.generator.Activator
 Bundle-Vendor: Eclipse Modeling Project
