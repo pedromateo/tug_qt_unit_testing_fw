@@ -15,47 +15,73 @@
   <!-- ###################################################################################################### -->
   
   
-  <parent>
-    <groupId>org.eclipse.acceleo</groupId>
-    <artifactId>org.eclipse.acceleo.qt_test_api.generator.parent</artifactId>
-    <version>1.0.0.qualifier</version>
-    <relativePath>../org.eclipse.acceleo.qt_test_api.generator.parent/pom.xml</relativePath>
-  </parent>
+<!--   <parent> -->
+<!--     <groupId>org.eclipse.acceleo</groupId> -->
+<!--     <artifactId>org.eclipse.acceleo.qt_test_api.generator.parent</artifactId> -->
+<!--     <version>1.0.0.qualifier</version> -->
+<!--     <relativePath>../org.eclipse.acceleo.qt_test_api.generator.parent/pom.xml</relativePath> -->
+<!--   </parent> -->
 
-  <groupId>acceleo</groupId>
-  <artifactId>org.eclipse.acceleo.qt_test_api.generator</artifactId>
-  <version>1.0.0.qualifier</version> <!-- This version should match the version of your project in the MANIFEST.MF-->
-  <packaging>eclipse-plugin</packaging>
+  <groupId>tug</groupId>
+  <artifactId>testapi_codegen</artifactId>
+  <version>1.0.0</version> <!-- This version should match the version of your project in the MANIFEST.MF-->
+  <packaging>jar</packaging>
+  <name>QT model</name>
+  <description>QT model generator</description>
+<repositories>
+   
+     <repository>
+       <id>Eclipse - Acceleo Release</id>
+       <url>https://repo.eclipse.org/content/repositories/acceleo-releases</url>
+     </repository>
+ </repositories>
+
+   <pluginRepositories>
+     <pluginRepository>
+       <id>Eclipse - Acceleo Release</id>
+       <url>https://repo.eclipse.org/content/repositories/acceleo-releases</url>
+     </pluginRepository>
+   </pluginRepositories>
+
 
   <dependencies>
-    <dependency>
-      <groupId>org.eclipse.acceleo</groupId>
-      <artifactId>maven</artifactId>
-      <version>3.3.0</version>
-    </dependency>
+     <dependency>
+       <groupId>org.eclipse.acceleo</groupId>
+       <artifactId>org.eclipse.acceleo.maven</artifactId>
+       <version>3.5.2</version>
+     </dependency>
+     <dependency>
+       <groupId>org.eclipse.acceleo</groupId>
+       <artifactId>org.eclipse.acceleo.engine</artifactId>
+       <version>3.5.1.201409021433</version>
+     </dependency>
+     <dependency>
+     	<groupId>org.eclipse.emf</groupId>
+     	<artifactId>org.eclipse.emf.ecore</artifactId>
+     	<version>2.11.1-v20150805-0538</version>
+     </dependency>
   </dependencies>
   
- <repositories>
-    <repository>
-      <id>Indigo Release</id>
-      <url>https://raw.github.com/eclipse/acceleo/master/maven/repository/releases/indigo</url>
-    </repository>
-	<repository>
-      <id>Juno Release</id>
-      <url>https://raw.github.com/eclipse/acceleo/master/maven/repository/releases/juno</url>
-    </repository>
-	<repository>
-      <id>Snapshots</id>
-      <url>https://raw.github.com/eclipse/acceleo/master/maven/repository/snapshots</url>
-    </repository>
- </repositories>
+ 
  
  <build>
    <plugins>
+   
+   
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+   
      <plugin>
        <groupId>org.eclipse.acceleo</groupId>
-       <artifactId>maven</artifactId>
-       <version>3.3.0</version>
+       <artifactId>org.eclipse.acceleo.maven</artifactId>
+       <version>3.5.0-SNAPSHOT</version>
        <executions>
           <execution>
             <phase>compile</phase>
