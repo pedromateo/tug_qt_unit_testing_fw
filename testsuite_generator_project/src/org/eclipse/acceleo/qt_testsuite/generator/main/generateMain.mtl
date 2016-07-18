@@ -1,0 +1,10 @@
+[comment encoding = UTF-8 /]
+[module generateMain('org.casa.dsl_testing.TestsuiteModel')/]
+[comment module generateMain('platform:/resource/testsuite_model/model/TestsuiteModel.ecore')/]
+
+[template public generateElement(aTestsuite : Testsuite)] 
+[comment @main/]
+[file (aTestsuite.name, false, 'UTF-8')] 
+
+[/file]
+[/template]

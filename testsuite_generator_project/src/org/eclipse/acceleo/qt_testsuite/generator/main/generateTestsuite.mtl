@@ -1,0 +1,93 @@
+[comment encoding = UTF-8 /] 
+[module generateTestsuite('org.casa.dsl_testing.TestsuiteModel')/]
+
+[**
+ * import org::eclipse::acceleo::qt_testsuite::generator::main::templates::test 
+ * /]
+
+
+[template public generateTestsuiteProject(ts : Testsuite,  
+   base_class_name : OclAny, base_class_filename : OclAny)]
+
+[file ('test/' + ts.name + '.hpp.gen', false, 'UTF-8')]
+#ifndef [ts.name /]_hpp
+#define [ts.name /]_hpp
+
+#include "[base_class_filename.toString() /]"
+
+#include "##TESTPANELCLASSNAME##.h"
+##MODELINCLUDE##
+##SIGNALSINCLUDE##
+
+class [ts.name /] : public [base_class_name.toString() /] {
+
+    Q_OBJECT /// (mandatory) Our test suite has to execute Q_OBJECT macros
+
+public:
+
+    /// TestSuite constructor
+    [ts.name /]()
+    {
+        _id = "[ts.name /]";
+    }
+
+
+    /// TestSuite destructor
+    ~[ts.name /]()
+    {
+    }
+
+protected:
+
+    ///
+    /// TestSuite objects (optional)
+    ///
+
+    ///
+    /// objects used to configure the test scenario
+    ##MODELOBJECT##
+    ##SIGNALSOBJECT##
+
+    ///
+    /// TestSuiteBase overloaded methods (optional)
+    ///
+
+public:
+
+    /// (optional) this method can be redefined if additional configurations
+    /// have to be performed before test suite execution
+    virtual void configure_testsuite()
+    {
+        TestSuiteBase::configure_testsuite();
+        // create and configure modal and signals here
+        ##MODELINSTANTIATION##
+        ##SIGNALSINSTANTIATION##
+    }
+
+    /// (optional) this method can be redefined if additional actions/tests
+    /// have to be executed during test suite execution
+    virtual void do_tests()
+    {
+        TestSuiteBase::do_tests();
+    }
+
+    /// (optional) this method can be redefined if additional actions have to
+    /// be executed before finishing the test suite
+    virtual void finish_testsuite()
+    {
+        TestSuiteBase::finish_testsuite();
+    }
+
+    ///
+    /// Tests definition
+    ///
+
+private Q_SLOTS: /// (mandatory) Tests have to be declared as "private slots"
+
+##TESTSDEFINITION##
+
+};
+
+#endif // [ts.name /]_hpp
+[/file]
+[/template]

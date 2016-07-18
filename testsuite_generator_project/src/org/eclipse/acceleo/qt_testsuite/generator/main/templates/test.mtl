@@ -1,0 +1,7 @@
+[comment encoding = UTF-8 /]
+[module test('/testsuite_model/model/TestsuiteModel.ecore')]
+
+
+[template public generateTest(aTest : Test)]
+
+[/template]
