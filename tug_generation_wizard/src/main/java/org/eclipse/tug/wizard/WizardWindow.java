@@ -44,7 +44,7 @@ public class WizardWindow extends WizardWindowGen{
 
 		// some previous data
 		final String TUG_TITLE = "TUG Wizard v" + TUG_VERSION + " - catedrasaes.org";
-		
+
 		// create splash screen and messages (do not show in testing mode)
 		final String splashMsg1 = "TUG v" + TUG_VERSION + " :: Initializing TUG data.";
 		final String splashMsg2 = "TUG v" + TUG_VERSION + " :: Loading Qt model utilities.";
@@ -62,47 +62,50 @@ public class WizardWindow extends WizardWindowGen{
 			_sleep(0.5);
 		}
 
-		
+
 		///
 		///
 		///
 		/*EventQueue.invokeLater(new Runnable() {
 			public void run() {*/
-				try {
+		try {
 
-					if (JUST_TESTING){
-						Test_WizardWindow.JustTesting();
-						return;
-					}
+			if (JUST_TESTING){
+				Test_WizardWindow.JustTesting();
+				return;
+			}
 
-					// create wizard app
-					WizardWindow window = null;
+			// create wizard app
+			WizardWindow window = null;
 
-					if (TESTING_MODE)
-						window = new Test_WizardWindow();
-					else
-						window = new WizardWindow();
+			if (TESTING_MODE){
+				System.out.println("TUG Working Directory = " +
+						System.getProperty("user.dir"));
+				window = new Test_WizardWindow();
+			}
+			else
+				window = new WizardWindow();
 
-					// initialize and launch
-					if (!TESTING_MODE){
-						UISplashScreen.updateBarProgress(splashMsg2);
-						_sleep(0.5);
-					}
-					window.frmTugGeneratorWizard.setTitle(TUG_TITLE);
+			// initialize and launch
+			if (!TESTING_MODE){
+				UISplashScreen.updateBarProgress(splashMsg2);
+				_sleep(1);
+			}
+			window.frmTugGeneratorWizard.setTitle(TUG_TITLE);
 
-					if (!TESTING_MODE){
-						UISplashScreen.updateBarProgress(splashMsg3);
-						_sleep(0.5);
-					}
-					window.initializeAppearanceAndGUIContent();
+			if (!TESTING_MODE){
+				UISplashScreen.updateBarProgress(splashMsg3);
+				_sleep(1);
+			}
+			window.initializeAppearanceAndGUIContent();
 
-				    window.frmTugGeneratorWizard.setVisible(true);
-					if (!TESTING_MODE) 
-						UISplashScreen.disposeSplash();
+			window.frmTugGeneratorWizard.setVisible(true);
+			if (!TESTING_MODE) 
+				UISplashScreen.disposeSplash();
 
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		/*	}
 		});*/
 	}

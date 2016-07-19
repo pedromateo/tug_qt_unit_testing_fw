@@ -52,10 +52,12 @@ public class Test_WizardWindow extends WizardWindow{
 			} 
 		});
 	}
+	
+	final String TEST_SOURCES = "/home/pedro/svn_catedra/p/mde_GUI_unit_testing/example_test_sources/";
 
 	public void _testQWTPanel(MouseEvent e){
 		// step 1
-		tef_panel_file.setText("../../example_test_sources/qwt_panel_lib/filePlotCenterPanel.ui");
+		tef_panel_file.setText(TEST_SOURCES + "qwt_panel_lib/filePlotCenterPanel.ui");
 		tef_panel_classname.setText("PlotCenterPanel");
 		//cbx_no_panel_file.doClick(); cbx_no_panel_file.doClick();
 		cbx_ui_reference.doClick();
@@ -65,28 +67,28 @@ public class Test_WizardWindow extends WizardWindow{
 
 		// step 2
 		//cbx_include_gw.doClick();//.setSelected(true);
-		tef_gw_lib.setText("../../example_test_sources/qwt_panel_lib/lib/libpanelgw.so");
-		tef_gw_file.setText("../../example_test_sources/qwt_panel_lib/include/filePlotCenterPanelGw.h");
+		tef_gw_lib.setText(TEST_SOURCES + "qwt_panel_lib/lib/libpanelgw.so");
+		tef_gw_file.setText(TEST_SOURCES + "qwt_panel_lib/include/filePlotCenterPanelGw.h");
 		tef_gw_classname.setText("PlotCenterPanelGw");
-		tef_gw_builddir.setText("../../example_test_sources/qwt_panel_lib/build");
-		txa_gw_dependencies.setText("INCLUDEPATH += /home/pedro/svn_catedra/anotaciones/dsl_testing/example_test_sources/qwt_panel_lib/include");
+		tef_gw_builddir.setText(TEST_SOURCES + "qwt_panel_lib/build");
+		txa_gw_dependencies.setText("INCLUDEPATH += " +  TEST_SOURCES + "qwt_panel_lib/include");
 
 		// step 3
 		cbx_include_model.doClick();//.setSelected(true);
-		tef_model_lib.setText("../../example_test_sources/lib_model/lib/libmodel.so");
-		tef_model_file.setText("../../example_test_sources/lib_model/include/LcsModelSignals.h");
+		tef_model_lib.setText(TEST_SOURCES + "lib_model/lib/libmodel.so");
+		tef_model_file.setText(TEST_SOURCES + "lib_model/include/LcsModelSignals.h");
 		tef_model_classname.setText("LcsModelSignals");
-		tef_model_builddir.setText("../../example_test_sources/lib_model/build");
-		txa_model_dependencies.setText("INCLUDEPATH += /home/pedro/svn_catedra/anotaciones/dsl_testing/example_test_sources/lib_model/include");
+		tef_model_builddir.setText(TEST_SOURCES + "lib_model/build");
+		txa_model_dependencies.setText("INCLUDEPATH += " +  TEST_SOURCES + "lib_model/include");
 
 		// step 4
 		cbx_include_signals.doClick();//.setSelected(true);
-		tef_signals_lib.setText("../../example_test_sources/lib_model/lib/libmodel.so");
-		tef_signals_file.setText("../../example_test_sources/lib_model/include/LcsModelSignals.h");
+		tef_signals_lib.setText(TEST_SOURCES + "lib_model/lib/libmodel.so");
+		tef_signals_file.setText(TEST_SOURCES + "lib_model/include/LcsModelSignals.h");
 		tef_signals_classname.setText("LcsModelSignals");
-		tef_signals_builddir.setText("../../example_test_sources/lib_model/build");
+		tef_signals_builddir.setText(TEST_SOURCES + "lib_model/build");
 		rdb_signals_boost.doClick();//.setSelected(true);
-		txa_signals_dependencies.setText("INCLUDEPATH += /home/pedro/svn_catedra/anotaciones/dsl_testing/example_test_sources/lib_model/include");
+		txa_signals_dependencies.setText("INCLUDEPATH += " +  TEST_SOURCES + "lib_model/include");
 
 		// step 5
 		cbx_gcov.doClick();//.setSelected(true);
@@ -105,7 +107,7 @@ public class Test_WizardWindow extends WizardWindow{
 
 	public void _testQtPanel(MouseEvent e){
 		// step 1
-		tef_panel_file.setText("../../example_test_sources/lib_panel/filePlotCenterPanel.ui");
+		tef_panel_file.setText(TEST_SOURCES + "lib_panel/filePlotCenterPanel.ui");
 		tef_panel_classname.setText("PlotCenterPanel");
 		//cbx_no_panel_file.doClick(); cbx_no_panel_file.doClick();
 		cbx_ui_reference.doClick();
@@ -115,28 +117,28 @@ public class Test_WizardWindow extends WizardWindow{
 
 		// step 2
 		//cbx_include_gw.doClick();//.setSelected(true);
-		tef_gw_lib.setText("../../example_test_sources/lib_panel/lib/libpanelgw.so");
-		tef_gw_file.setText("../../example_test_sources/lib_panel/include/filePlotCenterPanelGw.h");
+		tef_gw_lib.setText(TEST_SOURCES + "lib_panel/lib/libpanelgw.so");
+		tef_gw_file.setText(TEST_SOURCES + "lib_panel/include/filePlotCenterPanelGw.h");
 		tef_gw_classname.setText("PlotCenterPanelGw");
-		tef_gw_builddir.setText("../../example_test_sources/lib_panel/build");
-		txa_gw_dependencies.setText("INCLUDEPATH += /home/pedro/svn_catedra/anotaciones/dsl_testing/example_test_sources/lib_panel/include");
+		tef_gw_builddir.setText(TEST_SOURCES + "lib_panel/build");
+		txa_gw_dependencies.setText("INCLUDEPATH += " +  TEST_SOURCES + "lib_panel/include");
 
 		// step 3
 		cbx_include_model.doClick();//.setSelected(true);
-		tef_model_lib.setText("../../example_test_sources/lib_model/lib/libmodel.so");
-		tef_model_file.setText("../../example_test_sources/lib_model/include/LcsModelSignals.h");
+		tef_model_lib.setText(TEST_SOURCES + "lib_model/lib/libmodel.so");
+		tef_model_file.setText(TEST_SOURCES + "lib_model/include/LcsModelSignals.h");
 		tef_model_classname.setText("LcsModelSignals");
-		tef_model_builddir.setText("../../example_test_sources/lib_model/build");
-		txa_model_dependencies.setText("INCLUDEPATH += /home/pedro/svn_catedra/anotaciones/dsl_testing/example_test_sources/lib_model/include");
+		tef_model_builddir.setText(TEST_SOURCES + "lib_model/build");
+		txa_model_dependencies.setText("INCLUDEPATH += " +  TEST_SOURCES + "lib_model/include");
 
 		// step 4
 		cbx_include_signals.doClick();//.setSelected(true);
-		tef_signals_lib.setText("../../example_test_sources/lib_model/lib/libmodel.so");
-		tef_signals_file.setText("../../example_test_sources/lib_model/include/LcsModelSignals.h");
+		tef_signals_lib.setText(TEST_SOURCES + "lib_model/lib/libmodel.so");
+		tef_signals_file.setText(TEST_SOURCES + "lib_model/include/LcsModelSignals.h");
 		tef_signals_classname.setText("LcsModelSignals");
-		tef_signals_builddir.setText("../../example_test_sources/lib_model/build");
+		tef_signals_builddir.setText(TEST_SOURCES + "lib_model/build");
 		rdb_signals_boost.doClick();//.setSelected(true);
-		txa_signals_dependencies.setText("INCLUDEPATH += /home/pedro/svn_catedra/anotaciones/dsl_testing/example_test_sources/lib_model/include");
+		txa_signals_dependencies.setText("INCLUDEPATH += " +  TEST_SOURCES + "lib_model/include");
 
 		// step 5
 		cbx_gcov.doClick();//.setSelected(true);
