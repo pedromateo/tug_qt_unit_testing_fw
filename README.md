@@ -46,7 +46,14 @@ The projects composing TUG can be easily imported and compiled from Eclipse (htt
 
 Maven will download all dependencies and everything should run fine.
 
-Problems? Please, contact me at [pedrolmn@gmail.com](mailto:pedrolmn@gmail.com)
+Please, notice that if you are running TUG directly from Eclipse (i.e., by running the main file of the project **tug_generation_wizard**), you will need to set the working directory manually:
+
+1. Right click on the `tug_generation_wizard` project > Run as > Java application
+2. Select WizardWindow`. Close app.
+3. Right click again on the `tug_generation_wizard` project > Run as > Run configurations
+4. Select `WizardWindow` in the left menu > `Arguments` tab > Working directory > Select `Other` > click `Workspace...` and select, within the compilation folder, the directory including the `config` folder. 
+
+Any problem? Please, contact me at [pedrolmn@gmail.com](mailto:pedrolmn@gmail.com)
 
 # contents of this repository
 
