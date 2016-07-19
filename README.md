@@ -1,7 +1,5 @@
 
-**-*TUG: GUI Unit Testing ("Testing Unitario GUI", in Spanish) for Qt applications*-** 
-
-TUG is a framework to create batteries of tests for Qt applications in Linux, Windows and OS systems. 
+**TUG** means *GUI Unit Testing* (*Testing Unitario GUI* in Spanish). It is a framework to create test batteries for Qt applications in Linux, Windows and OS systems. 
 
 The TUG framework is based on the Qt Test framework, and is composed of two elements:
 * TUGLib: a C++ library to support GUI unit testing (requires Qt 4.8 or higher).
@@ -22,7 +20,6 @@ After 7 steps, 3-5 minutes and no code, you get:
 * high-level, interactive reports on the web browser
 * profiling and coverage analysis
 
-
 # what does a TUG package/release contain?
 
 A new release can be created by executing "scripts/create_release.sh". This script receives the version
@@ -38,6 +35,18 @@ Generated releases can be found at "releases/" folder. Each one includes:
 Please, go to "doc/" folder and open TUG_doc.pdf to find a quick usage guide and 
 further information about this testing framework.
 
+# compile, (modify) and run TUG
+
+The projects composing TUG can be easily imported and compiled from Eclipse (https://eclipse.org/downloads/). Just follow these steps:
+
+1. Download this repository and install Eclipse. Open Eclipse.
+2. File > Import > Existing Projects into Workspace. (Next)
+3. Select root directory of the project.
+4. Repeat 2 and 3 for the three projects: **qt48_model**, **tug_generation_wizard**, **tug_testapi_codegen**.
+
+Maven will download all dependencies and everything should run fine.
+
+Problems? Please, contact me at [pedrolmn@gmail.com](mailto:pedrolmn@gmail.com)
 
 # contents of this repository
 
